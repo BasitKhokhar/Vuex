@@ -1,0 +1,1570 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Source Sans 3', sans-serif;
+    color: $p-color;
+    box-sizing: border-box;
+}
+*ul{
+    list-style: none;
+    padding-left: 0;
+}
+.display-none{
+    display: none !important;
+}
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color:$vuexy-primary ;
+}
+body a{
+    text-decoration: none;
+  
+}
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    max-width:136.6rem;
+    // background-color: $vuexy-primary;
+}
+.grid{
+    box-sizing: border-box;
+    display: grid;
+    @include primaryborder(black,.1rem);
+}
+
+//   topbar//
+.left-sidebaar{
+    position: fixed;
+    overflow-y: auto;
+    width: 4.5%;
+    height: 100%;
+    background-color: $vuexy-bg;
+    overflow: hidden;
+    @include primaryborder(black,.1rem);
+    transition: .3s;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    background-color: white;
+    z-index: 1;
+    &:hover{
+        width: 20%;
+        overflow-y: auto;
+    }
+    // &:hover + .right-side{
+    //     margin-left:28rem ;
+    //     width: 79%;
+    // }  
+    // custom scrollbar css //
+    &::-webkit-scrollbar{
+        width: 1rem;
+        
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: black;
+        border-radius: 1rem;
+        height: 1rem;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    &::-webkit-scrollbar-track{
+       box-shadow:0 0 .5rem .5rem gray ;
+    }
+}
+.display-leftsidebaar{
+    width: 50%;
+}
+.header-left-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.header-left{
+    @include secondaryborder(brown,.1rem);
+}
+.header-right{
+    margin-top: 2rem;
+    padding-right: 1.8rem;
+}
+.header-right .out-circle{
+    width: .3rem;
+    height: .3rem;
+    background-color: $vuexy-primary;
+    padding: .5rem 1.2rem;
+    border: 1px solid $top-h1;
+    border-radius: 2rem;
+    
+    position: relative;
+}
+.inner-circle{
+    position: absolute;
+    padding: .2rem;
+    width: .1rem;
+    height: .1rem;
+    top: 40%;
+    left: 44%;
+    border-radius: 1rem;
+    background-color: $top-h1;
+
+}
+.header-left{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.header-left svg{
+    margin-top: 1.5rem;
+}
+.header-left h1{
+    margin-top: 1.5rem;
+    color: $top-h1;
+    font-weight: bold;
+   
+}
+// sidebaar body css
+.grid .left-side{
+    background-color:$vuexy-bg;
+    color: $top-h1;
+    overflow-y: auto;
+    padding-top: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 4.5rem;
+    
+}
+.grid .left-side .left-dashboard a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color:$sidebaar-h1;
+    opacity: .7;
+    &:hover{
+        opacity: 1;
+    }
+}
+.grid .left-side .left-dashboard a .dashboard-left{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.grid .left-side .left-dashboard a .dashboard-right{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15rem;
+    // gap: 7rem;
+ 
+}
+.grid .left-side .left-dashboard a .dashboard-right span p{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.grid .left-side .left-dashboard a .dashboard-right span i{
+    font-size: 1.5rem;
+}
+.grid .left-side .dashboard-list #dashboard-list
+{
+    list-style: circle;
+    padding-left: 3rem;
+    display: none;
+}
+.grid .left-side .lists{
+    list-style: none;
+    margin: 0;
+    display: none;
+}
+.grid .left-side .lists li{
+    opacity: .7;
+    &:hover{
+        opacity: 1;
+    }
+}
+.grid .left-side .dashboard-list #dashboard-list li a p{
+    font-size: 1.4rem;
+    margin: .5rem;
+    color: $top-h1;
+    font-weight: bold;
+    @include secondaryborder(brown,.1rem);
+    opacity: .7;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.grid .left-side .lists li a{
+    margin: 0;
+}
+.grid .left-side .lists li a p{
+    font-size: 1.5rem;
+    margin: 0rem;
+    color: $top-h1;
+    font-weight: bold;
+    @include secondaryborder(brown,.1rem);
+}
+.grid .left-side .app,
+.grid .left-side .pages,
+.grid .left-side .modules,
+.grid .left-side .documentation{
+    box-sizing: border-box;
+    opacity: .7;
+    gap: 1rem;
+    margin: 0;
+}
+.grid .left-side .app span p,
+.grid .left-side .pages span p,
+.grid .left-side .modules span p,
+.grid .left-side .documentation span p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.grid .left-side .list2 ul{
+    list-style: none;
+    padding-left: 0;
+}
+.grid .left-side .list2 ul .email-list .lists,
+.grid .left-side .list2 ul .event-list .lists,
+.grid .left-side .list2 ul .ecommerce-list .lists,
+.grid .left-side .list2 ul .elearning-list .lists,
+.grid .left-side .list2 ul .social-list .lists,
+.grid .left-side .list2 ul .supooert-desk-list .lists
+{
+    list-style: circle;
+    padding-left: 3rem;
+}
+.grid .left-side .list2 ul li {
+    margin: .9rem 0;
+}
+.grid .left-side .list2 ul li a{
+    display:  flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: $top-h1;
+    opacity: .7;
+    &:hover{
+        opacity: 1;
+    }
+}
+.grid .left-side .list2 ul li a .arrows{
+    display: flex;
+    flex-direction: row;
+    @include secondaryborder(brown,.1rem);
+    justify-content: space-between;
+    width: 23rem;
+}
+.grid .left-side .list2 ul li a span p{
+    margin: 0;
+    font-weight: bold;
+}
+
+// body right side css //
+.right-side{
+    margin-left: 6.5rem;
+    width: 94%;
+    transition: .3s;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: row;
+    position: relative;
+    padding: 0 2rem;
+    &::-webkit-scrollbar{
+        width: 1rem;
+        
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: black;
+        border-radius: 1rem;
+        height: 1rem;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    &::-webkit-scrollbar-track{
+       box-shadow:0 0 .5rem .5rem gray ;
+    }
+   
+}
+
+.right-side #bodySetting{
+   position: fixed;
+   right: 0;
+   top: 35%;
+   background-color: $vuexy-secondary;
+   font-size: 2rem;
+   padding: .5rem .8rem;
+   border-radius: .5rem;
+   color: white;
+   font-weight: bold;
+   z-index: 0;
+   cursor: pointer;
+}
+.right-side .popup{
+    position: fixed;
+    background-color:white;
+    color: black;
+    width: 40rem;
+    height: 63.6rem;
+    border-radius: 1rem;
+    top:50%;
+    left: 85.2%;
+    transform: translate(-50%,-50%) scale(1);
+    display: none;
+    padding: 1rem 3rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 1;
+    box-shadow: 0 0 1rem .4rem rgb(240, 240, 240);
+    @include secondaryborder(brown,.1rem);
+    &::-webkit-scrollbar{
+        width: 1rem;
+        
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: black;
+        border-radius: 1rem;
+        height: 1rem;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    &::-webkit-scrollbar-track{
+       box-shadow:0 0 .5rem .5rem gray ;
+    }
+}
+.popup-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: .1rem solid lightgray;
+    padding: 1.2rem 0;
+
+}
+.popup-top h2{
+    margin: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.popup-top i{
+    font-size: 2.5rem;
+    margin-top: 0rem;
+    cursor: pointer;
+}
+.popup-part1{
+    display: flex;
+    flex-direction: column; 
+    margin: .5rem 0; 
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid lightgray;
+}
+.popup-part1 .popup-part1-p1{
+    margin: 1.5rem 0;
+}
+.popup-part1 .popup-part1-p1 p{
+   color: $vuexy-secondary;
+   font-size: 1.3rem;
+   font-weight: bold;
+   padding: .4rem 2rem;
+   background-color: lightgray; 
+   display: inline-block;
+   border-radius: .5rem;
+}
+.popup-part1 .popup-part1-h1{
+   font-size: 1.1rem;
+}
+.popup-part1 .popup-part1-flex1{
+    display: flex;
+    flex-direction: row;
+   gap: 1rem;
+}
+.popup-part1 .popup-part1-flex1 .flex1-item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popup-part1 .popup-part1-flex1 .flex1-item1 .flex1-item1-icon{
+    margin: 2rem 0;
+}
+.popup-part1 .popup-part1-flex1 .flex1-item1 span i{
+    font-size: 2rem;
+    border: .1rem solid lightgray;
+    padding: 1.5rem 4rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+.popup-part1 .popup-part1-flex1 .flex1-item1  .flex1-item1-p1{
+    font-size: 1.4rem;
+}
+.right-side #bodybutton{
+    position: fixed;
+    right: 1.9%;
+    top: 70%;
+    @include primarybutton(1rem 2.5rem,1rem,1.6rem,$vuexy-button-color,white);
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 1rem .3rem rgb(245, 91, 91);
+    opacity: .7;
+    cursor: pointer;
+    &:hover{
+        opacity: 1;
+    }
+
+}
+    // right side main container
+.right-side-container{
+    width: 100%;
+    @include primaryborder(black,.1rem);
+}
+.right-topbar{
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem ;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    background-color: $vuexy-bg;
+    @include primaryborder(brown,.1rem);
+    
+}
+.input-search{
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 0;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+.right-topbar .search-btn{
+   margin-top: 1rem;
+}
+.right-topbar .search-btn .search-icon{
+   display: flex;
+   flex-direction:row;
+   gap: .5rem;
+   background-color: $vuexy-bg;
+   cursor: pointer;
+   outline: none;
+   border: none;
+}
+.right-topbar .search-btn .search-icon i{
+    font-size: 2rem;
+}
+.right-topbar .search-btn .search-icon p{
+    font-size: 1.6rem;
+    color: $p-color;
+}
+
+#searchicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: $vuexy-bg;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);   
+}
+.input-search{
+    width: 96.7%;
+    border-radius: 1rem;
+}
+.input-search input{
+    height: 6rem;
+    outline: none;
+    border: none;
+    width: 90%;
+    font-size: 1.6rem;
+    padding:0 2rem ;
+}
+.input-search i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+    // tooltips //
+.right-topbar .topbar-right-data{
+    margin-top: 0;
+}
+.right-topbar .topbar-right-data ul{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    gap: 1rem;
+    // margin-top: 1.7rem;
+}
+.right-topbar .topbar-right-data ul li{
+    @include primaryborder(brown,.1rem);
+}
+.right-topbar .topbar-right-data ul li i{
+    font-size: 2.3rem;
+}
+.right-topbar .topbar-right-data .top-girl-image img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius:5rem ;
+} 
+//  1 languages tooltip
+.topbar-right-data ul .lang{
+    position: relative;
+    display: inline-block;
+    border: none;
+    margin: 0px;
+    &:hover+.d-l-mode-tooltip-data{
+        display: block;
+    }
+}
+.topbar-right-data ul .lang-tooltip-data1{
+    position: absolute;
+    bottom: -15.8rem;
+    transform: translateX(-73%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    border-radius: 1rem;
+    padding: .5rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}
+.topbar-right-data ul .languages{
+    gap: .5rem;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: .8rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(231, 231, 231);
+    }
+}
+// tooltip darklight mode//
+.topbar-right-data ul .moon{
+    position: relative;
+    display: inline-block;
+    border: none;
+    margin: 0px;
+    &:hover+.d-l-mode-tooltip-data{
+        display: block;
+    }
+}
+.d-l-mode-tooltip-data{
+    position: absolute;
+    background-color: $p-color;
+    color: white;
+    margin: 0;
+    width: 9.5rem;
+    border-radius: .5rem;
+    display: none;
+    padding: .5rem 1rem;
+    bottom: -2.5rem;
+    transform: translateX(-0%);
+    transition: 0.2s;
+    z-index: 1;
+    &::after{
+        content:'';
+        position: absolute;
+        bottom: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-color: transparent transparent $p-color transparent;
+        border-width: 8px;
+        border-style: solid;
+    }
+}
+.d-l-mode-tooltip-data span{
+    font-size: 1.5rem;
+    color: white; 
+}
+.d-l-mode-tooltip-data1{
+    position: absolute;
+    bottom: -12.2rem;
+    transform: translateX(-50%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    border-radius: 1rem;
+    padding: .5rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}
+.d-l-d1{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(231, 231, 231);
+    }
+}
+// shortcut tooltip data
+.topbar-right-data ul .shortcut{
+    position: relative;
+    display: inline-block;
+    border: none;
+    margin: 0px;
+
+}
+.topbar-right-data ul .shortcut-toolip-data{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 28rem;
+    bottom: -37.2rem;
+    transform: translateX(-66%);
+    background-color: white;
+    display: none;
+    border-radius: 1rem;
+    padding: .5rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}
+.shortcut-header{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 1rem 2rem;
+   font-size: 1.6rem;
+   border-bottom: .1rem solid gray;
+}
+.shortcut-body{
+   display: grid;
+   grid-template-rows: auto auto auto;
+   grid-template-columns: auto auto;
+  
+   row-gap: 2rem;
+   margin: 2rem 0;
+}
+.body-item1{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.body-item1 span i{
+    font-size: 1.6rem;
+    padding: .7rem 1rem;
+    background-color: lightgray;
+    border-radius: 2rem;
+}
+.shortcut-body-h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+  margin-top: .5rem;
+
+}
+.shortcut-body-p{
+    font-size: 1.6rem;
+    margin: 0;
+}
+//  notifications tooltip//
+.topbar-right-data ul .bell-icon{
+    position: relative;
+    display: inline-block;
+    border: none;
+    margin: 0px;
+
+}
+.topbar-right-data ul .bell-tooltip-data{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 35rem;
+    bottom: -46.2rem;
+    transform: translateX(-66%);
+    background-color: white;
+    display:none;
+    border-radius: 1rem;
+    padding: .5rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}
+.bell-data-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+.bell-data-top-h1{
+    font-size: 2rem;
+}
+.bell-envelope-icon{
+    font-size: 1.8rem;
+    margin-top: .3rem;
+}
+.bell-scroll-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    height: 35rem;
+    overflow-y: auto;  
+}
+.bell-scroll-item1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(236, 236, 236);
+    padding: 0 1rem;
+    border-radius: 1rem;
+    &:hover{
+        background-color: lightgray;
+    }
+    &:hover .bell-scroll-item1-L i{
+        display: block;
+    }
+}
+.remove-bell-scroll-data{
+    display: none !important;
+}
+.bell-scroll-item1-L{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.scroll-item1-img img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    border-radius:5rem ;
+    margin-top: .3rem;
+}
+.scroll-item1-img-data{
+    display: flex;
+    flex-direction: column;
+}
+.scroll-item1-data-dark{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.scroll-item1-data-light{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.scroll-item1-data-time{
+    font-size: 1.4rem;
+    opacity: .8;
+}
+.bell-scroll-item1-L{
+    // margin-top: 3rem;
+}
+.bell-scroll-item1-L i{
+    font-size: 3rem;
+    padding-top: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.bell-data-footer{
+   padding: .5rem .5rem;
+}
+.bell-footer-btn1{
+    @include primarybutton(1rem 8.5rem,1rem,1.6rem,$light-bg,$p-color);
+    border: none;
+    font-weight: 600;
+    &:hover{
+        background-color: $vuexy-secondary;
+        color: white;
+    }
+}
+// admin tooltip //
+.topbar-right-data ul .header-pic{
+    position: relative;
+    display: inline-block;
+    border: none;
+    margin: 0px;
+    &:hover+.d-l-mode-tooltip-data{
+        display: block;
+    }
+}
+.topbar-right-data ul .pic-tooltip-data{
+    position: absolute;
+    bottom: -29rem;
+    transform: translateX(-11%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    border-radius: 1rem;
+    padding: .5rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}
+.display-tooltip-data{
+    display: block !important;
+}
+.topbar-right-data ul .admin{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 18rem;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 0rem 1.5rem;
+    border-bottom: .1rem solid gray;
+    &:hover{
+        background-color: rgb(231, 231, 231);
+    }
+}
+.top-boy-image img{
+    width: 3.7rem;
+    height: 3.7rem;
+    object-fit: contain;
+    border-radius:5rem ;
+    margin-top: .3rem;
+} 
+.admin-name{
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   font-weight: bold;
+}
+.admin-bx2{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.6rem;
+    padding: .5rem .5rem;
+    &:hover{
+        background-color: rgb(231, 231, 231);
+    }
+}
+.topbar-right-data ul .admin1{
+    display: flex;
+    flex-direction:column;
+    gap: .2rem;
+    width: 18rem;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: .5rem 1.5rem;
+    border-bottom: .1rem solid gray;
+
+}
+    //  main  body css//
+.main-h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+
+}
+.main-p1{
+    font-size: 1.5rem;
+}
+.main-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 3rem 0;
+    padding-right: 1.5rem;
+}
+.main-item1,
+.main-item2,
+.main-item3{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.main-item1 .main-item1-icon,
+.main-item2 .main-item2-icon,
+.main-item3 .main-item3-icon{
+   padding: 1rem 2.5rem;
+   font-size: 4rem;
+   border-radius: .5rem; 
+   background-color: lightgray;
+}
+.main-item1 .main-item1-icon i{
+    color:$vuexy-secondary ;
+}
+.main-item2 .main-item2-icon i{
+    color:#1ab7ea ;
+}
+.main-item3 .main-item3-icon i{
+    color:goldenrod ;
+}
+.main-item1 .timer,
+.main-item2 .timer2,
+.main-item3 .timer3{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+.main-item1 .timer .timer-p,
+.main-item2 .timer2 .timer-p2,
+.main-item3 .timer3 .timer-p3{
+    font-size: 2rem;
+} 
+.main-item1 .timer .timer-N{
+    font-size: 3rem;
+    font-weight: bold;
+    color:$vuexy-secondary ;
+} 
+.main-item2 .timer2 .timer-N2{
+    font-size: 3rem;
+    color: #1ab7ea;
+    font-weight: bold;
+} 
+.main-item3 .timer3 .timer-N3{
+    font-size: 3rem;
+    color: goldenrod;
+    font-weight: bold;
+} 
+  
+// body flex 1//
+.body-flex1{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    width: 100%;
+}
+.body-flex1 .left-flex1{
+    width: 65%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+} 
+// for right side of flex1
+.body-flex1 .right-flex1{
+    width: 30%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+} 
+.body-flex1 .left-flex1 .L-flex1-top,
+.body-flex1 .right-flex1 .R-flex1-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+.body-flex1 .left-flex1 .L-flex1-top-left,
+.body-flex1 .right-flex1 .R-flex1-top-left{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.body-flex1 .left-flex1 .L-flex1-top-right{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: .5rem;
+    cursor: pointer;
+    position: relative;
+    
+}
+.body-flex1 .right-flex1 .R-flex1-top-right{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: .5rem;
+    cursor: pointer;
+    position: relative;
+}
+.body-flex1 .left-flex1 .L-flex1-top-right span{
+    width: .3rem;
+    height: .3rem;
+    border-radius: .5rem;
+    background-color:$p-color;
+    
+}
+.body-flex1 .right-flex1 .R-flex1-top-right span{
+    width: .3rem;
+    height: .3rem;
+    border-radius: .5rem;
+    background-color:$p-color;
+    
+}
+  
+    //  three dots tooltip 1 data //
+.dots1-tooltip-data{
+    position: absolute;
+    display: flex;
+    right: 38.5%;
+    top: 25%;
+    flex-direction: column;
+    gap: .5rem;
+    padding:1rem ;
+    border-radius: .8rem;
+    background-color: white;
+    display: none;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}  
+.dots1{
+    cursor: pointer; 
+    padding: 1rem 2rem;
+    &:hover{
+        background-color: lightgray;
+    }
+}
+.dots1 span{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+ //  three dots tooltip 2 data //
+ .dots2-tooltip-data{
+    position: absolute;
+    display: flex;
+    right: 5.5%;
+    top: 25.3%;
+    flex-direction: column;
+    gap: .5rem;
+    padding:1rem ;
+    border-radius: .8rem;
+    background-color: white;
+    z-index: 1;
+    display: none;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}  
+.dots1{
+    cursor: pointer; 
+    padding: 1rem 2rem;
+    &:hover{
+        background-color: lightgray;
+    }
+}
+.dots1 span{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+//  asasas
+.garph-lists{
+   
+}
+.garph-lists ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.garph-lists ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0 3rem;
+}
+    //  1 .garph-list
+    .garph-lists ul .garph-list-item1{
+        position: relative;
+    }
+    .garph-lists ul > .garph-list-item1-tooltip{
+        position:absolute;
+        right: 54%;
+        top: 57%;
+        display: none;
+    }
+    .garph-lists ul .garph-list-item1-tooltip p{
+        display: inline-block;
+        background-color: lightgray;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+    }
+.garph-lists ul li .garph-number6{
+    font-size: 1.6rem;
+    margin-top: .2rem;
+    
+}
+.garph-lists ul li > .garph-p6{
+    font-size:1.5rem;
+    background-color:$vuexy-secondary;
+    color: white;
+    padding:.5rem 0 ;
+    text-align: center;
+    width: 70%;
+    border-radius: 0 .8rem .8rem 0;
+    transition: .4s;
+    &:hover{
+     width: 75%; 
+    }   
+}
+//  2 .garph-list
+
+.garph-lists ul li .garph-number5{
+    font-size: 1.6rem;
+    margin-top: .2rem;
+    
+}
+.garph-lists ul li .garph-p5{
+    font-size:1.5rem;
+    background-color: #1da1f2;
+    color: white;
+    padding:.5rem 0 ;
+    text-align: center;
+    width: 50%;
+    border-radius: 0 .8rem .8rem 0; 
+    transition: .4s;
+    &:hover{
+        width: 55%; 
+       }    
+}
+//  3 .garph-list
+.garph-lists ul li .garph-number4{
+    font-size: 1.6rem;
+    margin-top: .2rem;
+    
+}
+.garph-lists ul li .garph-p4{
+    font-size:1.5rem;
+    background-color: #28c76f;
+    color: white;
+    padding:.5rem 0 ;
+    text-align: center;
+    width: 40%;
+    border-radius: 0 .8rem .8rem 0; 
+    transition: .4s;
+    &:hover{
+        width: 45%; 
+       }  
+}
+//  4 .garph-list
+.garph-lists ul li .garph-number3{
+    font-size: 1.6rem;
+    margin-top: .2rem;
+    
+}
+.garph-lists ul li .garph-p3{
+    font-size:1.5rem;
+    background-color:#5d596c ;
+    color: white;
+    padding:.5rem 0 ;
+    text-align: center;
+    width: 35%;
+    border-radius: 0 .8rem .8rem 0;  
+    transition: .4s;
+    &:hover{
+        width: 40%; 
+       } 
+}
+//  5 .garph-list
+.garph-lists ul li .garph-number2{
+    font-size: 1.6rem;
+    margin-top: .2rem;
+    
+}
+.garph-lists ul li .garph-p2{
+    font-size:1.5rem;
+    background-color: #ea5455;
+    color: white;
+    padding:.5rem 0 ;
+    text-align: center;
+    width: 25%;
+    border-radius: 0 .8rem .8rem 0;  
+    transition: .4s;
+    &:hover{
+        width: 30%; 
+       } 
+}
+//  6 .garph-list
+.garph-lists ul li .garph-number1{
+    font-size: 1.6rem;
+    margin-top: .2rem;
+    
+}
+.garph-lists ul li .garph-p1{
+    font-size:1.5rem;
+    background-color: #ff9f43;
+    color: white;
+    padding:.5rem 0 ;
+    text-align: center;
+    width: 15%;
+    border-radius: 0 .8rem .8rem 0;  
+    transition: .4s;
+    &:hover{
+        width: 20%; 
+       } 
+}
+    // body flex1 right side //
+    // rightside top css is same as of leftside so it is on top with leftside css
+.right-flex1 .right-flex1-body1{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding:1.5rem 3rem ;
+   border-top: .1rem solid lightgray;
+   border-bottom: .1rem solid lightgray;
+}    
+.right-flex1 .right-flex1-body1 span{
+    font-size: 1.6rem;font-weight: 500;
+}
+.right-flex1-pics-data{
+    display: flex;
+    flex-direction: column;
+    // gap: .5rem;
+    padding: 2rem 0;
+}
+.right-flex1-pics-data .right-flex1-pics-data1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .8rem 3rem;
+}
+.right-flex1-pics-data-L{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.right-flex1-pics-data-L .pics-1 img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    border-radius:5rem ;
+}
+.pics-data-1{
+    display: flex;
+    flex-direction: column;
+
+}
+.pics-data-1 .pics-data-1-dark{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.pics-data-1 .pics-data-1-light{
+    font-size: 1.4rem;
+    
+}
+.right-flex1-pics-data-R{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+// body flex2 css//
+.body-flex2{
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    gap: 3.8rem;
+    margin: 3rem 0;
+   
+}
+.body-flex2-item1{
+    width: 31%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}
+.body-flex2-item1 .L-flex2-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+.body-flex2-item1 .L-flex2-top .L-flex2-top-left{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+// thre dots tooltip 3 css
+.dots3-tooltip-data{
+    position: absolute;
+    display: flex;
+    right: 70.5%;
+    top: 55.8%;
+    flex-direction: column;
+    gap: .5rem;
+    padding:1rem ;
+    border-radius: .8rem;
+    background-color: white;
+    z-index: 1;
+    display: none;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}  
+.dots1{
+    cursor: pointer; 
+    padding: 1rem 2rem;
+    &:hover{
+        background-color: lightgray;
+    }
+}
+.dots1 span{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.body-flex2-item1 .L-flex2-top .L-flex2-top-right{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: .5rem;
+    cursor: pointer;
+    position: relative;
+}
+.body-flex2-item1 .L-flex2-top .L-flex2-top-right span{
+    width: .3rem;
+    height: .3rem;
+    border-radius: .5rem;
+    background-color:$p-color;
+}
+.L-flex2-body-part1{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin: 1.5rem 0;
+}
+.L-flex2-body-part1-Left{
+    margin-top: 1.8rem;
+}
+.camera-icon i{
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: $vuexy-secondary;
+    background-color: rgb(240, 240, 240);
+  
+}
+.arrows-icon i{
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: $sky-blue;
+    background-color: rgb(240, 240, 240);
+  
+}
+.cameras-icon i{
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: $green;
+    background-color: rgb(240, 240, 240);
+  
+}
+.dribble-icon i{
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: goldenrod;
+    background-color: rgb(240, 240, 240);
+  
+}
+.mic-icon i{
+    font-size: 2.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: rgb(245, 91, 91);
+    background-color: rgb(240, 240, 240);
+  
+}
+
+.L-flex2-body-part1-rightt{
+    display: flex;
+    flex-direction: column;
+}
+.L-flex2-dark{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.L-flex2-buttons{
+    display: inline-block;
+    margin-top: .3rem;
+    
+}
+.L-flex2-buttons p{
+    font-size: 1.2rem;
+    background-color: rgb(240, 240, 240);
+    display: inline-block;
+    border-radius: .5rem;
+    padding: .4rem 2rem;
+}
+  // .body-flex2-item2 //
+.body-flex2-item2{
+    width: 31%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    
+} 
+.body-flex2-item2-image{
+    // height: 25rem;
+    // padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: lightgray;
+    border-radius: 1rem;
+}
+.body-flex2-item2-image img{
+    width: 55%;
+    height: 22rem;
+    margin-top: 3rem;
+}
+.body-flex2-item2-h1 h2{
+   font-size: 2.5rem;
+   padding: 1rem 2.5rem;
+}
+.body-flex2-item2-p1 p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: .5rem 2.5rem;
+ }
+ .body-flex2-item2-btn1{
+    text-align: center;
+    margin: 1rem 0;
+ }
+ .body-flex2-item2-btn1 .join-event{
+    @include primarybutton(1rem 12rem,1rem,1.6rem,$vuexy-secondary,white);
+    border: none;
+    opacity: .8;
+    &:hover{
+        opacity: 1;
+    }
+ }
+.body-flex2-item2-DT{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+}
+.body-flex2-item2-calender,
+.body-flex2-item2-clock{
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+}
+.calender1-icon,.clock1-icon{
+    margin-top: 1rem;
+}
+.calender1-icon i,
+.clock1-icon i{
+    font-size:2rem;
+    padding: .8rem 1.4rem;
+    border-radius: .5rem;
+    color: $vuexy-secondary;
+    background-color: $light-bg;
+}
+.date1,.clock1{
+    display: flex;
+    flex-direction: column;
+}
+.date1-dark,.clock1-dark{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.date1-light,.clock1-light{
+    font-size: 1.4rem;
+}
+//   .body-flex2-item3 //
+.body-flex2-item3{
+    width: 31%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}
+.body-flex2-item3-h1{
+    padding: 0 2.5rem;  
+    margin: 2.5rem 0;
+} 
+.body-flex2-item3-h1 h2{
+    font-size: 1.8rem;
+}
+.body-flex2-item3-part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    margin: 1.2rem 0;
+}
+.body-flex2-item3-part1-L{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.body-flex2-item3-left{
+    margin-top: 1.4rem;
+}
+.percentage1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem .7rem;
+    border-radius: 5rem;
+    border: .5rem solid $vuexy-secondary;
+}
+.percentage2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem .7rem;
+    border-radius: 5rem;
+    border: .5rem solid $green;
+}
+.percentage3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem .7rem;
+    border-radius: 5rem;
+    border: .5rem solid $vuexy-button-color;
+}
+.percentage4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem .7rem;
+    border-radius: 5rem;
+    border: .5rem solid $sky-blue;
+}
+.body-flex2-item3-right{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.body-flex2-item3-headings{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.tasks{
+    font-size: 1.5rem;
+}
+.body-flex2-item3-part1-R{
+    margin-top: 1rem;
+}
+.body-flex2-item3-part1-R i{
+    font-size: 2rem;
+    padding: .3rem .5rem;
+    border-radius: .4rem;
+    background-color: $light-bg;
+    &:hover{
+        background-color: lightgray;
+    }
+}
+// vuexy footer //
+.vuexy-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-right: 1.8rem;
+}
+.vuexy-footer-left{
+    font-size: 1.6rem;
+}
+.vuexy-footer-right{
+    
+}
+.vuexy-footer-right ul{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    
+}
+.vuexy-footer-right ul li{
+    font-size: 1.6rem;
+    cursor: pointer;
+}

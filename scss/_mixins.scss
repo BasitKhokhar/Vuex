@@ -1,0 +1,16 @@
+@mixin primarybutton ($padding,$border-radius,$font-size,$bg,$color){
+  padding:$padding;
+  border-radius: $border-radius;
+  font-size: $font-size;
+  background-color: $bg;
+  color: $color;
+  // border: none;
+}
+@mixin primaryborder($color,$width){
+  // border: $width solid $color;
+  border: none;
+}
+@mixin secondaryborder($color,$width){
+  // border: $width solid $color;
+  border: none;
+}
