@@ -16,6 +16,10 @@ html{
 .display-none{
     display: none !important;
 }
+.visibility-hidden{
+   display: none !important;
+   opacity: 0;
+}
 body{
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
@@ -312,7 +316,7 @@ body a{
     background-color:white;
     color: black;
     width: 40rem;
-    height: 63.6rem;
+    height:100vh;
     border-radius: 1rem;
     top:50%;
     left: 85.2%;

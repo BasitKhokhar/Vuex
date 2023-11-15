@@ -1,13 +1,29 @@
 
 window.addEventListener('scroll',function(){
-    var header=document.querySelector('header-right');
+    var header=document.querySelector('.left-sidebaar');
     header.classList.toggle('display-none',window.scrollY > 100);
 });
+// let darklight=document.getElementById('dark-light-tooltip');
+// let moon1=document.getElementById('moon1');
+// moon1.addEventListener('mouseenter',setTimeout(function(){
+//     darklight.classList.add('visibility-hidden');
+//     console.log('add')
+// },1000)) ;
+// moon1.addEventListener('mouseleave',setTimeout(function(){
+//     darklight.classList.remove('visibility-hidden');
+//     console.log('remove')
+// },1000)) ;
+// setTimeout(function(){
+//     darklight.classList.remove('visibility-hidden');
+//     console.log('remove')
+// },1000);
 // function circlesonclick(){
 //    var sidebaar=document.getElementById('display-sidebar');
 //    sidebaar.classList.toggle('display-leftsidebaar');
 // }
 
+
+// let lang11=document.getElementById('lang1')
 // window.onclick = function(e){
 //     if(e.target.id !== 'popup' && e.target.id !=='iamge1'){
 //         popup.classList.remove("display-picdata");
@@ -122,14 +138,27 @@ function searchicon() {
 }
 
                 // tooltips //
-function languagesbutton() {
-    var langtn2= document.getElementById("lang1");
+var langtn2= document.getElementById("lang1");
+var popup=document.getElementById("lang1");
+var body1=document.body;
+function languagesbutton(){
     langtn2.classList.toggle("display-tooltip-data");
 }
 function closelang(){
-    var popup=document.getElementById("lang1");
-    popup.classList.remove('display-tooltip-data');
+    langtn2.classList.remove('display-tooltip-data');
 }
+// body1.addEventListener('click',function(e){
+//     if(e.target !== lang1){
+//         langtn2.classList.remove('display-tooltip-data');
+//     }
+// });
+  
+window.onclick = function(e){
+    if(e.target !== langtn2){
+        langtn2.classList.remove('display-tooltip-data');
+    }
+}
+
 function darklightbutton() {
     var dlbtn2= document.getElementById("d-l-d2");
     dlbtn2.classList.toggle("display-tooltip-data");
