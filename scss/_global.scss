@@ -25,6 +25,10 @@ body{
     font-family: 'Noto Sans', sans-serif;
     background-color:$vuexy-primary ;
 }
+.body-displaydark{
+    background-color: black;
+    color: white;
+}
 body a{
     text-decoration: none;
   
@@ -49,14 +53,21 @@ body a{
     height: 100%;
     background-color: $vuexy-bg;
     overflow: hidden;
-    @include primaryborder(black,.1rem);
+    @include primaryborder(rgb(90, 85, 85),.1rem);
     transition: .3s;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
     background-color: white;
-    z-index: 1;
+    z-index: 3;
+    // display: none;
     &:hover{
         width: 20%;
         overflow-y: auto;
+    }
+    &:hover ~ .grid .left-side .app,
+    .grid .left-side .pages,
+    .grid .left-side .modules,
+    .grid .left-side .documentation{
+           display: inline-block !important;
     }
     // &:hover + .right-side{
     //     margin-left:28rem ;
@@ -79,6 +90,12 @@ body a{
        box-shadow:0 0 .5rem .5rem gray ;
     }
 }
+    // class maade for javascript//
+.left-side-display{
+    display: block !important;
+    width: 40% !important;
+}
+ // class maade for javascript//
 .display-leftsidebaar{
     width: 50%;
 }
@@ -222,6 +239,7 @@ body a{
     opacity: .7;
     gap: 1rem;
     margin: 0;
+    display: none;
 }
 .grid .left-side .app span p,
 .grid .left-side .pages span p,
@@ -271,33 +289,92 @@ body a{
 }
 
 // body right side css //
+
+    // 1 three lines style css //
+.menu1{
+  display:none;
+ }
+ .menu1 div,.menu2 div,.menu3 div{
+    width: 4rem;
+    height: 4rem;
+    background-color: lightgray;
+    border-radius: 5rem;
+    margin: auto;
+    position: relative;
+ }
+ .menu1 span,.menu2 span{
+     position: absolute;
+     background-color:black;
+     width: 50%;
+     height: .2rem;
+     border-radius: .5rem;
+     display: block;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50% );
+     transition: .5s;
+ }
+ .menu1 div .line1,.menu2 div .line1{
+     transform: translate(-50%,-.7rem);
+ }
+ .menu1 div .line2,.menu2 div .line2{
+     transform: translate(-50%,-50%);
+ }
+ .menu1 div .line3,.menu2 div .line3{
+     transform: translate(-50%,.5rem);
+ }
+ .openmenu1 div .line1{
+     transform: translate(-50%,-50%) rotate(-45deg) ;
+ }
+ .openmenu1 div .line3{
+     transform: translate(-50%,-50%) rotate(45deg);
+ }
+ .openmenu1 div .line2{
+     width: 0rem;
+ }
+    // body right side css //
 .right-side{
     margin-left: 6.5rem;
     width: 94%;
     transition: .3s;
     display: flex;
-    overflow-y: auto;
+    // overflow-y: auto;
     flex-direction: row;
     position: relative;
     padding: 0 2rem;
-    &::-webkit-scrollbar{
-        width: 1rem;
+    // &::-webkit-scrollbar{
+    //     width: 1rem;
         
-    }
-    &::-webkit-scrollbar-thumb{
-        background-color: black;
-        border-radius: 1rem;
-        height: 1rem;
-        &:hover{
-            background-color: gray;
-        }
-    }
-    &::-webkit-scrollbar-track{
-       box-shadow:0 0 .5rem .5rem gray ;
-    }
-   
+    // }
+    // &::-webkit-scrollbar-thumb{
+    //     background-color: black;
+    //     border-radius: 1rem;
+    //     height: 1rem;
+    //     &:hover{
+    //         background-color: gray;
+    //     }
+    // }
+    // &::-webkit-scrollbar-track{
+    //    box-shadow:0 0 .5rem .5rem gray ;
+    // }
 }
-
+.blur{
+        width: 91.7%;
+        height: 1.5rem;
+        font-size: 1rem;
+        justify-content: center;
+        display: flex;
+        position: fixed;
+        z-index: 3;
+        backdrop-filter: blur(1rem);
+        @include secondaryborder(brown,.1rem);
+}
+.blur-fixed{
+    width: 90.5% !important;
+    height: 3rem !important;
+    filter: blur(1.1rem) !important;
+    position: sticky !important;
+}
 .right-side #bodySetting{
    position: fixed;
    right: 0;
@@ -308,7 +385,7 @@ body a{
    border-radius: .5rem;
    color: white;
    font-weight: bold;
-   z-index: 0;
+   z-index: 8;
    cursor: pointer;
 }
 .right-side .popup{
@@ -326,7 +403,7 @@ body a{
     overflow-y: auto;
     scroll-behavior: smooth;
     transition: transform 0.4s, top 0.4s;
-    z-index: 1;
+    z-index: 999;
     box-shadow: 0 0 1rem .4rem rgb(240, 240, 240);
     @include secondaryborder(brown,.1rem);
     &::-webkit-scrollbar{
@@ -417,6 +494,7 @@ body a{
     border: none;
     box-shadow: 0 0 1rem .3rem rgb(245, 91, 91);
     opacity: .7;
+    z-index: 8;
     cursor: pointer;
     &:hover{
         opacity: 1;
@@ -429,31 +507,50 @@ body a{
     @include primaryborder(black,.1rem);
 }
 .right-topbar{
-    position: relative;
-    width: 100%;
-    margin-top: 1rem;
+    position: fixed;
+    width: 91%;
+    margin-top: 1.5rem;
     height: 6rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    // justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    background-color: $vuexy-bg;
+    z-index: 1;
+    @include primaryborder(brown,.1rem);
+ 
+}
+.right-topbar-fixed{
+    position: fixed !important;
+    width: 90.5% !important;
+    margin-top: 0rem !important;
+}
+.searchbar-data{
+    width: 100%;
+    margin-top: .6rem;
+    height: 6rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:0 2rem ;
-    border-radius: 1rem;
-    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
-    background-color: $vuexy-bg;
     @include primaryborder(brown,.1rem);
-    
 }
 .input-search{
     position: absolute;
     display: none;
     width: 100%;
     top: 0;
-    margin-top: 1rem;
+    // margin-top: 1rem;
     border-radius: 1rem;
+    z-index: 2;
 }
 .right-topbar .search-btn{
-   margin-top: 1rem;
+   margin-top: 0rem;
 }
 .right-topbar .search-btn .search-icon{
    display: flex;
@@ -480,10 +577,11 @@ body a{
     border: none;
     background-color: $vuexy-bg;
     border-radius: 1rem;
+    width:100%;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);   
 }
 .input-search{
-    width: 96.7%;
+    width: 100%;
     border-radius: 1rem;
 }
 .input-search input{
@@ -863,6 +961,7 @@ body a{
     font-size: 1.8rem;
     font-weight: bold;
     margin: 1.5rem 0;
+    margin-top: 10rem;
 
 }
 .main-p1{
@@ -997,7 +1096,7 @@ body a{
     position: absolute;
     display: flex;
     right: 38.5%;
-    top: 25%;
+    top: 21.5%;
     flex-direction: column;
     gap: .5rem;
     padding:1rem ;
@@ -1022,7 +1121,7 @@ body a{
     position: absolute;
     display: flex;
     right: 5.5%;
-    top: 25.3%;
+    top: 21.5%;
     flex-direction: column;
     gap: .5rem;
     padding:1rem ;
@@ -1276,7 +1375,7 @@ body a{
     position: absolute;
     display: flex;
     right: 70.5%;
-    top: 55.8%;
+    top: 53.5%;
     flex-direction: column;
     gap: .5rem;
     padding:1rem ;

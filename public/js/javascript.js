@@ -1,8 +1,58 @@
+AOS.init();
+// let topbar=document.querySelector('.right-topbar');
 
-window.addEventListener('scroll',function(){
-    var header=document.querySelector('.left-sidebaar');
-    header.classList.toggle('display-none',window.scrollY > 100);
-});
+// window.addEventListener('scroll',function(e){
+//     let height=window.scrollY;
+//     if(height > 10){
+//     topbar.classList.add('right-topbar-fixed');
+//     }
+//     else{
+//         topbar.classList.remove('right-topbar-fixed');   
+//     }
+// });
+
+
+// let blurspan=document.querySelector('.blur');
+
+// window.addEventListener('scroll',function(e){
+//     let height=window.scrollY;
+//     if(height > 50){
+//     blurspan.classList.add('blur-fixed');
+//     }
+//     else{
+//         blurspan.classList.remove('blur-fixed');   
+//     }
+// })
+// dark and light mode js //
+function darkmode(){
+    var btn1=document.body;
+    btn1.classList.add("body-displaydark");
+}
+
+function lightmode(){
+    var btn1=document.body;
+    btn1.classList.remove('body-displaydark');
+}
+
+    //    three lines javascript
+let menu1=document.getElementById('display-sidebar');
+let plusbuton=document.getElementById("menu11");
+let circles=document.querySelector('.header-right')
+plusbuton.onclick=function togle(){
+    menu1.classList.add("left-side-display");
+}
+circles.onclick=function togle(){
+    menu1.classList.remove("left-side-display");
+}
+
+
+
+// window.addEventListener('scroll',function(){
+//     var header=document.querySelector('.left-sidebaar');
+//     header.classList.toggle('display-none',window.scrollY > 100);
+// });
+
+
 // let darklight=document.getElementById('dark-light-tooltip');
 // let moon1=document.getElementById('moon1');
 // moon1.addEventListener('mouseenter',setTimeout(function(){
@@ -23,13 +73,6 @@ window.addEventListener('scroll',function(){
 // }
 
 
-// let lang11=document.getElementById('lang1')
-// window.onclick = function(e){
-//     if(e.target.id !== 'popup' && e.target.id !=='iamge1'){
-//         popup.classList.remove("display-picdata");
-//         iamge1.classList.remove("display-picdata");
-//     }
-// }
 
 // list display function
 function dashboardList() {
@@ -138,62 +181,143 @@ function searchicon() {
 }
 
                 // tooltips //
-var langtn2= document.getElementById("lang1");
-var popup=document.getElementById("lang1");
-var body1=document.body;
-function languagesbutton(){
-    langtn2.classList.toggle("display-tooltip-data");
-}
-function closelang(){
-    langtn2.classList.remove('display-tooltip-data');
-}
-// body1.addEventListener('click',function(e){
-//     if(e.target !== lang1){
-//         langtn2.classList.remove('display-tooltip-data');
+// var langtn2= document.getElementById("lang11");
+// function languagesbutton(){
+//         langtn2.classList.toggle("display-tooltip-data");
 //     }
-// });
-  
-window.onclick = function(e){
-    if(e.target !== langtn2){
-        langtn2.classList.remove('display-tooltip-data');
-    }
-}
+// function closelang(){
+//     langtn2.classList.remove('display-tooltip-data');
+// }
 
-function darklightbutton() {
-    var dlbtn2= document.getElementById("d-l-d2");
-    dlbtn2.classList.toggle("display-tooltip-data");
-}
-function closedarklightmode(){
-    var popup=document.getElementById("d-l-d2");
-    popup.classList.remove('display-tooltip-data');
-}
-function openpopup(){
-    let admindata=document.getElementById("admindata");
-    admindata.classList.toggle("display-tooltip-data");
-}
-function closepopup(){
-    let popup=document.getElementById("admindata");
-    popup.classList.remove('display-tooltip-data');
-}
-
-
-function displayshrtcutdata(){
-    let shortcut= document.getElementById('shortcutdata');
-    shortcut.classList.toggle('display-tooltip-data');
-}
-function closeshortcutdata(){
-    let popup=document.getElementById("shortcutdata");
-    popup.classList.remove('display-tooltip-data');
-}
-// function admindatabutton() {
-//     var dlbtn2= document.getElementById("admindata");
-  
-//     if (dlbtn2.style.display === "block"){
-//         dlbtn2.style.display = "none";
-//     } else {
-//         dlbtn2.style.display = "block";
+// let langicon=document.getElementById('lang-icon');
+// let langdata=document.getElementById('lang-data');
+// window.onclick = function(e){
+//     if(e.target.id !== langicon && e.target.id !==langdata){
+//         langdata.classList.remove("display-tooltip-data");
 //     }
 // }
+// languegues tooltip JS //
+let langicon=document.querySelector('.lang');
+let langlist = document.querySelector(".lang-tooltip-data1");
+langicon.addEventListener('click',function() {
+    langlist.style.display='block';
+});
+window.addEventListener('click',function(e) {
+    console.log(e.target);
+    if(e.target.id !== 'langicon'){
+        langlist.style.display='none';
+    }
+    else{
+        langlist.style.display='block';
+    }
+});
+// darklight tooltip JS //
+let DLicon=document.querySelector('.moon');
+let DLlist = document.querySelector(".d-l-mode-tooltip-data1");
+langicon.addEventListener('click',function() {
+    DLlist.style.display='block';
+});
+window.addEventListener('click',function(e) {
+    console.log(e.target);
+    if(e.target.id !== 'moon1' && e.target.id !== 'd-l-d2'){
+        DLlist.style.display='none';
+    }
+    else{
+        DLlist.style.display='block';
+    }
+});
+// function darklightbutton() {
+//     var dlbtn2= document.getElementById("d-l-d2");
+//     dlbtn2.classList.toggle("display-tooltip-data");
+// }
+// function closedarklightmode(){
+//     var popup=document.getElementById("d-l-d2");
+//     popup.classList.remove('display-tooltip-data');
+// }
+// admin tooltip JS //
+let picicon=document.querySelector('.header-pic');
+let piclist = document.querySelector(".pic-tooltip-data");
+langicon.addEventListener('click',function() {
+    piclist .style.display='block';
+});
+window.addEventListener('click',function(e) {
+    console.log(e.target);
+    if(e.target.id !== 'iamge1' && e.target.id !== 'admindata'){
+        piclist.style.display='none';
+    }
+    else{
+        piclist.style.display='block';
+    }
+});
+
+    // shortcut tooltip JS //
+let shortcuticon=document.querySelector('.shortcut');
+let shortcutlist = document.querySelector(".shortcut-toolip-data");
+langicon.addEventListener('click',function() {
+    shortcutlist.style.display='block';
+});
+window.addEventListener('click',function(e) {
+    console.log(e.target);
+    if(e.target.id !== 'shortcuticon' && e.target.id !== 'shortcutdata'){
+        shortcutlist.style.display='none';
+    }
+    else{
+        shortcutlist.style.display='block';
+    }
+});
+    //  bell tootip data
+let bellicon=document.querySelector('.bell-icon');
+let belllist=document.querySelector(".bell-tooltip-data");
+langicon.addEventListener('click',function() {
+    belllist.style.display='block';
+});
+window.addEventListener('click',function(e) {
+    console.log(e.target);
+    if(e.target.id !== 'bellicon' && e.target.id !== 'bell-tooltip'){
+        belllist.style.display='none';
+    }
+    else{
+        belllist.style.display='block';
+    }
+});
+    // function opentbelltooltipdata(){
+    //     var btn1=document.getElementById("bell-tooltip");
+    //     btn1.classList.toggle("display-tooltip-data");
+    //  }
+    // function closebelltooltipdata(){
+    //     var btn1=document.getElementById("bell-tooltip");
+    //     btn1.classList.remove('display-tooltip-data');
+    // } 
+     function opentbelldata1(){
+         var bell1=document.getElementById("bell-data1");
+         bell1.classList.add("remove-bell-scroll-data");
+    }
+    function opentbelldata2(){
+        var bell1=document.getElementById("bell-data2");
+        bell1.classList.add("remove-bell-scroll-data");
+    }
+    function opentbelldata3(){
+        var bell1=document.getElementById("bell-data3");
+        bell1.classList.add("remove-bell-scroll-data");
+    }
+    function opentbelldata4(){
+        var bell1=document.getElementById("bell-data4");
+        bell1.classList.add("remove-bell-scroll-data");
+    }
+    function opentbelldata5(){
+        var bell1=document.getElementById("bell-data5");
+        bell1.classList.add("remove-bell-scroll-data");
+    }
+    function opentbelldata6(){
+        var bell1=document.getElementById("bell-data6");
+        bell1.classList.add("remove-bell-scroll-data");
+    }
+    function opentbelldata7(){
+        var bell1=document.getElementById("bell-data7");
+        bell1.classList.add("remove-bell-scroll-data");
+    }
+    
+        //  setting icon Js
 function opensetting(){
     var btn1=document.getElementById("settingdata");
     btn1.classList.add("display-tooltip-data");
@@ -229,41 +353,4 @@ function opentdots3data(){
 function closedots3data(){
     var btn1=document.getElementById("dots3-data");
     btn1.classList.remove('display-tooltip-data');
-}
-    //  bell tootip data
-function opentbelltooltipdata(){
-    var btn1=document.getElementById("bell-tooltip");
-    btn1.classList.toggle("display-tooltip-data");
- }
-function closebelltooltipdata(){
-    var btn1=document.getElementById("bell-tooltip");
-    btn1.classList.remove('display-tooltip-data');
-} 
- function opentbelldata1(){
-     var bell1=document.getElementById("bell-data1");
-     bell1.classList.add("remove-bell-scroll-data");
-}
-function opentbelldata2(){
-    var bell1=document.getElementById("bell-data2");
-    bell1.classList.add("remove-bell-scroll-data");
-}
-function opentbelldata3(){
-    var bell1=document.getElementById("bell-data3");
-    bell1.classList.add("remove-bell-scroll-data");
-}
-function opentbelldata4(){
-    var bell1=document.getElementById("bell-data4");
-    bell1.classList.add("remove-bell-scroll-data");
-}
-function opentbelldata5(){
-    var bell1=document.getElementById("bell-data5");
-    bell1.classList.add("remove-bell-scroll-data");
-}
-function opentbelldata6(){
-    var bell1=document.getElementById("bell-data6");
-    bell1.classList.add("remove-bell-scroll-data");
-}
-function opentbelldata7(){
-    var bell1=document.getElementById("bell-data7");
-    bell1.classList.add("remove-bell-scroll-data");
 }

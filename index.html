@@ -14,8 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public\css\style.css">
+    <link rel="stylesheet" href="public\css\aos.css">
     <link rel="icon" href="countries png\IU.png">
     <title>Academy-Dashboard-App | Vuexy </title>
+    <script src="jquery.js"></script>
+    <script src="public/js/aos.js"></script>
 </head>
 <body>
    <div class="container">
@@ -151,7 +154,8 @@
       </div>
       <!-- body right side -->
       <div class="right-side">
-         <span class="body-setting-icon" onclick="opensetting()" ><i id="bodySetting" class="bi bi-gear"></i></span>
+         
+         <span class="body-setting-icon" onclick="opensetting()"><i id="bodySetting" class="bi bi-gear"></i></span>
          <div class="popup" id="settingdata">
           <div class="popup-top">
            <h2>Template Customizer</h2>
@@ -224,32 +228,41 @@
         <!-- buy now button -->
         <span class="body-button"><button id="bodybutton">Buy Now</button></span>
         <!-- rightside container -->
-       <div class="right-side-container">     
-        <div class="right-topbar"> 
+       <div class="right-side-container"> 
+         
+        <div class="right-topbar">
+          <div class="menu1" id="menu11">
+            <div>
+             <span class="line1"></span>
+             <span class="line2"></span>
+             <span class="line3"></span>
+            </div>
+          </div>
+         <div class="searchbar-data">
           <div class="search-btn" onclick="opensearchbar()">
             <button class="search-icon"><i class="bi bi-search"></i><p>Search (Ctrl+/)</p></button>
           </div>
           <div class="topbar-right-data" >
             <ul>
-                <li class="lang" onclick="languagesbutton()"><i class="bi bi-translate"></i></li>
-                <div class="lang-tooltip-data1" id="lang1" onclick="closelang()">
+                <li class="lang"><i class="bi bi-translate" id="langicon"></i></li>
+                <div class="lang-tooltip-data1" id="lang1" id="lang11">
                   <div class="languages"><span>English</span></div>
                   <div class="languages"><span>French</span></div>
                   <div class="languages"><span>Urdu</span></div>
                   <div class="languages"><span>Arabic</span></div>
                 </div>
 
-                <li class="moon" id="moon1"><span onclick="darklightbutton()"><i class="bi bi-brightness-high-fill"></i></span></li>
+                <li class="moon"><span onclick="darklightbutton()"><i class="bi bi-brightness-high-fill" id="moon1"></i></span></li>
                 <div class="d-l-mode-tooltip-data" id="dark-light-tooltip">
                   <span>Light mode</span>
                 </div>
                 <div class="d-l-mode-tooltip-data1" id="d-l-d2" onclick="closedarklightmode()">
-                  <div class="d-l-d1"><span><i class="bi bi-brightness-high-fill"></i></span>Light Mode<span></span></div>
-                  <div class="d-l-d1"><span><i class="bi bi-moon"></i></span>Dark Mode<span></span></div>
+                  <div class="d-l-d1" onclick="lightmode()"><span><i class="bi bi-brightness-high-fill"></i></span>Light Mode<span></span></div>
+                  <div class="d-l-d1" onclick="darkmode()"><span><i class="bi bi-moon"></i></span>Dark Mode<span></span></div>
                   <div class="d-l-d1"><span><i class="bi bi-display"></i></span>System<span></span></div>
                 </div>
             
-                <li class="shortcut" onclick=" displayshrtcutdata()"><i class="bi bi-ui-checks-grid"></i></li>
+                <li class="shortcut" onclick=" displayshrtcutdata()"><i class="bi bi-ui-checks-grid" id="shortcuticon"></i></li>
                 <div class="shortcut-toolip-data" id="shortcutdata" onclick="closeshortcutdata()">
                   <div class="shortcut-header">
                     <span>Shortcuts</span><span><i class="bi bi-ui-checks-grid"></i></span>
@@ -287,7 +300,7 @@
                     </div>
                   </div>
                 </div>
-                <li class="bell-icon" onclick="opentbelltooltipdata()"><i class="bi bi-bell-fill"></i></li>
+                <li class="bell-icon" onclick="opentbelltooltipdata()"><i class="bi bi-bell-fill" id="bellicon"></i></li>
                   <div class="bell-tooltip-data" id="bell-tooltip">
                      <div class="bell-data-top">
                       <span class="bell-data-top-h1">Notification</span><span class="bell-envelope-icon"><i class="bi bi-envelope-open"></i></span>
@@ -375,7 +388,7 @@
                       <button class="bell-footer-btn1">View All Notifications</button>
                      </div>
                   </div>
-                <li class="header-pic" onclick="openpopup()" id="iamge1"><span class="top-girl-image"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg"></span></li>
+                <li class="header-pic" onclick="openpopup()" ><span class="top-girl-image"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg" id="iamge1"></span></li>
                 <div class="pic-tooltip-data" id="admindata" onclick="closepopup()">
                   <div class="admin" ><span class="top-boy-image"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg"></span><span class="admin-name"><span>Basit</span><span>Khokhar</span></span></div>
                   <div class="admin1">
@@ -394,12 +407,14 @@
                 </div>
             </ul>
           </div>
-        </div>
-        <div class="input-search" id="search">
+         </div>
+         <div class="input-search" id="search">
           <div id="searchicon">
            <input type="text" placeholder="Search" id="txt" ><div onclick="closesearchbar()"><i class="bi bi-x" ></i></div>
           </div>
+         </div> 
         </div>
+        <span class="blur"></span>
         <div class="main-h1"><h1>Welcome back, Felecia</h1></div>
         <div class="main-p1"><p>Your progress this week is Awesome. let's keep it up and get a lot of points reward !</p></div>
         <div class="main-icons">
@@ -426,7 +441,7 @@
           </div>
         </div>
         <div class="body-flex1">
-          <div class="left-flex1">
+          <div class="left-flex1" data-aos="fade-up">
             <div class="L-flex1-top">
               <div class="L-flex1-top-left">Topic you are interested in</div>
               <div class="L-flex1-top-right" onclick="opentdots1data()">
@@ -451,7 +466,7 @@
               </ul>
             </div>
           </div>
-          <div class="right-flex1">
+          <div class="right-flex1" data-aos="fade-up">
             <div class="R-flex1-top">
               <div class="R-flex1-top-left">Popular Instructors</div>
               <div class="R-flex1-top-right" onclick="opentdots2data()">
@@ -509,8 +524,8 @@
             </div>
           </div>
         </div>
-        <div class="body-flex2">
-          <div class="body-flex2-item1">
+        <div class="body-flex2" >
+          <div class="body-flex2-item1" data-aos="fade-up" >
             <div class="L-flex2-top">
               <div class="L-flex2-top-left">Popular Instructors</div>
               <div class="L-flex2-top-right" onclick="opentdots3data()">
@@ -565,7 +580,7 @@
               </span>
             </div>           
           </div>
-          <div class="body-flex2-item2">
+          <div class="body-flex2-item2" data-aos="fade-up">
             <div class="body-flex2-item2-image">
               <img src="pics\girl-with-laptop.png" alt="girl-with-laptop.png">
             </div>
@@ -595,7 +610,7 @@
               <button class="join-event">Join the Event</button>
             </div>
           </div>
-          <div class="body-flex2-item3">
+          <div class="body-flex2-item3" data-aos="fade-up">
             <div class="body-flex2-item3-h1"><h2>Assignment Progress</h2></div>
              <!-- first row of body item3 -->
             <div class="body-flex2-item3-part1">
@@ -675,5 +690,7 @@
 
 
     <script src="public\js\javascript.js"></script>
+
+
 </body>
 </html>
