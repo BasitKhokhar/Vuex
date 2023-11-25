@@ -14,6 +14,9 @@
         //     width: 40%;
         // }
     }
+    .right-topbar{
+        width: 96%;
+    }
     // .header-left-side{
     //     padding: 0;
     // }
@@ -92,7 +95,23 @@
     }
    
 }
+@media only screen and (max-width:850px){
+    .top2-part2{
+        gap: 8rem !important;
+        padding-right: 9rem;
+    }
+    .top2-part3{
+      display: none;
+    }
+    .body-part3-row1-part3{
+        display: none;
+    }
+
+}
 @media only screen and (max-width:800px){
+    .right-topbar{
+        width: 95%;
+    }
     .dots1-tooltip-data{ 
         right: 8.5%;
         top:13%;
@@ -130,6 +149,9 @@
     //         z-index: 1;
     //     }
     // }
+    .right-topbar{
+        width: 93%;
+    }
     .main-icons{
         flex-direction: column;
         row-gap: 2rem;
@@ -161,6 +183,18 @@
         z-index: 999;
         font-weight: 600;
     } 
+}
+@media only screen and (max-width:620px){
+    .top2-part2{
+        gap: 1rem !important;
+        padding-right: 1rem;
+    }
+    .top2-part2 #progresss1{
+        display: none;
+    }
+    .row1-part2-right{
+        display: none !important;
+    }
 }
 @media only screen and (max-width:600px){
     // .left-sidebaar{
@@ -208,6 +242,7 @@
     //     border-radius: 5rem;
     //     background-color: $top-h1;
     // }
+   
     .grid .left-side .list2 ul li a .arrows{
         width: 15rem;
     }
@@ -238,9 +273,31 @@
         height: 100vh;
         left: 67.2%;
     }
-
+    .body-part3-top1{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .row1-part2-left{
+        padding-right: 2.5rem;
+    }
+    .top2-part2{
+        gap: 1rem !important;
+        padding-right: 3rem;
+    }
     html{
         font-size: 55%;
+    }
+}
+@media only screen and (max-width:550px){
+    .right-topbar{
+        width: 92%;
+    }
+    .top2-part2 #progresss1{
+        display: none;
+    }
+    .row1-part2-right{
+        display: none !important;
     }
 }
 @media only screen and (max-width:415px){
@@ -289,6 +346,9 @@
     //     border-radius: 5rem;
     //     background-color: $top-h1;
     // }
+    .right-topbar{
+        width: 91%;
+    }
     .grid .left-side .list2 ul li a .arrows{
      
         width: 15rem;
@@ -346,7 +406,16 @@
         height: 100vh;
         left: 54%;
     }
-
-    .input-search{
+    .vuexy-footer-right ul{
+        flex-direction: column;
+        row-gap: 1rem;
+    } 
+}
+@media only screen and (max-width:330px){
+    .top2-part2{
+      display: none;
+    }
+    .body-part3-row1-part2{
+        display: none;
     }
 }
