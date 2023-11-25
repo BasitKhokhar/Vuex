@@ -11,18 +11,6 @@ AOS.init();
 //     }
 // });
 
-
-// let blurspan=document.querySelector('.blur');
-
-// window.addEventListener('scroll',function(e){
-//     let height=window.scrollY;
-//     if(height > 50){
-//     blurspan.classList.add('blur-fixed');
-//     }
-//     else{
-//         blurspan.classList.remove('blur-fixed');   
-//     }
-// })
 // dark and light mode js //
 function darkmode(){
     var btn1=document.body;
@@ -44,14 +32,6 @@ plusbuton.onclick=function togle(){
 circles.onclick=function togle(){
     menu1.classList.remove("left-side-display");
 }
-
-
-
-// window.addEventListener('scroll',function(){
-//     var header=document.querySelector('.left-sidebaar');
-//     header.classList.toggle('display-none',window.scrollY > 100);
-// });
-
 
 // let darklight=document.getElementById('dark-light-tooltip');
 // let moon1=document.getElementById('moon1');

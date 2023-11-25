@@ -51,7 +51,7 @@ body a{
     overflow-y: auto;
     width: 4.5%;
     height: 100%;
-    background-color: $vuexy-bg;
+    background-color: white;
     overflow: hidden;
     @include primaryborder(rgb(90, 85, 85),.1rem);
     transition: .3s;
@@ -63,17 +63,6 @@ body a{
         width: 20%;
         overflow-y: auto;
     }
-    // &:hover ~ .grid .left-side .app,
-    // .grid .left-side .pages,
-    // .grid .left-side .modules,
-    // .grid .left-side .documentation{
-    //        display: inline-block !important;
-    // }
-    // &:hover + .right-side{
-    //     margin-left:28rem ;
-    //     width: 79%;
-    // }  
-    // custom scrollbar css //
     &::-webkit-scrollbar{
         width: 1rem;
         
@@ -93,12 +82,12 @@ body a{
     // class maade for javascript//
 .left-side-display{
     display: block !important;
-    width: 40% !important;
+    width: 45% !important;
 }
  // class maade for javascript//
-.display-leftsidebaar{
-    width: 50%;
-}
+// .display-leftsidebaar{
+//     width: 50%;
+// }
 .header-left-side{
     display: flex;
     flex-direction: row;
@@ -112,27 +101,31 @@ body a{
     margin-top: 2rem;
     padding-right: 1.8rem;
 }
-.header-right .out-circle{
-    width: .3rem;
-    height: .3rem;
-    background-color: $vuexy-primary;
-    padding: .5rem 1.2rem;
-    border: 1px solid $top-h1;
-    border-radius: 2rem;
+.header-right #sidebar-crossicon{
+    font-size: 2rem;
+    padding-right: .7rem;
+}
+// .header-right .out-circle{
+//     width: .3rem;
+//     height: .3rem;
+//     background-color: $vuexy-primary;
+//     padding: .5rem 1.2rem;
+//     border: 1px solid $top-h1;
+//     border-radius: 2rem;
     
-    position: relative;
-}
-.inner-circle{
-    position: absolute;
-    padding: .2rem;
-    width: .1rem;
-    height: .1rem;
-    top: 40%;
-    left: 44%;
-    border-radius: 1rem;
-    background-color: $top-h1;
+//     position: relative;
+// }
+// .inner-circle{
+//     position: absolute;
+//     padding: .2rem;
+//     width: .1rem;
+//     height: .1rem;
+//     top: 40%;
+//     left: 44%;
+//     border-radius: 1rem;
+//     background-color: $top-h1;
 
-}
+// }
 .header-left{
     display: flex;
     flex-direction: row;

@@ -49,7 +49,7 @@ body a {
 .grid {
   box-sizing: border-box;
   display: grid;
-  border: 0.1rem solid black;
+  border: none;
 }
 
 .left-sidebaar {
@@ -59,7 +59,7 @@ body a {
   height: 100%;
   background-color: white;
   overflow: hidden;
-  border: 0.1rem solid rgb(90, 85, 85);
+  border: none;
   transition: 0.3s;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
   background-color: white;
@@ -86,11 +86,7 @@ body a {
 
 .left-side-display {
   display: block !important;
-  width: 40% !important;
-}
-
-.display-leftsidebaar {
-  width: 50%;
+  width: 45% !important;
 }
 
 .header-left-side {
@@ -101,7 +97,7 @@ body a {
 }
 
 .header-left {
-  border: 0.1rem solid brown;
+  border: none;
 }
 
 .header-right {
@@ -109,25 +105,9 @@ body a {
   padding-right: 1.8rem;
 }
 
-.header-right .out-circle {
-  width: 0.3rem;
-  height: 0.3rem;
-  background-color: #f8f7fa;
-  padding: 0.5rem 1.2rem;
-  border: 1px solid #5d596c;
-  border-radius: 2rem;
-  position: relative;
-}
-
-.inner-circle {
-  position: absolute;
-  padding: 0.2rem;
-  width: 0.1rem;
-  height: 0.1rem;
-  top: 40%;
-  left: 44%;
-  border-radius: 1rem;
-  background-color: #5d596c;
+.header-right #sidebar-crossicon {
+  font-size: 2rem;
+  padding-right: 0.7rem;
 }
 
 .header-left {
@@ -217,7 +197,7 @@ body a {
   margin: 0.5rem;
   color: #5d596c;
   font-weight: bold;
-  border: 0.1rem solid brown;
+  border: none;
   opacity: 0.7;
 }
 .grid .left-side .dashboard-list #dashboard-list li a p:hover {
@@ -233,7 +213,7 @@ body a {
   margin: 0rem;
   color: #5d596c;
   font-weight: bold;
-  border: 0.1rem solid brown;
+  border: none;
 }
 
 .grid .left-side .app,
@@ -289,7 +269,7 @@ body a {
 .grid .left-side .list2 ul li a .arrows {
   display: flex;
   flex-direction: row;
-  border: 0.1rem solid brown;
+  border: none;
   justify-content: space-between;
   width: 23rem;
 }
@@ -368,7 +348,7 @@ body a {
   position: fixed;
   z-index: 3;
   backdrop-filter: blur(1rem);
-  border: 0.1rem solid brown;
+  border: none;
 }
 
 .right-side #bodySetting {
@@ -402,7 +382,7 @@ body a {
   transition: transform 0.4s, top 0.4s;
   z-index: 999;
   box-shadow: 0 0 1rem 0.4rem rgb(240, 240, 240);
-  border: 0.1rem solid brown;
+  border: none;
 }
 .right-side .popup::-webkit-scrollbar {
   width: 1rem;
@@ -515,7 +495,7 @@ body a {
 
 .right-side-container {
   width: 100%;
-  border: 0.1rem solid black;
+  border: none;
 }
 
 .right-topbar {
@@ -532,7 +512,7 @@ body a {
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
   background-color: white;
   z-index: 1;
-  border: 0.1rem solid brown;
+  border: none;
 }
 
 .right-topbar-fixed {
@@ -550,7 +530,7 @@ body a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 0.1rem solid brown;
+  border: none;
 }
 
 .input-search {
@@ -630,7 +610,7 @@ body a {
 }
 
 .right-topbar .topbar-right-data ul li {
-  border: 0.1rem solid brown;
+  border: none;
 }
 
 .right-topbar .topbar-right-data ul li i {
@@ -2054,6 +2034,26 @@ body a {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1200px) {
+  .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+  .left-sidebaar {
+    width: 0%;
+    height: 100%;
+    box-shadow: none;
+    background-color: white;
+    display: none;
+    transition: left 0.4s;
+  }
+  .right-topbar {
+    width: 96%;
+  }
+  .menu1 {
+    display: block;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .right-side {
     width: 100%;
@@ -2063,7 +2063,7 @@ body a {
     width: 0%;
     height: 100%;
     box-shadow: none;
-    background-color: #f8f7fa;
+    background-color: white;
     display: none;
     transition: left 0.4s;
   }

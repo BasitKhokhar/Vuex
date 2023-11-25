@@ -1,3 +1,54 @@
+@media only screen and (max-width:1200px){
+    .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+    .left-sidebaar{
+        width: 0%;
+        height: 100%;
+        box-shadow: none;
+        background-color:white;
+        display: none;
+        transition: left 0.4s;
+    }
+    .right-topbar{
+        width: 96%;
+    }
+    // .header-left-side{
+    //     padding: 0;
+    // }
+    // .header-left{
+    //     display: none;
+    // }
+    // .header-right{
+    //   margin-top: .5rem;
+    //   padding-right:0;
+    //   margin-right: 0;
+    // }
+    // .header-right .out-circle{
+    //     width: .3rem;
+    //     height: .3rem;
+    //     background-color: lightgray;
+    //     padding: .3rem 1rem;
+    //     border: 1px solid $top-h1;
+    //     border-radius: 2rem;
+    //     position: relative;
+    // }
+    // .inner-circle{
+    //     position: absolute;
+    //     padding: .1.5rem;
+    //     width: .1rem;
+    //     height: .2rem;
+    //     top: 35%;
+    //     left: 40%;
+    //     border-radius: 5rem;
+    //     background-color: $top-h1;
+    // }
+    .menu1{
+        display:block;
+     }
+
+}
 @media only screen and (max-width:1000px){
     .right-side{
         width: 100%;
@@ -7,7 +58,7 @@
         width: 0%;
         height: 100%;
         box-shadow: none;
-        background-color:$vuexy-primary;
+        background-color:white;
         display: none;
         transition: left 0.4s;
         // &:hover{
@@ -299,6 +350,9 @@
     .row1-part2-right{
         display: none !important;
     }
+}
+@media only screen and (max-width:520px){
+
 }
 @media only screen and (max-width:415px){
     // .left-sidebaar{
