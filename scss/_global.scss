@@ -1083,7 +1083,7 @@ body a{
     background-color:$p-color;
     
 }
-.body-flex1 .right-flex1 #R-flex1-top-right span{
+.body-flex1 .right-flex1 .R-flex1-top-right span{
     width: .3rem;
     height: .3rem;
     border-radius: .5rem;
@@ -1091,7 +1091,7 @@ body a{
     
 }
  //  three dots tooltip 2 data //
- .right-side .body-flex1 .right-flex1 .R-flex1-top #R-flex1-top-right{
+ .right-side .body-flex1 .right-flex1 .R-flex1-top .R-flex1-top-right{
     display: flex;
     flex-direction: column;
     gap: .3rem;
