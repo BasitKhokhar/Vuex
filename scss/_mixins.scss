@@ -7,10 +7,10 @@
   // border: none;
 }
 @mixin primaryborder($color,$width){
-  border: $width solid $color;
-  // border: none;
+  // border: $width solid $color;
+  border: none;
 }
 @mixin secondaryborder($color,$width){
-  border: $width solid $color;
-  // border: none;
+  // border: $width solid $color;
+  border: none;
 }
