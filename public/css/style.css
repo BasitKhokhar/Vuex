@@ -60,7 +60,7 @@ body a {
   background-color: white;
   overflow: hidden;
   border: none;
-  transition: 0.3s;
+  transition: all 0.5s ease;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
   background-color: white;
   z-index: 15;
@@ -73,7 +73,7 @@ body a {
   width: 1rem;
 }
 .left-sidebaar::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: gray;
   border-radius: 1rem;
   height: 1rem;
 }
@@ -84,9 +84,15 @@ body a {
   box-shadow: 0 0 0.5rem 0.5rem gray;
 }
 
+.left-sidebaar.enter {
+  opacity: 1;
+  left: 0;
+}
+
 .left-side-display {
   display: block !important;
-  width: 45% !important;
+  transform-origin: 100%;
+  width: 25rem !important;
 }
 
 .header-left-side {
@@ -1102,13 +1108,17 @@ body a {
   padding: 2rem 3rem;
 }
 
-.body-flex1 .left-flex1 .L-flex1-top-left,
+.right-side .body-flex1 .left-flex1 .L-flex1-top-left {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 .body-flex1 .right-flex1 .R-flex1-top-left {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-.body-flex1 .left-flex1 .L-flex1-top-right {
+.right-side .body-flex1 .left-flex1 .L-flex1-top .L-flex1-top-right {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -1117,34 +1127,11 @@ body a {
   position: relative;
 }
 
-.body-flex1 .right-flex1 .R-flex1-top-right {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  padding: 0.5rem;
-  cursor: pointer;
-  position: relative;
-}
-
-.body-flex1 .left-flex1 .L-flex1-top-right span {
-  width: 0.3rem;
-  height: 0.3rem;
-  border-radius: 0.5rem;
-  background-color: #5d596c;
-}
-
-.body-flex1 .right-flex1 .R-flex1-top-right span {
-  width: 0.3rem;
-  height: 0.3rem;
-  border-radius: 0.5rem;
-  background-color: #5d596c;
-}
-
-.dots1-tooltip-data {
+.right-side .body-flex1 .left-flex1 .L-flex1-top .dots1-tooltip-data {
   position: absolute;
   display: flex;
-  right: 38.5%;
-  top: 21.5%;
+  right: 5%;
+  top: 12%;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
@@ -1167,17 +1154,39 @@ body a {
   display: inline-block;
 }
 
-.dots2-tooltip-data {
+.body-flex1 .left-flex1 .L-flex1-top-right span {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: #5d596c;
+}
+
+.body-flex1 .right-flex1 #R-flex1-top-right span {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: #5d596c;
+}
+
+.right-side .body-flex1 .right-flex1 .R-flex1-top #R-flex1-top-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.right-side .body-flex1 .right-flex1 .R-flex1-top .dots2-tooltip-data {
   position: absolute;
   display: flex;
-  right: 5.5%;
-  top: 21.5%;
+  right: 11%;
+  top: 70%;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 0.8rem;
   background-color: white;
-  z-index: 1;
   display: none;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
 }
@@ -1429,17 +1438,33 @@ body a {
   font-weight: bold;
 }
 
+.body-flex2-item1 .L-flex2-top .L-flex2-top-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.body-flex2-item1 .L-flex2-top .L-flex2-top-right span {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: #5d596c;
+}
+
 .dots3-tooltip-data {
   position: absolute;
   display: flex;
-  right: 70.5%;
-  top: 53.5%;
+  right: 7.5%;
+  top: 70%;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
   border-radius: 0.8rem;
   background-color: white;
-  z-index: 1;
+  z-index: 10 !important;
   display: none;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
 }
@@ -1455,22 +1480,6 @@ body a {
 .dots1 span {
   font-size: 1.5rem;
   display: inline-block;
-}
-
-.body-flex2-item1 .L-flex2-top .L-flex2-top-right {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  padding: 0.5rem;
-  cursor: pointer;
-  position: relative;
-}
-
-.body-flex2-item1 .L-flex2-top .L-flex2-top-right span {
-  width: 0.3rem;
-  height: 0.3rem;
-  border-radius: 0.5rem;
-  background-color: #5d596c;
 }
 
 .L-flex2-body-part1 {
@@ -1763,6 +1772,7 @@ body a {
   border-radius: 0.5rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
+  border: 0.1rem solid lightgray;
 }
 
 .body-part3-top2 {
@@ -2040,12 +2050,26 @@ body a {
     margin-left: 0;
   }
   .left-sidebaar {
-    width: 0%;
+    width: 100%;
     height: 100%;
     box-shadow: none;
     background-color: white;
     display: none;
-    transition: left 0.4s;
+    transition: all 0.5s ease;
+  }
+  .left-sidebaar::-webkit-scrollbar {
+    width: 1rem;
+  }
+  .left-sidebaar::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 1rem;
+    height: 1rem;
+  }
+  .left-sidebaar::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+  }
+  .left-sidebaar::-webkit-scrollbar-track {
+    box-shadow: 0 0 0.5rem 0.5rem gray;
   }
   .right-topbar {
     width: 96%;

@@ -25,14 +25,24 @@ function lightmode(){
     //    three lines javascript
 let menu1=document.getElementById('display-sidebar');
 let plusbuton=document.getElementById("menu11");
-let circles=document.querySelector('.header-right')
+let cross=document.querySelector('.header-right')
 plusbuton.onclick=function togle(){
     menu1.classList.add("left-side-display");
 }
-circles.onclick=function togle(){
+cross.onclick=function togle(){
     menu1.classList.remove("left-side-display");
 }
 
+// $(document).ready(function(){
+//     $("#menu11").on("click", function(){
+//        $("#menu11").css("opacity", "0");
+//         $("#display-sidebar").addClass("enter");
+//     });
+//         $("#header-right").on("click", function(){
+//            $("#display-sidebar").removeClass("enter");
+//             $("#menu11").css("opacity", "1");
+//         });
+//     });
 // let darklight=document.getElementById('dark-light-tooltip');
 // let moon1=document.getElementById('moon1');
 // moon1.addEventListener('mouseenter',setTimeout(function(){

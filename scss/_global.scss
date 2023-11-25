@@ -54,7 +54,7 @@ body a{
     background-color: white;
     overflow: hidden;
     @include primaryborder(rgb(90, 85, 85),.1rem);
-    transition: .3s;
+    transition: all .5s ease;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
     background-color: white;
     z-index: 15;
@@ -64,11 +64,10 @@ body a{
         overflow-y: auto;
     }
     &::-webkit-scrollbar{
-        width: 1rem;
-        
+        width: 1rem;  
     }
     &::-webkit-scrollbar-thumb{
-        background-color: black;
+        background-color: gray;
         border-radius: 1rem;
         height: 1rem;
         &:hover{
@@ -79,11 +78,17 @@ body a{
        box-shadow:0 0 .5rem .5rem gray ;
     }
 }
+.left-sidebaar.enter{
+    opacity: 1;
+    left: 0;
+}
     // class maade for javascript//
 .left-side-display{
     display: block !important;
-    width: 45% !important;
+    transform-origin: 100%;
+    width: 25rem !important;
 }
+
  // class maade for javascript//
 // .display-leftsidebaar{
 //     width: 50%;
@@ -1028,28 +1033,49 @@ body a{
     justify-content: space-between;
     padding: 2rem 3rem;
 }
-.body-flex1 .left-flex1 .L-flex1-top-left,
+.right-side .body-flex1 .left-flex1 .L-flex1-top-left
+{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
 .body-flex1 .right-flex1 .R-flex1-top-left{
     font-size: 1.8rem;
     font-weight: bold;
 }
-.body-flex1 .left-flex1 .L-flex1-top-right{
+.right-side .body-flex1 .left-flex1 .L-flex1-top .L-flex1-top-right{
     display: flex;
     flex-direction: column;
     gap: .3rem;
     padding: .5rem;
     cursor: pointer;
-    position: relative;
-    
+    position: relative; 
 }
-.body-flex1 .right-flex1 .R-flex1-top-right{
-    display: flex;
-    flex-direction: column;
-    gap: .3rem;
-    padding: .5rem;
-    cursor: pointer;
-    position: relative;
-}
+    //  three dots tooltip 1 data //
+.right-side .body-flex1 .left-flex1 .L-flex1-top .dots1-tooltip-data{
+        position: absolute;
+        display: flex;
+        right: 5%;
+        top: 12%;
+        flex-direction: column;
+        gap: .5rem;
+        padding:1rem ;
+        border-radius: .8rem;
+        background-color: white;
+        display: none;
+        box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}  
+.dots1{
+        cursor: pointer; 
+        padding: 1rem 2rem;
+        &:hover{
+            background-color: lightgray;
+        }
+    }
+    .dots1 span{
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+
 .body-flex1 .left-flex1 .L-flex1-top-right span{
     width: .3rem;
     height: .3rem;
@@ -1057,51 +1083,32 @@ body a{
     background-color:$p-color;
     
 }
-.body-flex1 .right-flex1 .R-flex1-top-right span{
+.body-flex1 .right-flex1 #R-flex1-top-right span{
     width: .3rem;
     height: .3rem;
     border-radius: .5rem;
     background-color:$p-color;
     
 }
-  
-    //  three dots tooltip 1 data //
-.dots1-tooltip-data{
-    position: absolute;
-    display: flex;
-    right: 38.5%;
-    top: 21.5%;
-    flex-direction: column;
-    gap: .5rem;
-    padding:1rem ;
-    border-radius: .8rem;
-    background-color: white;
-    display: none;
-    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
-}  
-.dots1{
-    cursor: pointer; 
-    padding: 1rem 2rem;
-    &:hover{
-        background-color: lightgray;
-    }
-}
-.dots1 span{
-    font-size: 1.5rem;
-    display: inline-block;
-}
  //  three dots tooltip 2 data //
- .dots2-tooltip-data{
+ .right-side .body-flex1 .right-flex1 .R-flex1-top #R-flex1-top-right{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: .5rem;
+    cursor: pointer;
+    position: relative;
+}
+.right-side .body-flex1 .right-flex1 .R-flex1-top .dots2-tooltip-data{
     position: absolute;
     display: flex;
-    right: 5.5%;
-    top: 21.5%;
+    right: 11%;
+    top: 70%;
     flex-direction: column;
     gap: .5rem;
     padding:1rem ;
     border-radius: .8rem;
     background-color: white;
-    z-index: 1;
     display: none;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
 }  
@@ -1345,31 +1352,6 @@ body a{
     font-weight: bold;
 }
 // thre dots tooltip 3 css
-.dots3-tooltip-data{
-    position: absolute;
-    display: flex;
-    right: 70.5%;
-    top: 53.5%;
-    flex-direction: column;
-    gap: .5rem;
-    padding:1rem ;
-    border-radius: .8rem;
-    background-color: white;
-    z-index: 1;
-    display: none;
-    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
-}  
-.dots1{
-    cursor: pointer; 
-    padding: 1rem 2rem;
-    &:hover{
-        background-color: lightgray;
-    }
-}
-.dots1 span{
-    font-size: 1.5rem;
-    display: inline-block;
-}
 .body-flex2-item1 .L-flex2-top .L-flex2-top-right{
     display: flex;
     flex-direction: column;
@@ -1384,6 +1366,32 @@ body a{
     border-radius: .5rem;
     background-color:$p-color;
 }
+.dots3-tooltip-data{
+    position: absolute;
+    display: flex;
+    right: 7.5%;
+    top: 70%;
+    flex-direction: column;
+    gap: .5rem;
+    padding:1rem ;
+    border-radius: .8rem;
+    background-color: white;
+    z-index: 10 !important;
+    display: none;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}  
+.dots1{
+    cursor: pointer; 
+    padding: 1rem 2rem;
+    &:hover{
+        background-color: lightgray;
+    }
+}
+.dots1 span{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
 .L-flex2-body-part1{
     display: flex;
     flex-direction: row;
@@ -1640,6 +1648,7 @@ body a{
     border-radius: .5rem;
     font-size: 1.5rem;
     padding: .5rem 1rem;
+    border: .1rem solid lightgray;
 }
 .body-part3-top2{
     display: flex;
