@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html1">
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -258,8 +258,8 @@
                   <span>Light mode</span>
                 </div>
                 <div class="d-l-mode-tooltip-data1" id="d-l-d2" onclick="closedarklightmode()">
-                  <div class="d-l-d1" onclick="lightmode()"><span><i class="bi bi-brightness-high-fill"></i></span>Light Mode<span></span></div>
-                  <div class="d-l-d1" onclick="darkmode()"><span><i class="bi bi-moon"></i></span>Dark Mode<span></span></div>
+                  <div class="d-l-d1" onclick="light()"><span><i class="bi bi-brightness-high-fill"></i></span>Light Mode<span></span></div>
+                  <div class="d-l-d1" onclick="dark()"><span><i class="bi bi-moon"></i></span>Dark Mode<span></span></div>
                   <div class="d-l-d1"><span><i class="bi bi-display"></i></span>System<span></span></div>
                 </div>
             
@@ -411,7 +411,7 @@
          </div>
          <div class="input-search" id="search">
           <div id="searchicon">
-           <input type="text" placeholder="Search" id="txt" ><div onclick="closesearchbar()"><i class="bi bi-x" ></i></div>
+           <input type="text" placeholder="Search" id="txt"><div onclick="closesearchbar()"><i class="bi bi-x" ></i></div>
           </div>
          </div> 
         </div>
@@ -467,7 +467,7 @@
               </ul>
             </div>
           </div>
-          <div class="right-flex1" >
+          <div class="right-flex1">
             <div class="R-flex1-top" data-aos="fade-up">
               <div class="R-flex1-top-left">Popular Instructors</div>
               <div class="R-flex1-top-right" onclick="opentdots2data()">

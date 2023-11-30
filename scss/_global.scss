@@ -6,7 +6,7 @@ html{
     margin: 0;
     padding: 0;
     font-family:'Source Sans 3', sans-serif;
-    color: $p-color;
+    // color: $p-color;
     box-sizing: border-box;
 }
 *ul{
@@ -37,7 +37,10 @@ body a{
     box-sizing: border-box;
     width: 100%;
     max-width:136.6rem;
-    // background-color: $vuexy-primary;
+    transition: 1s;
+}
+html.dark .container{
+    background-color:$dark-bg ;
 }
 .grid{
     box-sizing: border-box;
@@ -51,13 +54,13 @@ body a{
     overflow-y: auto;
     width: 4.5%;
     height: 100%;
-    background-color: white;
+    background-color: $vuexy-bg;
     overflow: hidden;
     @include primaryborder(rgb(90, 85, 85),.1rem);
     transition: all .5s ease;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
-    background-color: white;
     z-index: 15;
+    transition: 1s;
     // display: none;
     &:hover{
         width: 20%;
@@ -76,6 +79,13 @@ body a{
     }
     &::-webkit-scrollbar-track{
        box-shadow:0 0 .5rem .5rem gray ;
+    }
+}
+html.dark .left-sidebaar{
+    background-color:$dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+    &::-webkit-scrollbar-thumb{
+        background-color:$dark-font ;
     }
 }
 .left-sidebaar.enter{
@@ -110,6 +120,9 @@ body a{
     font-size: 2rem;
     padding-right: .7rem;
 }
+html.dark .header-right #sidebar-crossicon{
+   color:$dark-font;
+}
 // .header-right .out-circle{
 //     width: .3rem;
 //     height: .3rem;
@@ -143,17 +156,23 @@ body a{
     margin-top: 1.5rem;
     color: $top-h1;
     font-weight: bold;
-   
+}
+html.dark .header-left h1{
+    color: $vuexy-bg;
 }
 // sidebaar body css
 .grid .left-side{
     background-color:$vuexy-bg;
-    color: $top-h1;
+    // color: $top-h1;
     overflow-y: auto;
     padding-top: 1rem;
     padding-left: 3.5rem;
     padding-right: 4.5rem;
-    
+    transition: 1s;
+}
+html.dark .grid .left-side{
+    background-color:$dark-medium;
+    transition: 1s;
 }
 .grid .left-side .left-dashboard a{
     box-sizing: border-box;
@@ -173,6 +192,9 @@ body a{
     flex-direction: row;
     gap: 1rem;
 }
+html.dark .grid .left-side .left-dashboard a .dashboard-left{
+  color: $dark-font;
+}
 .grid .left-side .left-dashboard a .dashboard-right{
     box-sizing: border-box;
     display: flex;
@@ -187,14 +209,23 @@ body a{
     font-size: 1.5rem;
     font-weight: bold;
 }
+html.dark .grid .left-side .left-dashboard a .dashboard-right span p{
+ color: $dark-font;
+}
 .grid .left-side .left-dashboard a .dashboard-right span i{
     font-size: 1.5rem;
 }
-.grid .left-side .dashboard-list #dashboard-list
-{
+html.dark .grid .left-side .left-dashboard a .dashboard-right span i{
+    font-size: 1.5rem;
+    color: $dark-font;
+}
+.grid .left-side .dashboard-list #dashboard-list{
     list-style: circle;
     padding-left: 3rem;
     display: none;
+}
+html.dark .grid .left-side .dashboard-list #dashboard-list{
+   color: $dark-font;
 }
 .grid .left-side .lists{
     list-style: none;
@@ -210,22 +241,23 @@ body a{
 .grid .left-side .dashboard-list #dashboard-list li a p{
     font-size: 1.4rem;
     margin: .5rem;
-    color: $top-h1;
     font-weight: bold;
     @include secondaryborder(brown,.1rem);
-    opacity: .7;
+    opacity: .8;
     &:hover{
         opacity: 1;
     }
 }
-
+html.dark .grid .left-side .dashboard-list #dashboard-list li a p{
+  color:$dark-font;
+}
 .grid .left-side .lists li a{
     margin: 0;
 }
 .grid .left-side .lists li a p{
     font-size: 1.5rem;
     margin: 0rem;
-    color: $top-h1;
+    // color: $top-h1;
     font-weight: bold;
     @include secondaryborder(brown,.1rem);
 }
@@ -260,6 +292,15 @@ body a{
     list-style: circle;
     padding-left: 3rem;
 }
+html.dark .grid .left-side .list2 ul .email-list .lists,
+.grid .left-side .list2 ul .event-list .lists,
+.grid .left-side .list2 ul .ecommerce-list .lists,
+.grid .left-side .list2 ul .elearning-list .lists,
+.grid .left-side .list2 ul .social-list .lists,
+.grid .left-side .list2 ul .supooert-desk-list .lists
+{
+    color:$dark-font;
+}
 .grid .left-side .list2 ul li {
     margin: .9rem 0;
 }
@@ -269,10 +310,14 @@ body a{
     gap: 1rem;
     font-size: 1.5rem;
     color: $top-h1;
-    opacity: .7;
+    transition: 1s;
+    opacity: .8;
     &:hover{
         opacity: 1;
     }
+}
+html.dark .grid .left-side .list2 ul li a{
+    color:$dark-font;
 }
 .grid .left-side .list2 ul li a .arrows{
     display: flex;
@@ -383,6 +428,7 @@ body a{
     z-index: 999;
     box-shadow: 0 0 1rem .4rem rgb(240, 240, 240);
     @include secondaryborder(brown,.1rem);
+    transition: 1s;
     &::-webkit-scrollbar{
         width: 1rem;
         
@@ -397,6 +443,14 @@ body a{
     }
     &::-webkit-scrollbar-track{
        box-shadow:0 0 .5rem .5rem gray ;
+    }
+}
+html.dark .right-side .popup{
+    background-color: $dark-medium;
+    color:$dark-font ;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+    &::-webkit-scrollbar-thumb{
+        background-color: white;
     }
 }
 .popup-top{
@@ -482,6 +536,11 @@ body a{
 .right-side-container{
     width: 100%;
     @include primaryborder(black,.1rem);
+    color: $top-h1;
+    transition: 1s;
+}
+html.dark .right-side-container{
+    color:$dark-font;
 }
 .right-topbar{
     position: fixed;
@@ -491,15 +550,19 @@ body a{
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    // justify-content: space-between;
     align-items: center;
     padding-left: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
     background-color: $vuexy-bg;
     z-index: 1;
+    transition: 1s;
     @include primaryborder(brown,.1rem);
- 
+}
+html.dark .right-topbar{
+    background-color:$dark-medium;
+    color:$dark-font ;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
 }
 .right-topbar-fixed{
     position: fixed !important;
@@ -523,13 +586,12 @@ body a{
     width: 100%;
     top: 0;
     left: 0;
-    // margin-top: 1rem;
     border-radius: 1rem;
-   
     z-index: 2;
 }
 .right-topbar .search-btn{
    margin-top: 0rem;
+
 }
 .right-topbar .search-btn .search-icon{
    display: flex;
@@ -539,13 +601,22 @@ body a{
    cursor: pointer;
    outline: none;
    border: none;
+   transition: 1s;
 }
+html.dark .right-topbar .search-btn .search-icon{
+    background-color:$dark-medium;
+    color: $dark-font;
+}
+// .right-topbar .search-btn .search-icon input[type=text]{
+//     background-color: $dark-medium;
+//     color:$dark-bg ;
+// }
 .right-topbar .search-btn .search-icon i{
     font-size: 2rem;
 }
 .right-topbar .search-btn .search-icon p{
     font-size: 1.6rem;
-    color: $p-color;
+    // color: $p-color;
 }
 
 #searchicon{
@@ -620,7 +691,12 @@ body a{
     border-radius: 1rem;
     padding: .5rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    transition: 1s;
 }
+html.dark .topbar-right-data ul .lang-tooltip-data1{
+    background-color: $dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}  
 .topbar-right-data ul .languages{
     gap: .5rem;
     font-size: 1.5rem;
@@ -632,6 +708,12 @@ body a{
         background-color: rgb(231, 231, 231);
     }
 }
+html.dark .topbar-right-data ul .languages{
+    background-color: $dark-medium;
+    &:hover{
+        background-color: $dark-bg;
+    }
+} 
 // tooltip darklight mode//
 .topbar-right-data ul .moon{
     position: relative;
@@ -682,6 +764,16 @@ body a{
     padding: .5rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
 }
+html.dark .d-l-mode-tooltip-data1{
+    background-color: $dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
+html.dark .d-l-d1{
+    background-color: $dark-medium;
+    &:hover{
+        background-color: $dark-bg;
+    }
+}
 .d-l-d1{
     display: flex;
     flex-direction: row;
@@ -714,6 +806,16 @@ body a{
     border-radius: 1rem;
     padding: .5rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+}
+html.dark .topbar-right-data ul .shortcut-toolip-data{
+    background-color: $dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
+html.dark .d-l-d1{
+    background-color: $dark-medium;
+    &:hover{
+        background-color: $dark-bg;
+    }
 }
 .shortcut-header{
    display: flex;
@@ -776,6 +878,16 @@ body a{
     padding: .5rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
 }
+html.dark .topbar-right-data ul .bell-tooltip-data{
+    background-color: $dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
+html.dark .bell-scroll-item1{
+    background-color: $dark-medium;
+    &:hover{
+        background-color: $dark-bg;
+    }
+}
 .bell-data-top{
     display: flex;
     flex-direction: row;
@@ -795,6 +907,19 @@ body a{
     gap: .5rem;
     height: 35rem;
     overflow-y: auto;  
+}
+html.dark .bell-scroll-container{
+    &::-webkit-scrollbar{
+        width: 1rem;  
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: white;
+        border-radius: 1rem;
+        height: 1rem;
+        &:hover{
+            background-color: gray;
+        }
+    }
 }
 .bell-scroll-item1{
     display: flex;
@@ -863,6 +988,12 @@ body a{
         color: white;
     }
 }
+html.dark .bell-footer-btn1{
+    background-color: $dark-medium;
+    &:hover{
+        background-color: $dark-bg;
+    }
+}
 // admin tooltip //
 .topbar-right-data ul .header-pic{
     position: relative;
@@ -884,6 +1015,17 @@ body a{
     border-radius: 1rem;
     padding: .5rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    transition: 1s;
+}
+html.dark .topbar-right-data ul .pic-tooltip-data{
+    background-color: $dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
+html.dark .topbar-right-data ul .admin{
+    background-color: $dark-medium;
+    &:hover{
+        background-color: $dark-bg;
+    }
 }
 .display-tooltip-data{
     display: block !important;
@@ -924,6 +1066,12 @@ body a{
         background-color: rgb(231, 231, 231);
     }
 }
+html.dark .admin-bx2{
+    background-color: $dark-medium;
+    &:hover{
+        background-color: $dark-bg;
+    }
+}
 .topbar-right-data ul .admin1{
     display: flex;
     flex-direction:column;
@@ -934,6 +1082,9 @@ body a{
     padding: .5rem 1.5rem;
     border-bottom: .1rem solid gray;
 
+}
+html.dark .topbar-right-data ul .admin1{
+    background-color: $dark-medium;
 }
     //  main  body css//
 .main-h1{
@@ -1018,14 +1169,24 @@ body a{
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    transition: 1s;
 } 
+html.dark .body-flex1 .left-flex1{
+    background-color:$dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
 // for right side of flex1
 .body-flex1 .right-flex1{
     width: 30%;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    transition: 1s;
 } 
+html.dark .body-flex1 .right-flex1{
+    background-color:$dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
 .body-flex1 .left-flex1 .L-flex1-top,
 .body-flex1 .right-flex1 .R-flex1-top{
     display: flex;
@@ -1052,25 +1213,35 @@ body a{
 }
     //  three dots tooltip 1 data //
 .right-side .body-flex1 .left-flex1 .L-flex1-top .dots1-tooltip-data{
-        position: absolute;
-        display: flex;
-        right: 5%;
-        top: 12%;
-        flex-direction: column;
-        gap: .5rem;
-        padding:1rem ;
-        border-radius: .8rem;
-        background-color: white;
-        display: none;
-        box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    position: absolute;
+    display: flex;
+    right: 5%;
+    top: 12%;
+    flex-direction: column;
+    gap: .5rem;
+    padding:1rem ;
+    border-radius: .8rem;
+    background-color: white;
+    display: none;
+    box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
 }  
+html.dark .right-side .body-flex1 .left-flex1 .L-flex1-top .dots1-tooltip-data{
+    background-color:$dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
 .dots1{
-        cursor: pointer; 
-        padding: 1rem 2rem;
-        &:hover{
-            background-color: lightgray;
-        }
+    cursor: pointer; 
+    padding: 1rem 2rem;
+    &:hover{
+        background-color: lightgray;
     }
+}
+html.dark .dots1{
+
+    &:hover{
+        background-color: $dark-bg;
+    }
+}
     .dots1 span{
         font-size: 1.5rem;
         display: inline-block;
@@ -1082,6 +1253,9 @@ body a{
     border-radius: .5rem;
     background-color:$p-color;
     
+}
+html.dark .body-flex1 .left-flex1 .L-flex1-top-right span{
+    background-color:$dark-font;  
 }
 .body-flex1 .right-flex1 .R-flex1-top-right span{
     width: .3rem;
@@ -1112,6 +1286,10 @@ body a{
     display: none;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
 }  
+html.dark .right-side .body-flex1 .right-flex1 .R-flex1-top .dots2-tooltip-data{
+    background-color:$dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
 .dots1{
     cursor: pointer; 
     padding: 1rem 2rem;
@@ -1272,6 +1450,9 @@ body a{
 }
     // body flex1 right side //
     // rightside top css is same as of leftside so it is on top with leftside css
+html.dark .right-flex1 .R-flex1-top-right span{
+    background-color:$dark-font ;
+}
 .right-flex1 .right-flex1-body1{
    display: flex;
    flex-direction: row;
@@ -1328,7 +1509,6 @@ body a{
 .body-flex2{
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     gap: 3.2rem;
     margin: 3rem 0;
    
@@ -1340,6 +1520,11 @@ body a{
     flex-direction: column;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    transition: 1s;
+}
+html.dark .body-flex2-item1{
+    background-color: $dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
 }
 .body-flex2-item1 .L-flex2-top{
     display: flex;
@@ -1366,6 +1551,9 @@ body a{
     border-radius: .5rem;
     background-color:$p-color;
 }
+html.dark .body-flex2-item1 .L-flex2-top .L-flex2-top-right span{
+    background-color:$dark-font ;
+}
 .dots3-tooltip-data{
     position: absolute;
     display: flex;
@@ -1379,12 +1567,21 @@ body a{
     z-index: 10 !important;
     display: none;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
-}  
+} 
+html.dark .dots3-tooltip-data{
+    background-color:$dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
 .dots1{
     cursor: pointer; 
     padding: 1rem 2rem;
     &:hover{
         background-color: lightgray;
+    }
+}
+html.dark .dots1{
+    &:hover{
+        background-color: $dark-bg;
     }
 }
 .dots1 span{
@@ -1408,8 +1605,8 @@ body a{
     border-radius: .5rem;
     color: $vuexy-secondary;
     background-color: rgb(240, 240, 240);
-  
 }
+
 .arrows-icon i{
     font-size: 2.5rem;
     padding: .5rem 1rem;
@@ -1463,6 +1660,9 @@ body a{
     border-radius: .5rem;
     padding: .4rem 2rem;
 }
+html.dark .L-flex2-buttons p{
+    background-color: $dark-bg; 
+}
   // .body-flex2-item2 //
 .body-flex2-item2{
     width: 31.5%;
@@ -1471,8 +1671,12 @@ body a{
     flex-direction: column;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
-    
+    transition: 1s;
 } 
+html.dark .body-flex2-item2{
+    background-color: $dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
+}
 .body-flex2-item2-image{
     // height: 25rem;
     // padding: 2rem;
@@ -1553,6 +1757,11 @@ body a{
     flex-direction: column;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
+    transition: 1s;
+}
+html.dark .body-flex2-item3{
+    background-color: $dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
 }
 .body-flex2-item3-h1{
     padding: 0 2.5rem;  
@@ -1634,6 +1843,11 @@ body a{
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
     margin-bottom: 2rem;
+    transition: 1s;
+}
+html.dark .body-part3{
+    background-color: $dark-medium;
+    box-shadow: 0 0 .5rem .5rem $dark-bg;
 }
 .body-part3-top1{
     display: flex;

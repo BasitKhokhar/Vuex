@@ -10,16 +10,23 @@ AOS.init();
 //         topbar.classList.remove('right-topbar-fixed');   
 //     }
 // });
-
+let html=document.getElementById('html1');
+function dark(){
+    html.classList.add('dark');
+}
+function light(){
+    html.classList.remove('dark');
+}
 // dark and light mode js //
 function darkmode(){
-    var btn1=document.body;
-    btn1.classList.add("body-displaydark");
+    var body1=document.body;
+    var sidebaar=document.querySelector('.left-side');
+    body1.classList.add('body-displaydark') &&  sidebaar.classList.add('.dark-left-side'); 
 }
 
 function lightmode(){
-    var btn1=document.body;
-    btn1.classList.remove('body-displaydark');
+    var body1=document.body;
+    body1.classList.remove('body-displaydark');
 }
 
     //    three lines javascript

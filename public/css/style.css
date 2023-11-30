@@ -7,7 +7,6 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Source Sans 3", sans-serif;
-  color: #5d596c;
   box-sizing: border-box;
 }
 
@@ -44,6 +43,11 @@ body a {
   box-sizing: border-box;
   width: 100%;
   max-width: 136.6rem;
+  transition: 1s;
+}
+
+html.dark .container {
+  background-color: #25293c;
 }
 
 .grid {
@@ -62,8 +66,8 @@ body a {
   border: none;
   transition: all 0.5s ease;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
-  background-color: white;
   z-index: 15;
+  transition: 1s;
 }
 .left-sidebaar:hover {
   width: 20%;
@@ -82,6 +86,14 @@ body a {
 }
 .left-sidebaar::-webkit-scrollbar-track {
   box-shadow: 0 0 0.5rem 0.5rem gray;
+}
+
+html.dark .left-sidebaar {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
+}
+html.dark .left-sidebaar::-webkit-scrollbar-thumb {
+  background-color: white;
 }
 
 .left-sidebaar.enter {
@@ -116,6 +128,10 @@ body a {
   padding-right: 0.7rem;
 }
 
+html.dark .header-right #sidebar-crossicon {
+  color: white;
+}
+
 .header-left {
   display: flex;
   flex-direction: row;
@@ -132,13 +148,22 @@ body a {
   font-weight: bold;
 }
 
+html.dark .header-left h1 {
+  color: white;
+}
+
 .grid .left-side {
   background-color: white;
-  color: #5d596c;
   overflow-y: auto;
   padding-top: 1rem;
   padding-left: 3.5rem;
   padding-right: 4.5rem;
+  transition: 1s;
+}
+
+html.dark .grid .left-side {
+  background-color: rgba(47, 51, 73, 0.95);
+  transition: 1s;
 }
 
 .grid .left-side .left-dashboard a {
@@ -161,6 +186,10 @@ body a {
   gap: 1rem;
 }
 
+html.dark .grid .left-side .left-dashboard a .dashboard-left {
+  color: white;
+}
+
 .grid .left-side .left-dashboard a .dashboard-right {
   box-sizing: border-box;
   display: flex;
@@ -175,14 +204,27 @@ body a {
   font-weight: bold;
 }
 
+html.dark .grid .left-side .left-dashboard a .dashboard-right span p {
+  color: white;
+}
+
 .grid .left-side .left-dashboard a .dashboard-right span i {
   font-size: 1.5rem;
+}
+
+html.dark .grid .left-side .left-dashboard a .dashboard-right span i {
+  font-size: 1.5rem;
+  color: white;
 }
 
 .grid .left-side .dashboard-list #dashboard-list {
   list-style: circle;
   padding-left: 3rem;
   display: none;
+}
+
+html.dark .grid .left-side .dashboard-list #dashboard-list {
+  color: white;
 }
 
 .grid .left-side .lists {
@@ -201,13 +243,16 @@ body a {
 .grid .left-side .dashboard-list #dashboard-list li a p {
   font-size: 1.4rem;
   margin: 0.5rem;
-  color: #5d596c;
   font-weight: bold;
   border: none;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .grid .left-side .dashboard-list #dashboard-list li a p:hover {
   opacity: 1;
+}
+
+html.dark .grid .left-side .dashboard-list #dashboard-list li a p {
+  color: white;
 }
 
 .grid .left-side .lists li a {
@@ -217,7 +262,6 @@ body a {
 .grid .left-side .lists li a p {
   font-size: 1.5rem;
   margin: 0rem;
-  color: #5d596c;
   font-weight: bold;
   border: none;
 }
@@ -256,6 +300,15 @@ body a {
   padding-left: 3rem;
 }
 
+html.dark .grid .left-side .list2 ul .email-list .lists,
+.grid .left-side .list2 ul .event-list .lists,
+.grid .left-side .list2 ul .ecommerce-list .lists,
+.grid .left-side .list2 ul .elearning-list .lists,
+.grid .left-side .list2 ul .social-list .lists,
+.grid .left-side .list2 ul .supooert-desk-list .lists {
+  color: white;
+}
+
 .grid .left-side .list2 ul li {
   margin: 0.9rem 0;
 }
@@ -266,10 +319,15 @@ body a {
   gap: 1rem;
   font-size: 1.5rem;
   color: #5d596c;
-  opacity: 0.7;
+  transition: 1s;
+  opacity: 0.8;
 }
 .grid .left-side .list2 ul li a:hover {
   opacity: 1;
+}
+
+html.dark .grid .left-side .list2 ul li a {
+  color: white;
 }
 
 .grid .left-side .list2 ul li a .arrows {
@@ -389,6 +447,7 @@ body a {
   z-index: 999;
   box-shadow: 0 0 1rem 0.4rem rgb(240, 240, 240);
   border: none;
+  transition: 1s;
 }
 .right-side .popup::-webkit-scrollbar {
   width: 1rem;
@@ -403,6 +462,15 @@ body a {
 }
 .right-side .popup::-webkit-scrollbar-track {
   box-shadow: 0 0 0.5rem 0.5rem gray;
+}
+
+html.dark .right-side .popup {
+  background-color: rgba(47, 51, 73, 0.95);
+  color: white;
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
+}
+html.dark .right-side .popup::-webkit-scrollbar-thumb {
+  background-color: white;
 }
 
 .popup-top {
@@ -502,6 +570,12 @@ body a {
 .right-side-container {
   width: 100%;
   border: none;
+  color: #5d596c;
+  transition: 1s;
+}
+
+html.dark .right-side-container {
+  color: white;
 }
 
 .right-topbar {
@@ -518,7 +592,14 @@ body a {
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
   background-color: white;
   z-index: 1;
+  transition: 1s;
   border: none;
+}
+
+html.dark .right-topbar {
+  background-color: rgba(47, 51, 73, 0.95);
+  color: white;
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
 }
 
 .right-topbar-fixed {
@@ -561,6 +642,12 @@ body a {
   cursor: pointer;
   outline: none;
   border: none;
+  transition: 1s;
+}
+
+html.dark .right-topbar .search-btn .search-icon {
+  background-color: rgba(47, 51, 73, 0.95);
+  color: white;
 }
 
 .right-topbar .search-btn .search-icon i {
@@ -569,7 +656,6 @@ body a {
 
 .right-topbar .search-btn .search-icon p {
   font-size: 1.6rem;
-  color: #5d596c;
 }
 
 #searchicon {
@@ -651,6 +737,12 @@ body a {
   border-radius: 1rem;
   padding: 0.5rem;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
+  transition: 1s;
+}
+
+html.dark .topbar-right-data ul .lang-tooltip-data1 {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
 }
 
 .topbar-right-data ul .languages {
@@ -663,6 +755,13 @@ body a {
 }
 .topbar-right-data ul .languages:hover {
   background-color: rgb(231, 231, 231);
+}
+
+html.dark .topbar-right-data ul .languages {
+  background-color: rgba(47, 51, 73, 0.95);
+}
+html.dark .topbar-right-data ul .languages:hover {
+  background-color: #25293c;
 }
 
 .topbar-right-data ul .moon {
@@ -718,6 +817,18 @@ body a {
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
 }
 
+html.dark .d-l-mode-tooltip-data1 {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
+}
+
+html.dark .d-l-d1 {
+  background-color: rgba(47, 51, 73, 0.95);
+}
+html.dark .d-l-d1:hover {
+  background-color: #25293c;
+}
+
 .d-l-d1 {
   display: flex;
   flex-direction: row;
@@ -750,6 +861,18 @@ body a {
   border-radius: 1rem;
   padding: 0.5rem;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
+}
+
+html.dark .topbar-right-data ul .shortcut-toolip-data {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
+}
+
+html.dark .d-l-d1 {
+  background-color: rgba(47, 51, 73, 0.95);
+}
+html.dark .d-l-d1:hover {
+  background-color: #25293c;
 }
 
 .shortcut-header {
@@ -817,6 +940,18 @@ body a {
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
 }
 
+html.dark .topbar-right-data ul .bell-tooltip-data {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
+}
+
+html.dark .bell-scroll-item1 {
+  background-color: rgba(47, 51, 73, 0.95);
+}
+html.dark .bell-scroll-item1:hover {
+  background-color: #25293c;
+}
+
 .bell-data-top {
   display: flex;
   flex-direction: row;
@@ -839,6 +974,18 @@ body a {
   gap: 0.5rem;
   height: 35rem;
   overflow-y: auto;
+}
+
+html.dark .bell-scroll-container::-webkit-scrollbar {
+  width: 1rem;
+}
+html.dark .bell-scroll-container::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 1rem;
+  height: 1rem;
+}
+html.dark .bell-scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
 }
 
 .bell-scroll-item1 {
@@ -920,6 +1067,13 @@ body a {
   color: white;
 }
 
+html.dark .bell-footer-btn1 {
+  background-color: rgba(47, 51, 73, 0.95);
+}
+html.dark .bell-footer-btn1:hover {
+  background-color: #25293c;
+}
+
 .topbar-right-data ul .header-pic {
   position: relative;
   display: inline-block;
@@ -941,6 +1095,19 @@ body a {
   border-radius: 1rem;
   padding: 0.5rem;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
+  transition: 1s;
+}
+
+html.dark .topbar-right-data ul .pic-tooltip-data {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
+}
+
+html.dark .topbar-right-data ul .admin {
+  background-color: rgba(47, 51, 73, 0.95);
+}
+html.dark .topbar-right-data ul .admin:hover {
+  background-color: #25293c;
 }
 
 .display-tooltip-data {
@@ -987,6 +1154,13 @@ body a {
   background-color: rgb(231, 231, 231);
 }
 
+html.dark .admin-bx2 {
+  background-color: rgba(47, 51, 73, 0.95);
+}
+html.dark .admin-bx2:hover {
+  background-color: #25293c;
+}
+
 .topbar-right-data ul .admin1 {
   display: flex;
   flex-direction: column;
@@ -996,6 +1170,10 @@ body a {
   background-color: white;
   padding: 0.5rem 1.5rem;
   border-bottom: 0.1rem solid gray;
+}
+
+html.dark .topbar-right-data ul .admin1 {
+  background-color: rgba(47, 51, 73, 0.95);
 }
 
 .main-h1 {
@@ -1091,6 +1269,12 @@ body a {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
+  transition: 1s;
+}
+
+html.dark .body-flex1 .left-flex1 {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
 }
 
 .body-flex1 .right-flex1 {
@@ -1098,6 +1282,12 @@ body a {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
+  transition: 1s;
+}
+
+html.dark .body-flex1 .right-flex1 {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
 }
 
 .body-flex1 .left-flex1 .L-flex1-top,
@@ -1141,12 +1331,21 @@ body a {
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
 }
 
+html.dark .right-side .body-flex1 .left-flex1 .L-flex1-top .dots1-tooltip-data {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
+}
+
 .dots1 {
   cursor: pointer;
   padding: 1rem 2rem;
 }
 .dots1:hover {
   background-color: lightgray;
+}
+
+html.dark .dots1:hover {
+  background-color: #25293c;
 }
 
 .dots1 span {
@@ -1159,6 +1358,10 @@ body a {
   height: 0.3rem;
   border-radius: 0.5rem;
   background-color: #5d596c;
+}
+
+html.dark .body-flex1 .left-flex1 .L-flex1-top-right span {
+  background-color: white;
 }
 
 .body-flex1 .right-flex1 .R-flex1-top-right span {
@@ -1189,6 +1392,11 @@ body a {
   background-color: white;
   display: none;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
+}
+
+html.dark .right-side .body-flex1 .right-flex1 .R-flex1-top .dots2-tooltip-data {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
 }
 
 .dots1 {
@@ -1350,6 +1558,10 @@ body a {
   width: 20%;
 }
 
+html.dark .right-flex1 .R-flex1-top-right span {
+  background-color: white;
+}
+
 .right-flex1 .right-flex1-body1 {
   display: flex;
   flex-direction: row;
@@ -1424,6 +1636,12 @@ body a {
   flex-direction: column;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
+  transition: 1s;
+}
+
+html.dark .body-flex2-item1 {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
 }
 
 .body-flex2-item1 .L-flex2-top {
@@ -1454,6 +1672,10 @@ body a {
   background-color: #5d596c;
 }
 
+html.dark .body-flex2-item1 .L-flex2-top .L-flex2-top-right span {
+  background-color: white;
+}
+
 .dots3-tooltip-data {
   position: absolute;
   display: flex;
@@ -1469,12 +1691,21 @@ body a {
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
 }
 
+html.dark .dots3-tooltip-data {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
+}
+
 .dots1 {
   cursor: pointer;
   padding: 1rem 2rem;
 }
 .dots1:hover {
   background-color: lightgray;
+}
+
+html.dark .dots1:hover {
+  background-color: #25293c;
 }
 
 .dots1 span {
@@ -1557,6 +1788,10 @@ body a {
   padding: 0.4rem 2rem;
 }
 
+html.dark .L-flex2-buttons p {
+  background-color: #25293c;
+}
+
 .body-flex2-item2 {
   width: 31.5%;
   background-color: white;
@@ -1564,6 +1799,12 @@ body a {
   flex-direction: column;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
+  transition: 1s;
+}
+
+html.dark .body-flex2-item2 {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
 }
 
 .body-flex2-item2-image {
@@ -1660,6 +1901,12 @@ body a {
   flex-direction: column;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
+  transition: 1s;
+}
+
+html.dark .body-flex2-item3 {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
 }
 
 .body-flex2-item3-h1 {
@@ -1755,6 +2002,12 @@ body a {
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
   margin-bottom: 2rem;
+  transition: 1s;
+}
+
+html.dark .body-part3 {
+  background-color: rgba(47, 51, 73, 0.95);
+  box-shadow: 0 0 0.5rem 0.5rem #25293c;
 }
 
 .body-part3-top1 {
