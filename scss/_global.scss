@@ -61,7 +61,6 @@ html.dark .container{
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
     z-index: 15;
     transition: 1s;
-    // display: none;
     &:hover{
         width: 20%;
         overflow-y: auto;
@@ -88,10 +87,13 @@ html.dark .left-sidebaar{
         background-color:$dark-font ;
     }
 }
-.left-sidebaar.enter{
-    opacity: 1;
-    left: 0;
+.left-sidebaar-display{
+    width: 20% !important;
 }
+// .left-sidebaar.enter{
+//     opacity: 1;
+//     left: 0;
+// }
     // class maade for javascript//
 .left-side-display{
     display: block !important;
@@ -524,7 +526,7 @@ html.dark .right-side .popup{
     font-weight: bold;
     border: none;
     box-shadow: 0 0 1rem .3rem rgb(245, 91, 91);
-    opacity: .7;
+    opacity: .8;
     z-index: 8;
     cursor: pointer;
     &:hover{
@@ -591,7 +593,6 @@ html.dark .right-topbar{
 }
 .right-topbar .search-btn{
    margin-top: 0rem;
-
 }
 .right-topbar .search-btn .search-icon{
    display: flex;
@@ -607,10 +608,10 @@ html.dark .right-topbar .search-btn .search-icon{
     background-color:$dark-medium;
     color: $dark-font;
 }
-// .right-topbar .search-btn .search-icon input[type=text]{
-//     background-color: $dark-medium;
-//     color:$dark-bg ;
-// }
+.right-topbar .search-btn .search-icon input[type=text]{
+    background-color: $dark-medium;
+    color:$dark-bg ;
+}
 .right-topbar .search-btn .search-icon i{
     font-size: 2rem;
 }
@@ -1169,7 +1170,7 @@ html.dark .topbar-right-data ul .admin1{
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
-    transition: 1s;
+    transition:1s !important;
 } 
 html.dark .body-flex1 .left-flex1{
     background-color:$dark-medium;
@@ -1671,7 +1672,7 @@ html.dark .L-flex2-buttons p{
     flex-direction: column;
     border-radius: 1rem;
     box-shadow: 0 0 .5rem .5rem rgb(235, 235, 235);
-    transition: 1s;
+    transition: 1s !important;
 } 
 html.dark .body-flex2-item2{
     background-color: $dark-medium;
@@ -1852,224 +1853,209 @@ html.dark .body-part3{
 .body-part3-top1{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 7rem 2rem 2rem;
+    justify-content: center;
+    padding: 2rem 0 ;
 }
 .body-part3-top1 > span > h2{
     font-size: 2rem;
 }
-.body-part3-top1 > .searchbar1 input[type=search]{
-    border-radius: .5rem;
-    font-size: 1.5rem;
-    padding: .5rem 1rem;
-    border: .1rem solid lightgray;
+// table //
+table{
+    background-color: white;
+    transition: 1s;
+    // font-size: 2rem;
 }
-.body-part3-top2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.5rem 2rem;
-    border-top:.1rem solid lightgray;
-}
-.body-part3-top2 > .top2-part1{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    cursor: pointer;
-}
-.body-part3-top2 > .top2-part1 input[type=checkbox]{
-    margin-top: .3rem;
-    font-size: 2rem;
-}
-.body-part3-top2 .p1 p{
+html.dark table{
+    background-color:$dark-medium ;
+} 
+table > thead > tr > .top-heading{
     font-size: 1.6rem;
-}
-.top2-part2{
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    cursor: pointer;
-}
-.top2-part3{
-   display: flex;
-   justify-content: left;
-   padding-right: 17.5rem;
-   cursor: pointer;
-}
-.body-part3-row1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    border-top:.1rem solid lightgray;
-}
-.body-part3-row1-part1{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-.body-part3-row1-part1 > div input[type=checkbox]{
-  margin-top: 1.8rem;
-}
-.body-part3-row1-part1 > .course-item1{
+ }
+ table > tbody > tr > td > .course-item1{
     display: flex;
     flex-direction: row;
     gap: 1rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-icon1{
+ }
+ table > tbody > tr > td > .course-item1 > .course-item1-icon1{
     background-color: lightgray;
     border-radius: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-icon1 i{
+ }
+ table > tbody > tr > td > .course-item1 > .course-item1-icon1 i{
     font-size: 2.5rem;
-    color: $vuexy-secondary;
+    color: #7367f0;
     padding: .8rem 1.3rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-icon1 #icon2{
-    font-size: 2.5rem;
-    color: goldenrod;
-    padding: .8rem 1.3rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-icon1 #icon3{
-    font-size: 2.5rem;
-    color: $green;
-    padding: .8rem 1.3rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-icon1 #icon4{
-    font-size: 2.5rem;
-    color: $sky-blue;
-    padding: .8rem 1.3rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-icon1 #icon5{
-    font-size: 2.5rem;
-    color: $vuexy-button-color;
-    padding: .8rem 1.3rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-data1{
+ }
+ table > tbody > tr > td > .course-item1 > .course-item1-data1{
     display: flex;
     flex-direction: column;
     gap: .5rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-data1 > .item1-data1-bottom{
+ }
+ table > tbody > tr > td > .course-item1 > .course-item1-data1 > .item1-data1-top > a{
+    color:$top-h1 ;
+ }
+ table > tbody > tr > td > .course-item1 > .course-item1-data1 > .item1-data1-bottom{
     display: flex;
     flex-direction: row;
     gap: .7rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-data1 > .item1-data1-top h4{
+ }
+ table > tbody > tr > td > .course-item1 > .course-item1-data1 > .item1-data1-top h4{
     font-size: 1.7rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-data1 > .item1-data1-bottom > .item1-data1-img1{
+ }
+ table > tbody > tr > td > .course-item1 > .course-item1-data1 > .item1-data1-bottom > .item1-data1-img1{
     width: 2.5rem;
     height: 2.5rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-data1 > .item1-data1-bottom > .item1-data1-img1 img{
+ }
+ table > tbody > tr > td > .course-item1 > .course-item1-data1 > .item1-data1-bottom > .item1-data1-img1 img{
    width: 100%;
    border-radius: 5rem;
-}
-.body-part3-row1-part1 > .course-item1 > .course-item1-data1 > .item1-data1-bottom > .p2 p{
+ }
+ table > tbody > tr > td > .course-item1 > .course-item1-data1 > .item1-data1-bottom > .p2 p{
     font-size:1.5rem ;
     margin-top: .1rem;
  }
-.body-part3-row1-part2{
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    margin-top: 1.5rem;
-} 
-.body-part3-row1-part2 > .row1-part2-right{
+ table > tbody > tr > .time > h3{
+    font-size: 1.6rem;
+ }
+ /* progressbar */
+ table > tbody > tr > .progressbar1 > .row1-part2-right{
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-}
-.body-part3-row1-part2 span h3{
+ }
+ table > tbody > tr > .progressbar1 > span > h3{
     font-size: 1.6rem;
     font-weight: bold;
-}
-.body-part3-row1-part2 > .row1-part2-right > .progress-out{
+ }
+ /* progressbar row1 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out{
     background-color: lightgray;
     width: 10rem;
     height: .8rem;
     border-radius: 1rem;
     position: relative;
     margin-top: .5rem;
-}
-.body-part3-row1-part2 > .row1-part2-right > .progress-out .progress-inner{
-    background-color: $vuexy-secondary;
+ }
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > .progress-inner{
+    background-color: #7367f0;
     width: 9rem;
     height: .8rem;
     border-radius: 1rem;
     position: absolute;
-}
-.body-part3-row1-part2 > .row1-part2-right > .progress-out .progress-inner-20{
-    background-color: $vuexy-secondary;
-    width: 2rem;
-    height: .8rem;
-    border-radius: 1rem;
-    position: absolute;
-}
-.body-part3-row1-part2 > .row1-part2-right > .progress-out .progress-inner-55{
-    background-color: $vuexy-secondary;
-    width: 5.5rem;
-    height: .8rem;
-    border-radius: 1rem;
-    position: absolute;
-}
-.body-part3-row1-part2 > .row1-part2-right > .progress-out .progress-inner-70{
-    background-color: $vuexy-secondary;
-    width: 7rem;
-    height: .8rem;
-    border-radius: 1rem;
-    position: absolute;
-}
-.body-part3-row1-part2 > .row1-part2-right > .progress-out .progress-inner-40{
-    background-color: $vuexy-secondary;
-    width: 4rem;
-    height: .8rem;
-    border-radius: 1rem;
-    position: absolute;
-}
-.body-part3-row1-part2 > .row1-part2-right > .progress-out .progress-inner-50{
-    background-color: $vuexy-secondary;
+ }
+ /* progressbar row2 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #two-inner{
+    background-color: #7367f0;
     width: 5rem;
     height: .8rem;
     border-radius: 1rem;
     position: absolute;
-}
-.body-part3-row1-part2 .percent1{
-    font-size: 1.6rem;
-}
-.body-part3-row1-part3{
+ }
+ /* progressbar row3 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #three-inner{
+    background-color: #7367f0;
+    width: 7rem;
+    height: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+ }
+ /* progressbar row4 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #four-inner{
+    background-color: #7367f0;
+    width: 4rem;
+    height: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+ }
+ /* progressbar row5 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #five-inner{
+    background-color: #7367f0;
+    width: 2rem;
+    height: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+ }
+ /* progressbar row6 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #six-inner{
+    background-color: #7367f0;
+    width: 6rem;
+    height: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+ }
+ /* progressbar row7 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #seven-inner{
+    background-color: #7367f0;
+    width: 3rem;
+    height: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+ }
+ /* progressbar row8 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #eight-inner{
+    background-color: #7367f0;
+    width: 3rem;
+    height: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+ }
+ /* progressbar row9 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #nine-inner{
+    background-color: #7367f0;
+    width: 8rem;
+    height: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+ }
+ /* progressbar row10 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #ten-inner{
+    background-color: #7367f0;
+    width: 6rem;
+    height: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+ }
+ /* progressbar row11 */
+ table > tbody > tr > .progressbar1 > .row1-part2-right > .progress-out > #eleven-inner{
+    background-color: #7367f0;
+    width: 3rem;
+    height: .8rem;
+    border-radius: 1rem;
+    position: absolute;
+ }
+ /* staus 1 */
+ .body-part3-row1-part3{
     display: flex;
     flex-direction: row;
     gap: 2rem;
     padding-right: 3.5rem;
     margin-top: 1rem;
-}
-.row1-part3-item1{
+ }
+ .row1-part3-item1{
     display: flex;
     flex-direction: row;
     gap: .8rem;
-}
-.row1-part3-item1 > .row1-part3-icon1 i{
-    color:  $vuexy-secondary;
+ }
+ .row1-part3-item1 > .row1-part3-icon1 i{
+    color:  #7367f0;
     font-size: 2.4rem;
-}
-.row1-part3-item1 > .row1-part3-icon2 i{
-    color:$sky-blue;
+ }
+ .row1-part3-item1 > .row1-part3-icon2 i{
+    color:#00cfe8;
     font-size: 2.4rem;
-}
-.row1-part3-item1 > .row1-part3-icon3 i{
-    color:$vuexy-button-color;
+ }
+ .row1-part3-item1 > .row1-part3-icon3 i{
+    color:#ea5455;
     font-size: 2.4rem;
-}
-.row1-part3-item1 > .row1-part3-icon-data p{
+ }
+ .row1-part3-item1 > .row1-part3-icon-data p{
     font-size: 1.6rem;
     font-weight: 600;
     margin-top: .5rem;
-}
+ }
+
 // vuexy footer //
 .vuexy-footer{
     display: flex;
@@ -2094,4 +2080,123 @@ html.dark .body-part3{
 .vuexy-footer-right ul li{
     font-size: 1.6rem;
     cursor: pointer;
+}
+// basic fundamental Page Css //
+.top-heading1{
+    margin-top:7rem ;
+}
+.top-heading1 h1{
+    font-size: 3.4rem;
+    padding: 3rem 0;
+}
+.part1{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 3rem 3rem;
+    transition: 1s;
+}
+html.dark .part1{
+    background-color: $dark-medium;
+}
+.part1 > .part1-left-container{
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+}
+.part1 > .part1-left-container > .left-container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.part1 > .part1-left-container > .left-container-header > .part1-left-h1 > h2{
+    font-size: 2rem;
+}
+.part1 > .part1-left-container > .left-container-header > .part1-right-icons{
+    display: flex;
+    flex-direction: row;
+}
+.part1 > .part1-left-container > .left-container-header > .part1-right-icons span{
+   font-size: 2rem;
+   padding: .5rem 2rem;
+   cursor: pointer;
+}
+.part1 > .part1-left-container > .left-container-header > .part1-right-icons > .red-data{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(230, 203, 203);
+   color:#ea5455;
+   font-size: 1.3rem;
+   border-radius: .5rem;
+ }
+ .top-h3 h3{
+    margin: 0;
+   font-size: 1.4rem;
+ }
+ .video-data-container{
+    display: flex;
+    flex-direction: column;
+    border: .1rem solid lightgray;
+    border-radius: 1rem;
+    padding: 1rem;
+ }
+ .video-data-container > .top-video{
+    border-radius: 1rem;
+ }
+ .video-data-container > .top-video > video{
+    width: 100%;
+    border-radius: 1rem;
+ }
+ .video-data-container > .video-data{
+    padding: 2rem 2rem;
+ }
+ .video-data-container > .video-data > .video-data-top-h3 h3{
+    font-size: 2rem;
+ }
+ .video-data-container > .video-data > #heading2 h3{
+    font-size: 2rem;
+    margin-top: 2rem;
+ }
+ .video-data-container > .video-data > #heading4 h3{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+ }
+ .video-data-container > .video-data > .video-data-p1 p{
+    font-size: 1.6rem;
+    padding: .7rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: .1rem solid lightgray;
+ }
+ .skills-conatiner{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: .1rem solid lightgray;
+ }
+ .skills-conatiner > .skil-item1{
+    display: flex;
+    flex-direction: row;
+    gap: .6rem;
+    font-size: 1.6rem;
+ }
+ .skills-conatiner > .skil-item1 > span i{
+    font-size: 2rem;
+ }
+ .video-data-para1{
+    border-bottom: .1rem solid lightgray;
+    padding:2rem 0;
+ }
+ .video-data-para1 p{
+    font-size: 1.6rem;
+ }
+// right side container //
+.part1 > .part1-right-container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }

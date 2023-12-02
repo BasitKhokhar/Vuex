@@ -85,7 +85,13 @@
     .menu1{
         display:block;
      }
-
+  // For pages//
+  .part1{
+    flex-direction: column;
+}
+.part1 > .part1-left-container{
+    width: 100%;
+}
 }
 @media only screen and (max-width:931px){
     // .left-sidebaar{
@@ -128,7 +134,12 @@
     .input-search{
         margin-right: 2rem;
     }
-   
+    #Status11,#Status22,#Status33,#Status44,#Status55,
+    #Status66,#Status77,#Status88,#Status99,#Status1010,
+    #Status1111,#Status1212{
+    display: none;
+    }
+  
 }
 @media only screen and (max-width:850px){
     .top2-part2{
@@ -260,7 +271,11 @@
     //     border-radius: 5rem;
     //     background-color: $top-h1;
     // }
-   
+    .topbar-right-data ul .moon{
+        &:hover+.d-l-mode-tooltip-data{
+            display: none;
+        }
+    }
     .grid .left-side .list2 ul li a .arrows{
         width: 15rem;
     }
@@ -319,7 +334,11 @@
     }
 }
 @media only screen and (max-width:520px){
-
+   
+    // For pages//
+    .part1{
+        padding: 2rem 1rem;
+    }
 }
 @media only screen and (max-width:415px){
     // .left-sidebaar{

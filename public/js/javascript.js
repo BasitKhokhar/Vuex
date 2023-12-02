@@ -1,4 +1,6 @@
 AOS.init();
+
+let table = new DataTable('#myTable');
 // let topbar=document.querySelector('.right-topbar');
 
 // window.addEventListener('scroll',function(e){
@@ -10,6 +12,7 @@ AOS.init();
 //         topbar.classList.remove('right-topbar-fixed');   
 //     }
 // });
+// for dark light mode JS //
 let html=document.getElementById('html1');
 function dark(){
     html.classList.add('dark');
@@ -17,24 +20,13 @@ function dark(){
 function light(){
     html.classList.remove('dark');
 }
-// dark and light mode js //
-function darkmode(){
-    var body1=document.body;
-    var sidebaar=document.querySelector('.left-side');
-    body1.classList.add('body-displaydark') &&  sidebaar.classList.add('.dark-left-side'); 
-}
-
-function lightmode(){
-    var body1=document.body;
-    body1.classList.remove('body-displaydark');
-}
-
     //    three lines javascript
 let menu1=document.getElementById('display-sidebar');
 let plusbuton=document.getElementById("menu11");
 let cross=document.querySelector('.header-right')
 plusbuton.onclick=function togle(){
     menu1.classList.add("left-side-display");
+    // menu1.style.transition='width 2s';
 }
 cross.onclick=function togle(){
     menu1.classList.remove("left-side-display");
@@ -135,6 +127,7 @@ function Mainlist() {
   
     if (mainlist.style.display === "none"  ) {
         mainlist.style.display = "block";
+
     } else {
         mainlist.style.display = "none";
     }

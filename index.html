@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" id="html1">
 <head>
+  <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -676,221 +677,548 @@
         <div class="body-part3">
           <div class="body-part3-top1"  data-aos="fade-up">
             <span><h2>Course you are taking</h2></span>
-            <span class="searchbar1"><input type="search" placeholder="Course Name"></span>
           </div>
-          <div class="body-part3-top2"  data-aos="fade-up">
-            <div class="top2-part1">
-              <span><input type="checkbox"></span>
-              <span class="p1"><p>COURSE NAME</p></span>
-            </div>
-            <div class="top2-part2">
-              <span class="p1"><p>TIME</p></span>
-              <span class="p1"><p id="progresss1">PROGRESS</p></span>
-            </div>
-            <div class="top2-part3">
-              <span class="p1"><p>STATUS</p></span>
-            </div>
-          </div>
-          <!-- body part3 row1 -->
-          <div class="body-part3-row1"  data-aos="fade-up">
-            <div class="body-part3-row1-part1">
-              <div><input type="checkbox"></div>
-              <div class="course-item1">
-                <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                <span class="course-item1-data1">
-                  <span class="item1-data1-top"><h4>Basic Fundamentals</h4></span>
-                  <span class="item1-data1-bottom">
-                    <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
-                    <span class="p2"><p>Euell Bownass</p></span>
+         <table id="myTable" class="display">
+          <thead>
+            <tr>
+              <th><input type="checkbox"></th>
+              <th class="top-heading">Course Name</th>
+              <th class="top-heading">Time</th>
+              <th class="top-heading">Progress</th>
+              <th class="top-heading">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+             <!-- row1 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                      <a href="Basicfundamentel.html"><h4>Basic Fundamentals</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\1.png" alt=""></span>
+                      <span class="p2">
+                        <p>Basit khokhar</p>
+                      </span>
+                    </span>
                   </span>
-                </span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part2">
-              <div class="row1-part2-left">
-                <span><h3>12h 42m</h3></span>
-              </div>
-              <div class="row1-part2-right">
-                <span><h3>90%</h3></span>
-                <span class="progress-out"><span class="progress-inner"></span></span>
-                <span class="percent1"><p>90/100</p></span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part3">
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                <span class="row1-part3-icon-data"><p>133</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                <span class="row1-part3-icon-data"><p>50</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                <span class="row1-part3-icon-data"><p>80</p></span>
-              </div>
-            </div>
-          </div>
-          <!-- body part3 row2 -->
-          <div class="body-part3-row1"  data-aos="fade-up">
-            <div class="body-part3-row1-part1">
-              <div><input type="checkbox"></div>
-              <div class="course-item1">
-                <span class="course-item1-icon1"><i class="bi bi-amd" id="icon2"></i></span>
-                <span class="course-item1-data1">
-                  <span class="item1-data1-top"><h4>Typography Theory</h4></span>
-                  <span class="item1-data1-bottom">
-                    <span class="item1-data1-img1"><img src="pics\girl1.jpg" alt=""></span>
-                    <span class="p2"><p>Rollie Parsons</p></span>
+                </div>
+              </td>
+              <td class="time"><h3>12h 42m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>90%</h3></span>
+                  <span class="progress-out"><span class="progress-inner"></span></span>
+                  <span class="percent1"><p>90/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="Status11">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>133</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>50</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>80</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row2 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                      <a href="#"><h4>Angular Routing</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\girl1.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Euell Bownass</p>
+                      </span>
+                    </span>
                   </span>
-                </span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part2">
-              <div class="row1-part2-left">
-                <span><h3>18h 12m</h3></span>
-              </div>
-              <div class="row1-part2-right">
-                <span><h3>20%</h3></span>
-                <span class="progress-out"><span class="progress-inner-20"></span></span>
-                <span class="percent1"><p>20/100</p></span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part3">
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                <span class="row1-part3-icon-data"><p>103</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                <span class="row1-part3-icon-data"><p>20</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                <span class="row1-part3-icon-data"><p>50</p></span>
-              </div>
-            </div>
-          </div>
-          <!-- body part3 row3 -->
-          <div class="body-part3-row1"  data-aos="fade-up">
-            <div class="body-part3-row1-part1">
-              <div><input type="checkbox"></div>
-              <div class="course-item1">
-                <span class="course-item1-icon1"><i class="bi bi-unity" id="icon3"></i></span>
-                <span class="course-item1-data1">
-                  <span class="item1-data1-top"><h4>UI/UX Design</h4></span>
-                  <span class="item1-data1-bottom">
-                    <span class="item1-data1-img1"><img src="pics\1.png" alt=""></span>
-                    <span class="p2"><p>Maybelle Zmitro</p></span>
+                </div>
+              </td>
+              <td class="time"><h3>10h 12m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right" >
+                  <span><h3>50%</h3></span>
+                  <span class="progress-out"><span class="progress-inner" id="two-inner"></span></span>
+                  <span class="percent1"><p>50/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="Status22">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>542</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>10</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>40</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row3 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                      <a href="#"><h4>Advanced Angular</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Robert Bownass</p>
+                      </span>
+                    </span>
                   </span>
-                </span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part2">
-              <div class="row1-part2-left">
-                <span><h3>15h 32m</h3></span>
-              </div>
-              <div class="row1-part2-right">
-                <span><h3>55%</h3></span>
-                <span class="progress-out"><span class="progress-inner-55"></span></span>
-                <span class="percent1"><p>55/100</p></span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part3">
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                <span class="row1-part3-icon-data"><p>380</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                <span class="row1-part3-icon-data"><p>60</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                <span class="row1-part3-icon-data"><p>90</p></span>
-              </div>
-            </div>
-          </div>
-          <!-- body part3 row4 -->
-          <div class="body-part3-row1"  data-aos="fade-up">
-            <div class="body-part3-row1-part1">
-              <div><input type="checkbox"></div>
-              <div class="course-item1">
-                <span class="course-item1-icon1"><i class="bi bi-bing" id="icon4"></i></span>
-                <span class="course-item1-data1">
-                  <span class="item1-data1-top"><h4>Psychology Theory</h4></span>
-                  <span class="item1-data1-bottom">
-                    <span class="item1-data1-img1"><img src="pics\girl1.jpg" alt=""></span>
-                    <span class="p2"><p>Freda Garham</p></span>
+                </div>
+              </td>
+              <td class="time"><h3>18h 22m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>70%</h3></span>
+                  <span class="progress-out"><span class="progress-inner" id="three-inner"></span></span>
+                  <span class="percent1"><p>70/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="Status33">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>333</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>20</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>90</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row4 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                     <a href="#"><h4>Advanced React Native</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\girl1.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Aluin Leveritt</p>
+                      </span>
+                    </span>
                   </span>
-                </span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part2">
-              <div class="row1-part2-left">
-                <span><h3>10h 42m</h3></span>
-              </div>
-              <div class="row1-part2-right">
-                <span><h3>70%</h3></span>
-                <span class="progress-out"><span class="progress-inner-70"></span></span>
-                <span class="percent1"><p>70/100</p></span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part3">
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                <span class="row1-part3-icon-data"><p>133</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                <span class="row1-part3-icon-data"><p>50</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                <span class="row1-part3-icon-data"><p>80</p></span>
-              </div>
-            </div>
-          </div>
-          <!-- body part3 row5 -->
-          <div class="body-part3-row1"  data-aos="fade-up">
-            <div class="body-part3-row1-part1">
-              <div><input type="checkbox"></div>
-              <div class="course-item1">
-                <span class="course-item1-icon1"><i class="bi bi-slack" id="icon5"></i></span>
-                <span class="course-item1-data1">
-                  <span class="item1-data1-top"><h4>Basic Fundamentals</h4></span>
-                  <span class="item1-data1-bottom">
-                    <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
-                    <span class="p2"><p>Euell Bownass</p></span>
+                </div>
+              </td>
+              <td class="time"><h3>10h 40m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>40%</h3></span>
+                  <span class="progress-out"><span class="progress-inner" id="four-inner"></span></span>
+                  <span class="percent1"><p>40/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="status44">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>183</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>50</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>70</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row5 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                      <a href="#"><h4>React Native</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\1.png" alt=""></span>
+                      <span class="p2">
+                        <p>Gertie Langwade</p>
+                      </span>
+                    </span>
                   </span>
-                </span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part2">
-              <div class="row1-part2-left">
-                <span><h3>16h 22m</h3></span>
-              </div>
-              <div class="row1-part2-right">
-                <span><h3>50%</h3></span>
-                <span class="progress-out"><span class="progress-inner-50"></span></span>
-                <span class="percent1"><p>50/100</p></span>
-              </div>
-            </div>
-            <div class="body-part3-row1-part3">
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                <span class="row1-part3-icon-data"><p>373</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                <span class="row1-part3-icon-data"><p>70</p></span>
-              </div>
-              <div class="row1-part3-item1">
-                <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                <span class="row1-part3-icon-data"><p>10</p></span>
-              </div>
-            </div>
-          </div>
+                </div>
+              </td>
+              <td class="time"><h3>16h 30m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>20%</h3></span>
+                  <span class="progress-out"><span class="progress-inner" id="five-inner"></span></span>
+                  <span class="percent1"><p>20/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="status55">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>123</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>24</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>55</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row6 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                     <a href="#"><h4>React for Professional</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\right8.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Ashleigh Bartkowiak</p>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </td>
+              <td class="time"><h3>18h 52m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>60%</h3></span>
+                  <span class="progress-out"><span class="progress-inner" id="six-inner"></span></span>
+                  <span class="percent1"><p>60/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="Status66">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>113</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>20</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>70</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row7 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                     <a href="#"><h4>React for Beginners</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\right9.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Terrye Etches</p>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </td>
+              <td class="time"><h3>18h 56m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>90%</h3></span>
+                  <span class="progress-out"><span class="progress-inner"></span></span>
+                  <span class="percent1"><p>90/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="Status77">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>138</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>47</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>89</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row8 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                     <a href="#"><h4>Color Theory</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Leyla Bourley</p>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </td>
+              <td class="time"><h3>10h 34m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>30%</h3></span>
+                  <span class="progress-out"><span class="progress-inner" id="eight-inner"></span></span>
+                  <span class="percent1"><p>30/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="status88">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>133</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>50</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>80</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row9 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                      <a href="#"><h4>Basics of Angular</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Merrilee Whitnells</p>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </td>
+              <td class="time"><h3>11h 45m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>80%</h3></span>
+                  <span class="progress-out"><span class="progress-inner" id="nine-inner"></span></span>
+                  <span class="percent1"><p>80/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="status99">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>833</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>90</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>80</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row10 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                      <a href="#"><h4>Art & Drawing</h4></a>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Estella Chace</p>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </td>
+              <td class="time"><h3>23h 12m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>60%</h3></span>
+                  <span class="progress-out"><span class="progress-inner" id="ten-inner"></span></span>
+                  <span class="percent1"><p>60/100</p></span>
+                </div>
+              </td>
+              <td class="Status1" id="status1010">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>373</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>50</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>30</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row11 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                      <h4>Basic Fundamentals</h4>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Euell Bownass</p>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </td>
+              <td class="time"><h3>11h 42m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>30%</h3></span>
+                  <span class="progress-out"><span class="progress-inner" id="eleven-inner"></span></span>
+                  <span class="percent1"><p>30/100</p></span>
+                </div>
+              </td>
+              <td class="Status1">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>133</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>50</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>80</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row13 -->
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="course-item1">
+                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                  <span class="course-item1-data1">
+                    <span class="item1-data1-top">
+                      <h4>Basic Fundamentals</h4>
+                    </span>
+                    <span class="item1-data1-bottom">
+                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                      <span class="p2">
+                        <p>Euell Bownass</p>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </td>
+              <td class="time"><h3>12h 42m</h3></td>
+              <td class="progressbar1">
+                <div class="row1-part2-right">
+                  <span><h3>90%</h3></span>
+                  <span class="progress-out"><span class="progress-inner"></span></span>
+                  <span class="percent1"><p>90/100</p></span>
+                </div>
+              </td>
+              <td class="Status1">
+                <div class="body-part3-row1-part3">
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                    <span class="row1-part3-icon-data"><p>133</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                    <span class="row1-part3-icon-data"><p>50</p></span>
+                  </div>
+                  <div class="row1-part3-item1">
+                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                    <span class="row1-part3-icon-data"><p>80</p></span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+         </table>
         </div>
         <div class="vuexy-footer">
           <div class="vuexy-footer-left"><p>© 2023 , made with ❤️ by <b>Basit Khokhar</b></p></div>
@@ -908,7 +1236,7 @@
     </div>
    </div>
 
-
+   <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script src="public\js\javascript.js"></script>
 
 
