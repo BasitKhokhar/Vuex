@@ -2184,12 +2184,21 @@ html.dark .body-part3 {
 }
 
 // table //
-#myTable {
+table {
     background-color: white;
     transition: 1s;
     // font-size: 2rem;
 }
-
+#myTable_length{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+#myTable_filter{
+    margin-right: 1rem !important;
+}
+#myTable_filter > label{
+    font-size: 1.5rem;
+}
 html.dark table {
     background-color: $dark-medium ;
 }

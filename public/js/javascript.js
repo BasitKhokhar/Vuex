@@ -1,6 +1,17 @@
 AOS.init();
 
-let table = new DataTable('#myTable');
+// let table = new DataTable('#myTable');
+
+$('#myTable').dataTable( {
+    "pageLength": 5
+  } );
+
+//   new dataTable('#myTable', {
+//     lengthMenu: [
+//         [5,10, 25, 50, -1],
+//         [5,10, 25, 50, 'All']
+//     ]
+// });
 // let topbar=document.querySelector('.right-topbar');
 
 // window.addEventListener('scroll',function(e){

@@ -2035,9 +2035,22 @@ html.dark .body-part3 {
   font-size: 2rem;
 }
 
-#myTable {
+table {
   background-color: white;
   transition: 1s;
+}
+
+#myTable_length {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+#myTable_filter {
+  margin-right: 1rem !important;
+}
+
+#myTable_filter > label {
+  font-size: 1.5rem;
 }
 
 html.dark table {
