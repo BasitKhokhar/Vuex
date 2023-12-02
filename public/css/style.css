@@ -346,7 +346,9 @@ html.dark .grid .left-side .list2 ul li a {
   display: none;
 }
 
-.menu1 div, .menu2 div, .menu3 div {
+.menu1 div,
+.menu2 div,
+.menu3 div {
   width: 4rem;
   height: 4rem;
   background-color: lightgray;
@@ -355,7 +357,8 @@ html.dark .grid .left-side .list2 ul li a {
   position: relative;
 }
 
-.menu1 span, .menu2 span {
+.menu1 span,
+.menu2 span {
   position: absolute;
   background-color: black;
   width: 50%;
@@ -368,15 +371,18 @@ html.dark .grid .left-side .list2 ul li a {
   transition: 0.5s;
 }
 
-.menu1 div .line1, .menu2 div .line1 {
+.menu1 div .line1,
+.menu2 div .line1 {
   transform: translate(-50%, -0.7rem);
 }
 
-.menu1 div .line2, .menu2 div .line2 {
+.menu1 div .line2,
+.menu2 div .line2 {
   transform: translate(-50%, -50%);
 }
 
-.menu1 div .line3, .menu2 div .line3 {
+.menu1 div .line3,
+.menu2 div .line3 {
   transform: translate(-50%, 0.5rem);
 }
 
@@ -1871,7 +1877,8 @@ html.dark .body-flex2-item2 {
   gap: 1rem;
 }
 
-.calender1-icon, .clock1-icon {
+.calender1-icon,
+.clock1-icon {
   margin-top: 1rem;
 }
 
@@ -1884,17 +1891,20 @@ html.dark .body-flex2-item2 {
   background-color: rgb(240, 240, 240);
 }
 
-.date1, .clock1 {
+.date1,
+.clock1 {
   display: flex;
   flex-direction: column;
 }
 
-.date1-dark, .clock1-dark {
+.date1-dark,
+.clock1-dark {
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-.date1-light, .clock1-light {
+.date1-light,
+.clock1-light {
   font-size: 1.4rem;
 }
 
@@ -2025,7 +2035,7 @@ html.dark .body-part3 {
   font-size: 2rem;
 }
 
-table {
+#myTable {
   background-color: white;
   transition: 1s;
 }
@@ -2058,6 +2068,38 @@ table > tbody > tr > td > .course-item1 > .course-item1-icon1 i {
   padding: 0.8rem 1.3rem;
 }
 
+table > tbody > tr > td > .course-item1 > .course-item1-icon1 #icon2 {
+  color: #ea5455;
+}
+
+table > tbody > tr > td > .course-item1 > .course-item1-icon1 #icon3 {
+  color: goldenrod;
+}
+
+table > tbody > tr > td > .course-item1 > .course-item1-icon1 #icon4 {
+  color: purple;
+}
+
+table > tbody > tr > td > .course-item1 > .course-item1-icon1 #icon5 {
+  color: red;
+}
+
+table > tbody > tr > td > .course-item1 > .course-item1-icon1 #icon6 {
+  color: #ea5455;
+}
+
+table > tbody > tr > td > .course-item1 > .course-item1-icon1 #icon7 {
+  color: blueviolet;
+}
+
+table > tbody > tr > td > .course-item1 > .course-item1-icon1 #icon8 {
+  color: #28c76f;
+}
+
+table > tbody > tr > td > .course-item1 > .course-item1-icon1 #icon9 {
+  color: #ea5455;
+}
+
 table > tbody > tr > td > .course-item1 > .course-item1-data1 {
   display: flex;
   flex-direction: column;
@@ -2065,7 +2107,12 @@ table > tbody > tr > td > .course-item1 > .course-item1-data1 {
 }
 
 table > tbody > tr > td > .course-item1 > .course-item1-data1 > .item1-data1-top > a {
+  transition: 1s;
   color: #5d596c;
+}
+
+html.dark table > tbody > tr > td > .course-item1 > .course-item1-data1 > .item1-data1-top > a {
+  color: white;
 }
 
 table > tbody > tr > td > .course-item1 > .course-item1-data1 > .item1-data1-bottom {
@@ -2497,7 +2544,7 @@ html.dark .part1 {
   .input-search {
     margin-right: 2rem;
   }
-  #Status11, #Status22, #Status33, #Status44, #Status55,
+  #status00, #Status11, #Status22, #Status33, #Status44, #Status55,
   #Status66, #Status77, #Status88, #Status99, #Status1010,
   #Status1111, #Status1212 {
     display: none;
@@ -2572,6 +2619,9 @@ html.dark .part1 {
     top: 46.2%;
     z-index: 999;
     font-weight: 600;
+  }
+  .progressbar1, #progress00 {
+    display: none;
   }
 }
 @media only screen and (max-width: 620px) {

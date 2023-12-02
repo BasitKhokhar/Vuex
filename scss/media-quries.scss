@@ -134,7 +134,7 @@
     .input-search{
         margin-right: 2rem;
     }
-    #Status11,#Status22,#Status33,#Status44,#Status55,
+    #status00,#Status11,#Status22,#Status33,#Status44,#Status55,
     #Status66,#Status77,#Status88,#Status99,#Status1010,
     #Status1111,#Status1212{
     display: none;
@@ -211,6 +211,9 @@
         top: 46.2%;
         z-index: 999;
         font-weight: 600;
+    }
+    .progressbar1,#progress00{
+        display: none;
     } 
 }
 @media only screen and (max-width:620px){

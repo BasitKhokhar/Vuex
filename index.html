@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" id="html1">
+
 <head>
   <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public\css\style.css">
-    <link rel="stylesheet" href="public\css\aos.css">
-    <link rel="icon" href="countries png\IU.png">
-    <title>Academy-Dashboard-App | Vuexy </title>
-    <script src="jquery.js"></script>
-    <script src="public/js/aos.js"></script>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public\css\style.css">
+  <link rel="stylesheet" href="public\css\aos.css">
+  <link rel="icon" href="countries png\IU.png">
+  <title>Academy-Dashboard-App | Vuexy </title>
+  <script src="jquery.js"></script>
+  <script src="public/js/aos.js"></script>
 </head>
+
 <body>
-   <div class="container">
+  <div class="container">
     <div class="grid">
       <div class="left-sidebaar" id="display-sidebar">
         <div class="header-left-side">
           <div class="header-left">
             <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="#7367F0"></path>
-              <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616"></path>
-              <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="#7367F0"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
+                fill="#7367F0"></path>
+              <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616"></path>
+              <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
+                fill="#7367F0"></path>
             </svg>
             <h1>Vuexy</h1>
           </div>
@@ -42,136 +50,289 @@
         </div>
         <!-- sidebar body -->
         <div class="left-side" id="A1">
-          <div class="left-dashboard" >
-           <a href="#"  onclick="dashboardList()">
-            <div class="dashboard-left"><span><i class="bi bi-envelope-open-fill"></i></span></div>
-            <div class="dashboard-right"><span><p>Dashboard</p></span><span><i class="bi bi-chevron-down"></i></span></div>
-           </a>
+          <div class="left-dashboard">
+            <a href="#" onclick="dashboardList()">
+              <div class="dashboard-left"><span><i class="bi bi-envelope-open-fill"></i></span></div>
+              <div class="dashboard-right"><span>
+                  <p>Dashboard</p>
+                </span><span><i class="bi bi-chevron-down"></i></span></div>
+            </a>
           </div>
           <div class="dashboard-list">
-           <ul id="dashboard-list">
-             <li><a href=""><p>Default</p></a></li>
-             <li><a href=""><p>Analytics</p></a></li>
-             <li><a href=""><p>CRM</p></a></li>
-             <li><a href=""><p>E Commerce</p></a></li>
-             <li><a href=""><p>LMS</p></a></li>
-             <li><a href=""><p>Management</p></a></li>
-             <li><a href=""><p>SaaS</p></a></li>
-             <li><a href=""><p>Support desk</p></a></li>
-           </ul>
+            <ul id="dashboard-list">
+              <li><a href="">
+                  <p>Default</p>
+                </a></li>
+              <li><a href="">
+                  <p>Analytics</p>
+                </a></li>
+              <li><a href="">
+                  <p>CRM</p>
+                </a></li>
+              <li><a href="">
+                  <p>E Commerce</p>
+                </a></li>
+              <li><a href="">
+                  <p>LMS</p>
+                </a></li>
+              <li><a href="">
+                  <p>Management</p>
+                </a></li>
+              <li><a href="">
+                  <p>SaaS</p>
+                </a></li>
+              <li><a href="">
+                  <p>Support desk</p>
+                </a></li>
+            </ul>
           </div>
-          
+
           <div class="list2">
-           <ul>
-             <li><a href="#"><span><i class="bi bi-columns"></i></i></span><span><p>Layouts</p></span></a></li>
-             <li><a href="#"><span><i class="bi bi-file-earmark-fill"></i></span><span><p>Front Pages</p></span></a></li>
-             <div class="app"><span><p>Apps</p></span></div>
-             <li onclick="secondList()"><a href="#"><span><i class="bi bi-envelope-open-fill"></i></span><span class="arrows"><span><p>Email</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <div class="email-list">
-               <ul id="a2" class="lists">
-                 <li><a href="#"><p>Inbox</p></a></li>
-                 <li><a href="#"><p>Email detail</p></a></li>
-                 <li><a href="#"><p>Compose</p></a></li>
-               </ul>
+            <ul>
+              <li><a href="#"><span><i class="bi bi-columns"></i></i></span><span>
+                    <p>Layouts</p>
+                  </span></a></li>
+              <li><a href="#"><span><i class="bi bi-file-earmark-fill"></i></span><span>
+                    <p>Front Pages</p>
+                  </span></a></li>
+              <div class="app"><span>
+                  <p>Apps</p>
+                </span></div>
+              <li onclick="secondList()"><a href="#"><span><i class="bi bi-envelope-open-fill"></i></span><span
+                    class="arrows"><span>
+                      <p>Email</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <div class="email-list">
+                <ul id="a2" class="lists">
+                  <li><a href="#">
+                      <p>Inbox</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Email detail</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Compose</p>
+                    </a></li>
+                </ul>
               </div>
-             <li onclick="eventList()"><a href="#"><span><i class="bi bi-calendar2-event-fill"></i></span><span class="arrows"><span><p>Events</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <div class="event-list">
-               <ul id="a3" class="lists" >
-                 <li><a href="#"><p>Create an event</p></a></li>
-                 <li><a href="#"><p>Event detail</p></a></li>
-                 <li><a href="#"><p>Event list</p></a></li>
-               </ul>
+              <li onclick="eventList()"><a href="#"><span><i class="bi bi-calendar2-event-fill"></i></span><span
+                    class="arrows"><span>
+                      <p>Events</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <div class="event-list">
+                <ul id="a3" class="lists">
+                  <li><a href="#">
+                      <p>Create an event</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Event detail</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Event list</p>
+                    </a></li>
+                </ul>
               </div>
-             <li onclick="ecommerceList()"><a href="#"><span><i class="bi bi-cart-dash-fill"></i></span><span class="arrows"><span><p>E Commerce</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <div class="ecommerce-list">
-               <ul id="a4" class="lists" >
-                 <li><a href="#"><p>Product</p></a></li>
-                 <li><a href="#"><p>Orders</p></a></li>
-                 <li><a href="#"><p>Customers</p></a></li>
-                 <li><a href="#"><p>Customers detail</p></a></li>
-                 <li><a href="#"><p>Checkout</p></a></li>
-                 <li><a href="#"><p>Billing</p></a></li>
-                 <li><a href="#"><p>Invoice</p></a></li>
-               </ul>
+              <li onclick="ecommerceList()"><a href="#"><span><i class="bi bi-cart-dash-fill"></i></span><span
+                    class="arrows"><span>
+                      <p>E Commerce</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <div class="ecommerce-list">
+                <ul id="a4" class="lists">
+                  <li><a href="#">
+                      <p>Product</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Orders</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Customers</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Customers detail</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Checkout</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Billing</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Invoice</p>
+                    </a></li>
+                </ul>
               </div>
-             <li onclick="elearningList()"><a href="#"><span><i class="bi bi-mortarboard-fill"></i></span><span class="arrows"><span><p>E learning</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <div class="elearning-list">
-               <ul id="a5" class="lists" >
-                 <li><a href="#"><p>Course</p></a></li>
-                 <li><a href="#"><p>Student Overview</p></a></li>
-                 <li><a href="#"><p>Trainer profile</p></a></li>
-               </ul>
+              <li onclick="elearningList()"><a href="#"><span><i class="bi bi-mortarboard-fill"></i></span><span
+                    class="arrows"><span>
+                      <p>E learning</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <div class="elearning-list">
+                <ul id="a5" class="lists">
+                  <li><a href="#">
+                      <p>Course</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Student Overview</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Trainer profile</p>
+                    </a></li>
+                </ul>
               </div>
-             <li><a href=""><span><i class="bi bi-trello"></i></span><span><p>Kanban</p></span></a></li>
-             <li onclick="socialList()"><a href="#"><span><i class="bi bi-share-fill"></i></span><span class="arrows"><span><p>Social</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <div class="social-list">
-               <ul id="a6" class="lists" >
-                 <li><a href="#"><p>Feed</p></a></li>
-                 <li><a href="#"><p>Activity log</p></a></li>
-                 <li><a href="#"><p>Notifications</p></a></li>
-                 <li><a href="#"><p>Followers</p></a></li>
-               </ul>
+              <li><a href=""><span><i class="bi bi-trello"></i></span><span>
+                    <p>Kanban</p>
+                  </span></a></li>
+              <li onclick="socialList()"><a href="#"><span><i class="bi bi-share-fill"></i></span><span
+                    class="arrows"><span>
+                      <p>Social</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <div class="social-list">
+                <ul id="a6" class="lists">
+                  <li><a href="#">
+                      <p>Feed</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Activity log</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Notifications</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Followers</p>
+                    </a></li>
+                </ul>
               </div>
-             <li onclick="supportdeskList()"><a href="#"><span><i class="bi bi-window-desktop"></i></span><span class="arrows"><span><p>Suppoert desk</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <div class="supooert-desk-list">
-               <ul id="a7" class="lists" >
-                 <li><a href="#"><p>Table view</p></a></li>
-                 <li><a href="#"><p>Card view</p></a></li>
-                 <li><a href="#"><p>Contacts</p></a></li>
-                 <li><a href="#"><p>Contact details</p></a></li>
-                 <li><a href="#"><p>Tickets preview</p></a></li>
-                 <li><a href="#"><p>Quick Links</p></a></li>
-                 <li><a href="#"><p>Reports</p></a></li>
-               </ul>
+              <li onclick="supportdeskList()"><a href="#"><span><i class="bi bi-window-desktop"></i></span><span
+                    class="arrows"><span>
+                      <p>Suppoert desk</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <div class="supooert-desk-list">
+                <ul id="a7" class="lists">
+                  <li><a href="#">
+                      <p>Table view</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Card view</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Contacts</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Contact details</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Tickets preview</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Quick Links</p>
+                    </a></li>
+                  <li><a href="#">
+                      <p>Reports</p>
+                    </a></li>
+                </ul>
               </div>
-             <div class="pages"><span><p>Pages</p></span></div>
-             <li><a href=""><span><i class="bi bi-flag-fill"></i></span><span><p>Starter</p></span></a></li>
-             <li><a href=""><span><i class="bi bi-globe"></i></span><span><p>Landing</p></span></a></li>
-             <li><a href=""><span><i class="bi bi-lock-fill"></i></span><span class="arrows"><span><p>Authentication</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-person-fill"></i></span><span class="arrows"><span><p>User</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-tags-fill"></i></span><span class="arrows"><span><p>Pricing</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-question-circle-fill"></i></span><span class="arrows"><span><p>Faq</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-exclamation-triangle-fill"></i></span><span class="arrows"><span><p>Errors</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-gender-neuter"></i></span><span class="arrows"><span><p>Miscellinious</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <div class="modules"><span><p>Modules</p></span></div>
-             <li><a href=""><span><i class="bi bi-file-earmark-fill"></i></span><span class="arrows"><span><p>Forms</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-table"></i></span><span class="arrows"><span><p>Tables</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-graph-up-arrow"></i></span><span class="arrows"><span><p>Charts</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-app-indicator"></i></span><span class="arrows"><span><p>Icons</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-map-fill"></i></span><span class="arrows"><span><p>Maps</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-puzzle-fill"></i></span><span class="arrows"><span><p>Components</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-fire"></i></span><span class="arrows"><span><p>Utilities</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-window-split"></i></span><span><p>Widgets</p></span></a></li>
-             <li><a href=""><span><i class="bi bi-stack"></i></span><span class="arrows"><span><p>Multi level</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <div class="documentation"><span><p>Documentation</p></span></div>
-             <li><a href=""><span><i class="bi bi-rocket-takeoff-fill"></i></span><span><p>Getting started</p></span></a></li>
-             <li><a href=""><span><i class="bi bi-wrench-adjustable"></i></span><span class="arrows"><span><p>Customization</p></span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
-             <li><a href=""><span><i class="bi bi-question-circle-fill"></i></span><span><p>Faq</p></span></a></li>
-             <li><a href=""><span><i class="bi bi-palette-fill"></i></span><span><p>Design File</p></span></a></li>
-             <li><a href=""><span><i class="bi bi-share-fill"></i></span><span><p>Changelog</p></span></a></li>
-           </ul>
+              <div class="pages"><span>
+                  <p>Pages</p>
+                </span></div>
+              <li><a href=""><span><i class="bi bi-flag-fill"></i></span><span>
+                    <p>Starter</p>
+                  </span></a></li>
+              <li><a href=""><span><i class="bi bi-globe"></i></span><span>
+                    <p>Landing</p>
+                  </span></a></li>
+              <li><a href=""><span><i class="bi bi-lock-fill"></i></span><span class="arrows"><span>
+                      <p>Authentication</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-person-fill"></i></span><span class="arrows"><span>
+                      <p>User</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-tags-fill"></i></span><span class="arrows"><span>
+                      <p>Pricing</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-question-circle-fill"></i></span><span class="arrows"><span>
+                      <p>Faq</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-exclamation-triangle-fill"></i></span><span class="arrows"><span>
+                      <p>Errors</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-gender-neuter"></i></span><span class="arrows"><span>
+                      <p>Miscellinious</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <div class="modules"><span>
+                  <p>Modules</p>
+                </span></div>
+              <li><a href=""><span><i class="bi bi-file-earmark-fill"></i></span><span class="arrows"><span>
+                      <p>Forms</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-table"></i></span><span class="arrows"><span>
+                      <p>Tables</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-graph-up-arrow"></i></span><span class="arrows"><span>
+                      <p>Charts</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-app-indicator"></i></span><span class="arrows"><span>
+                      <p>Icons</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-map-fill"></i></span><span class="arrows"><span>
+                      <p>Maps</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-puzzle-fill"></i></span><span class="arrows"><span>
+                      <p>Components</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-fire"></i></span><span class="arrows"><span>
+                      <p>Utilities</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-window-split"></i></span><span>
+                    <p>Widgets</p>
+                  </span></a></li>
+              <li><a href=""><span><i class="bi bi-stack"></i></span><span class="arrows"><span>
+                      <p>Multi level</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <div class="documentation"><span>
+                  <p>Documentation</p>
+                </span></div>
+              <li><a href=""><span><i class="bi bi-rocket-takeoff-fill"></i></span><span>
+                    <p>Getting started</p>
+                  </span></a></li>
+              <li><a href=""><span><i class="bi bi-wrench-adjustable"></i></span><span class="arrows"><span>
+                      <p>Customization</p>
+                    </span><span><i class="bi bi-chevron-down"></i></span></span></a></li>
+              <li><a href=""><span><i class="bi bi-question-circle-fill"></i></span><span>
+                    <p>Faq</p>
+                  </span></a></li>
+              <li><a href=""><span><i class="bi bi-palette-fill"></i></span><span>
+                    <p>Design File</p>
+                  </span></a></li>
+              <li><a href=""><span><i class="bi bi-share-fill"></i></span><span>
+                    <p>Changelog</p>
+                  </span></a></li>
+            </ul>
           </div>
-       </div>
-     
+        </div>
+
       </div>
       <!-- body right side -->
       <div class="right-side">
-         
-         <span class="body-setting-icon" onclick="opensetting()"><i id="bodySetting" class="bi bi-gear"></i></span>
-         <div class="popup" id="settingdata">
+
+        <span class="body-setting-icon" onclick="opensetting()"><i id="bodySetting" class="bi bi-gear"></i></span>
+        <div class="popup" id="settingdata">
           <div class="popup-top">
-           <h2>Template Customizer</h2>
-           <i onclick="closesetting()" class="bi bi-x"></i>
+            <h2>Template Customizer</h2>
+            <i onclick="closesetting()" class="bi bi-x"></i>
           </div>
           <div class="popup-part1">
-            <div class="popup-part1-p1"><p>Theming</p></div>
-            <div class="popup-part1-h1"><h2>Style(Modes)</h2></div>
+            <div class="popup-part1-p1">
+              <p>Theming</p>
+            </div>
+            <div class="popup-part1-h1">
+              <h2>Style(Modes)</h2>
+            </div>
             <div class="popup-part1-flex1">
               <span class="flex1-item1">
                 <span class="flex1-item1-icon"><i class="bi bi-sun"></i></span><span class="flex1-item1-p1">Light</span>
               </span>
               <span class="flex1-item1">
-                <span class="flex1-item1-icon"><i class="bi bi-cloud-sun"></i></span><span class="flex1-item1-p1">Dark</span>
+                <span class="flex1-item1-icon"><i class="bi bi-cloud-sun"></i></span><span
+                  class="flex1-item1-p1">Dark</span>
               </span>
               <span class="flex1-item1">
                 <span class="flex1-item1-icon"><i class="bi bi-tv"></i></span><span class="flex1-item1-p1">System</span>
@@ -179,33 +340,46 @@
             </div>
           </div>
           <div class="popup-part1">
-            <div class="popup-part1-h1"><h2>Themes</h2></div>
+            <div class="popup-part1-h1">
+              <h2>Themes</h2>
+            </div>
             <div class="popup-part1-flex1">
               <span class="flex1-item1">
-                <span class="flex1-item1-icon"><i class="bi bi-sun"></i></span><span class="flex1-item1-p1">Default</span>
+                <span class="flex1-item1-icon"><i class="bi bi-sun"></i></span><span
+                  class="flex1-item1-p1">Default</span>
               </span>
               <span class="flex1-item1">
-                <span class="flex1-item1-icon"><i class="bi bi-cloud-sun"></i></span><span class="flex1-item1-p1">Bordered</span>
+                <span class="flex1-item1-icon"><i class="bi bi-cloud-sun"></i></span><span
+                  class="flex1-item1-p1">Bordered</span>
               </span>
               <span class="flex1-item1">
-                <span class="flex1-item1-icon"><i class="bi bi-tv"></i></span><span class="flex1-item1-p1">Semi Dark</span>
+                <span class="flex1-item1-icon"><i class="bi bi-tv"></i></span><span class="flex1-item1-p1">Semi
+                  Dark</span>
               </span>
             </div>
-          </div>  
+          </div>
           <div class="popup-part1">
-            <div class="popup-part1-p1"><p>Layouts</p></div>
-            <div class="popup-part1-h1"><h2>Menu(Navigation)</h2></div>
+            <div class="popup-part1-p1">
+              <p>Layouts</p>
+            </div>
+            <div class="popup-part1-h1">
+              <h2>Menu(Navigation)</h2>
+            </div>
             <div class="popup-part1-flex1">
               <span class="flex1-item1">
-                <span class="flex1-item1-icon"><i class="bi bi-sun"></i></span><span class="flex1-item1-p1">Expanded</span>
+                <span class="flex1-item1-icon"><i class="bi bi-sun"></i></span><span
+                  class="flex1-item1-p1">Expanded</span>
               </span>
               <span class="flex1-item1">
-                <span class="flex1-item1-icon"><i class="bi bi-cloud-sun"></i></span><span class="flex1-item1-p1">Collapsed</span>
+                <span class="flex1-item1-icon"><i class="bi bi-cloud-sun"></i></span><span
+                  class="flex1-item1-p1">Collapsed</span>
               </span>
             </div>
-          </div>       
+          </div>
           <div class="popup-part1">
-            <div class="popup-part1-h1"><h2>Navbar Type</h2></div>
+            <div class="popup-part1-h1">
+              <h2>Navbar Type</h2>
+            </div>
             <div class="popup-part1-flex1">
               <span class="flex1-item1">
                 <span class="flex1-item1-icon"><i class="bi bi-sun"></i></span><span class="flex1-item1-p1">Light</span>
@@ -213,1032 +387,1251 @@
             </div>
           </div>
           <div class="popup-part1">
-            <div class="popup-part1-h1"><h2>Navbar Type</h2></div>
+            <div class="popup-part1-h1">
+              <h2>Navbar Type</h2>
+            </div>
             <div class="popup-part1-flex1">
               <span class="flex1-item1">
                 <span class="flex1-item1-icon"><i class="bi bi-sun"></i></span><span class="flex1-item1-p1">Light</span>
               </span>
               <span class="flex1-item1">
-                <span class="flex1-item1-icon"><i class="bi bi-cloud-sun"></i></span><span class="flex1-item1-p1">Dark</span>
+                <span class="flex1-item1-icon"><i class="bi bi-cloud-sun"></i></span><span
+                  class="flex1-item1-p1">Dark</span>
               </span>
               <span class="flex1-item1">
                 <span class="flex1-item1-icon"><i class="bi bi-tv"></i></span><span class="flex1-item1-p1">System</span>
               </span>
             </div>
           </div>
-         </div>
+        </div>
         <!-- buy now button -->
         <span class="body-button"><button id="bodybutton">Buy Now</button></span>
         <!-- rightside container -->
-       <div class="right-side-container"> 
-         
-        <div class="right-topbar">
-          <div class="menu1" id="menu11">
-            <div>
-             <span class="line1"></span>
-             <span class="line2"></span>
-             <span class="line3"></span>
+        <div class="right-side-container">
+
+          <div class="right-topbar">
+            <div class="menu1" id="menu11">
+              <div>
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+              </div>
+            </div>
+            <div class="searchbar-data">
+              <div class="search-btn" onclick="opensearchbar()">
+                <button class="search-icon"><i class="bi bi-search"></i>
+                  <p>Search (Ctrl+/)</p>
+                </button>
+              </div>
+              <div class="topbar-right-data">
+                <ul>
+                  <li class="lang"><i class="bi bi-translate" id="langicon"></i></li>
+                  <div class="lang-tooltip-data1" id="lang1" id="lang11">
+                    <div class="languages"><span>English</span></div>
+                    <div class="languages"><span>French</span></div>
+                    <div class="languages"><span>Urdu</span></div>
+                    <div class="languages"><span>Arabic</span></div>
+                  </div>
+
+                  <li class="moon"><span onclick="darklightbutton()"><i class="bi bi-brightness-high-fill"
+                        id="moon1"></i></span></li>
+                  <div class="d-l-mode-tooltip-data" id="dark-light-tooltip">
+                    <span>Light mode</span>
+                  </div>
+                  <div class="d-l-mode-tooltip-data1" id="d-l-d2" onclick="closedarklightmode()">
+                    <div class="d-l-d1" onclick="light()"><span><i class="bi bi-brightness-high-fill"></i></span>Light
+                      Mode<span></span></div>
+                    <div class="d-l-d1" onclick="dark()"><span><i class="bi bi-moon"></i></span>Dark Mode<span></span>
+                    </div>
+                    <div class="d-l-d1"><span><i class="bi bi-display"></i></span>System<span></span></div>
+                  </div>
+
+                  <li class="shortcut" onclick=" displayshrtcutdata()"><i class="bi bi-ui-checks-grid"
+                      id="shortcuticon"></i></li>
+                  <div class="shortcut-toolip-data" id="shortcutdata" onclick="closeshortcutdata()">
+                    <div class="shortcut-header">
+                      <span>Shortcuts</span><span><i class="bi bi-ui-checks-grid"></i></span>
+                    </div>
+                    <div class="shortcut-body">
+                      <div class="body-item1">
+                        <span><i class="bi bi-calendar4"></i></span>
+                        <span class="shortcut-body-h2">Calender</span>
+                        <span class="shortcut-body-p">Appoinments</span>
+                      </div>
+                      <div class="body-item1">
+                        <span><i class="bi bi-file-earmark"></i></span>
+                        <span class="shortcut-body-h2">Invoice App</span>
+                        <span class="shortcut-body-p">Manage Accounts</span>
+                      </div>
+                      <div class="body-item1">
+                        <span><i class="bi bi-people"></i></span>
+                        <span class="shortcut-body-h2">User App</span>
+                        <span class="shortcut-body-p">Manage Users</span>
+                      </div>
+                      <div class="body-item1">
+                        <span><i class="bi bi-lock"></i></span>
+                        <span class="shortcut-body-h2">Role Management</span>
+                        <span class="shortcut-body-p">Permissions</span>
+                      </div>
+                      <div class="body-item1">
+                        <span><i class="bi bi-bar-chart"></i></span>
+                        <span class="shortcut-body-h2">Dashboard</span>
+                        <span class="shortcut-body-p">User Profile</span>
+                      </div>
+                      <div class="body-item1">
+                        <span><i class="bi bi-calendar4"></i></span>
+                        <span class="shortcut-body-h2">Setting</span>
+                        <span class="shortcut-body-p">Account Setting</span>
+                      </div>
+                    </div>
+                  </div>
+                  <li class="bell-icon" onclick="opentbelltooltipdata()"><i class="bi bi-bell-fill" id="bellicon"></i>
+                  </li>
+                  <div class="bell-tooltip-data" id="bell-tooltip">
+                    <div class="bell-data-top">
+                      <span class="bell-data-top-h1">Notification</span><span class="bell-envelope-icon"><i
+                          class="bi bi-envelope-open"></i></span>
+                    </div>
+                    <div class="bell-scroll-container">
+                      <div class="bell-scroll-item1" id="bell-data1">
+                        <div class="bell-scroll-item1-L">
+                          <span class="scroll-item1-img"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg"></span>
+                          <span class="scroll-item1-img-data">
+                            <span class="scroll-item1-data-dark">Congratulation Basit Khokhar</span>
+                            <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
+                            <span class="scroll-item1-data-time">5h ago</span>
+                          </span>
+                        </div>
+                        <div class="bell-scroll-item1-L" onclick="opentbelldata1()"><i class="bi bi-x"></i></div>
+                      </div>
+                      <div class="bell-scroll-item1" id="bell-data2">
+                        <div class="bell-scroll-item1-L">
+                          <span class="scroll-item1-img"><img src="pics\girl1.jpg" alt="girl1.jpg"></span>
+                          <span class="scroll-item1-img-data">
+                            <span class="scroll-item1-data-dark">Congratulation Lettie</span>
+                            <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
+                            <span class="scroll-item1-data-time">5h ago</span>
+                          </span>
+                        </div>
+                        <div class="bell-scroll-item1-L" onclick="opentbelldata2()"><i class="bi bi-x"></i></div>
+                      </div>
+                      <div class="bell-scroll-item1" id="bell-data3">
+                        <div class="bell-scroll-item1-L">
+                          <span class="scroll-item1-img"><img src="pics\IMG_0836.jpg" alt="IMG_0836.jpg"></span>
+                          <span class="scroll-item1-img-data">
+                            <span class="scroll-item1-data-dark">Congratulation Lettie</span>
+                            <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
+                            <span class="scroll-item1-data-time">5h ago</span>
+                          </span>
+                        </div>
+                        <div class="bell-scroll-item1-L" onclick="opentbelldata3()"><i class="bi bi-x"></i></div>
+                      </div>
+                      <div class="bell-scroll-item1" id="bell-data4">
+                        <div class="bell-scroll-item1-L">
+                          <span class="scroll-item1-img"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg"></span>
+                          <span class="scroll-item1-img-data">
+                            <span class="scroll-item1-data-dark">Congratulation Lettie</span>
+                            <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
+                            <span class="scroll-item1-data-time">5h ago</span>
+                          </span>
+                        </div>
+                        <div class="bell-scroll-item1-L" onclick="opentbelldata4()"><i class="bi bi-x"></i></div>
+                      </div>
+                      <div class="bell-scroll-item1" id="bell-data5">
+                        <div class="bell-scroll-item1-L">
+                          <span class="scroll-item1-img"><img src="pics\1.png" alt="1.png"></span>
+                          <span class="scroll-item1-img-data">
+                            <span class="scroll-item1-data-dark">Congratulation Lettie</span>
+                            <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
+                            <span class="scroll-item1-data-time">5h ago</span>
+                          </span>
+                        </div>
+                        <div class="bell-scroll-item1-L" onclick="opentbelldata5()"><i class="bi bi-x"></i></div>
+                      </div>
+                      <div class="bell-scroll-item1" id="bell-data6">
+                        <div class="bell-scroll-item1-L">
+                          <span class="scroll-item1-img"><img src="pics\girl1.jpg" alt="girl1.jpg"></span>
+                          <span class="scroll-item1-img-data">
+                            <span class="scroll-item1-data-dark">Congratulation Lettie</span>
+                            <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
+                            <span class="scroll-item1-data-time">5h ago</span>
+                          </span>
+                        </div>
+                        <div class="bell-scroll-item1-L" onclick="opentbelldata6()"><i class="bi bi-x"></i></div>
+                      </div>
+                      <div class="bell-scroll-item1" id="bell-data7">
+                        <div class="bell-scroll-item1-L">
+                          <span class="scroll-item1-img"><img src="pics\top-girl.jpg" alt="top-girl.jpg"></span>
+                          <span class="scroll-item1-img-data">
+                            <span class="scroll-item1-data-dark">Congratulation Lettie</span>
+                            <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
+                            <span class="scroll-item1-data-time">5h ago</span>
+                          </span>
+                        </div>
+                        <div class="bell-scroll-item1-L" onclick="opentbelldata7()"><i class="bi bi-x"></i></div>
+                      </div>
+                    </div>
+                    <div class="bell-data-footer">
+                      <button class="bell-footer-btn1">View All Notifications</button>
+                    </div>
+                  </div>
+                  <li class="header-pic" onclick="openpopup()"><span class="top-girl-image"><img src="pics\IMG_0202.jpg"
+                        alt="IMG_0202.jpg" id="iamge1"></span></li>
+                  <div class="pic-tooltip-data" id="admindata" onclick="closepopup()">
+                    <div class="admin"><span class="top-boy-image"><img src="pics\IMG_0202.jpg"
+                          alt="IMG_0202.jpg"></span><span
+                        class="admin-name"><span>Basit</span><span>Khokhar</span></span></div>
+                    <div class="admin1">
+                      <span class="admin-bx2"><span><i class="bi bi-person-check"></i></span><span>My
+                          Profile</span></span>
+                      <span class="admin-bx2"><span><i class="bi bi-gear"></i></span><span>Setting</span></span>
+                      <span class="admin-bx2"><span><i class="bi bi-calendar4"></i></span><span>Billing</span></span>
+                    </div>
+                    <div class="admin1">
+                      <span class="admin-bx2"><span><i class="bi bi-question-circle"></i></span><span>FAQ</span></span>
+                      <span class="admin-bx2"><span><i
+                            class="bi bi-currency-dollar"></i></span><span>Pricing</span></span>
+                    </div>
+                    <div class="admin1" style="border-bottom: none;">
+                      <span class="admin-bx2"><span><i class="bi bi-box-arrow-right"></i></span><span>Log
+                          Out</span></span>
+                    </div>
+
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="input-search" id="search">
+              <div id="searchicon">
+                <input type="text" placeholder="Search" id="txt">
+                <div onclick="closesearchbar()"><i class="bi bi-x"></i></div>
+              </div>
             </div>
           </div>
-         <div class="searchbar-data">
-          <div class="search-btn" onclick="opensearchbar()">
-            <button class="search-icon"><i class="bi bi-search"></i><p>Search (Ctrl+/)</p></button>
+          <span class="blur"></span>
+          <div class="main-h1">
+            <h1>Welcome back, Felecia</h1>
           </div>
-          <div class="topbar-right-data" >
-            <ul>
-                <li class="lang"><i class="bi bi-translate" id="langicon"></i></li>
-                <div class="lang-tooltip-data1" id="lang1" id="lang11">
-                  <div class="languages"><span>English</span></div>
-                  <div class="languages"><span>French</span></div>
-                  <div class="languages"><span>Urdu</span></div>
-                  <div class="languages"><span>Arabic</span></div>
+          <div class="main-p1">
+            <p>Your progress this week is Awesome. let's keep it up and get a lot of points reward !</p>
+          </div>
+          <div class="main-icons">
+            <div class="main-item1">
+              <span class="main-item1-icon"><i class="bi bi-display"></i></span>
+              <span class="timer">
+                <span class="timer-p">Hours Spent</span>
+                <span class="timer-N">34h</span>
+              </span>
+            </div>
+            <div class="main-item2">
+              <span class="main-item2-icon"><i class="bi bi-lightbulb"></i></span>
+              <span class="timer2">
+                <span class="timer-p2">Results</span>
+                <span class="timer-N2">82%</span>
+              </span>
+            </div>
+            <div class="main-item3">
+              <span class="main-item3-icon"><i class="bi bi-gear"></i></span>
+              <span class="timer3">
+                <span class="timer-p3">Course Completed</span>
+                <span class="timer-N3">14</span>
+              </span>
+            </div>
+          </div>
+          <div class="body-flex1">
+            <div class="left-flex1" data-aos="fade-up">
+              <div class="L-flex1-top">
+                <div class="L-flex1-top-left">Topic you are interested in</div>
+                <div class="L-flex1-top-right" onclick="opentdots1data()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
-
-                <li class="moon"><span onclick="darklightbutton()"><i class="bi bi-brightness-high-fill" id="moon1"></i></span></li>
-                <div class="d-l-mode-tooltip-data" id="dark-light-tooltip">
-                  <span>Light mode</span>
+                <div class="dots1-tooltip-data" id="dots1-data" onclick="closedots1data()">
+                  <div class="dots1"><span>Highest Views</span></div>
+                  <div class="dots1"><span>See All</span></div>
                 </div>
-                <div class="d-l-mode-tooltip-data1" id="d-l-d2" onclick="closedarklightmode()">
-                  <div class="d-l-d1" onclick="light()"><span><i class="bi bi-brightness-high-fill"></i></span>Light Mode<span></span></div>
-                  <div class="d-l-d1" onclick="dark()"><span><i class="bi bi-moon"></i></span>Dark Mode<span></span></div>
-                  <div class="d-l-d1"><span><i class="bi bi-display"></i></span>System<span></span></div>
-                </div>
-            
-                <li class="shortcut" onclick=" displayshrtcutdata()"><i class="bi bi-ui-checks-grid" id="shortcuticon"></i></li>
-                <div class="shortcut-toolip-data" id="shortcutdata" onclick="closeshortcutdata()">
-                  <div class="shortcut-header">
-                    <span>Shortcuts</span><span><i class="bi bi-ui-checks-grid"></i></span>
-                  </div>
-                  <div class="shortcut-body">
-                    <div class="body-item1">
-                      <span><i class="bi bi-calendar4"></i></span>
-                      <span class="shortcut-body-h2">Calender</span>
-                      <span class="shortcut-body-p">Appoinments</span>
-                    </div>
-                    <div class="body-item1">
-                      <span><i class="bi bi-file-earmark"></i></span>
-                      <span class="shortcut-body-h2">Invoice App</span>
-                      <span class="shortcut-body-p">Manage Accounts</span>
-                    </div>
-                    <div class="body-item1">
-                      <span><i class="bi bi-people"></i></span>
-                      <span class="shortcut-body-h2">User App</span>
-                      <span class="shortcut-body-p">Manage Users</span>
-                    </div>
-                    <div class="body-item1">
-                      <span><i class="bi bi-lock"></i></span>
-                      <span class="shortcut-body-h2">Role Management</span>
-                      <span class="shortcut-body-p">Permissions</span>
-                    </div>
-                    <div class="body-item1">
-                      <span><i class="bi bi-bar-chart"></i></span>
-                      <span class="shortcut-body-h2">Dashboard</span>
-                      <span class="shortcut-body-p">User Profile</span>
-                    </div>
-                    <div class="body-item1">
-                      <span><i class="bi bi-calendar4"></i></span>
-                      <span class="shortcut-body-h2">Setting</span>
-                      <span class="shortcut-body-p">Account Setting</span>
-                    </div>
-                  </div>
-                </div>
-                <li class="bell-icon" onclick="opentbelltooltipdata()"><i class="bi bi-bell-fill" id="bellicon"></i></li>
-                  <div class="bell-tooltip-data" id="bell-tooltip">
-                     <div class="bell-data-top">
-                      <span class="bell-data-top-h1">Notification</span><span class="bell-envelope-icon"><i class="bi bi-envelope-open"></i></span>
-                     </div>  
-                     <div class="bell-scroll-container">
-                        <div class="bell-scroll-item1" id="bell-data1">
-                          <div class="bell-scroll-item1-L">
-                            <span class="scroll-item1-img"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg"></span>
-                            <span class="scroll-item1-img-data">
-                              <span class="scroll-item1-data-dark">Congratulation Basit Khokhar</span>
-                              <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
-                              <span class="scroll-item1-data-time">5h ago</span>
-                            </span>
-                          </div>
-                          <div class="bell-scroll-item1-L" onclick="opentbelldata1()"><i class="bi bi-x"></i></div>
-                        </div>
-                        <div class="bell-scroll-item1" id="bell-data2">
-                          <div class="bell-scroll-item1-L" >
-                            <span class="scroll-item1-img"><img src="pics\girl1.jpg" alt="girl1.jpg"></span>
-                            <span class="scroll-item1-img-data">
-                              <span class="scroll-item1-data-dark">Congratulation Lettie</span>
-                              <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
-                              <span class="scroll-item1-data-time">5h ago</span>
-                            </span>
-                          </div>
-                          <div class="bell-scroll-item1-L"  onclick="opentbelldata2()"><i class="bi bi-x"></i></div>
-                        </div>
-                        <div class="bell-scroll-item1" id="bell-data3">
-                          <div class="bell-scroll-item1-L" >
-                            <span class="scroll-item1-img"><img src="pics\IMG_0836.jpg" alt="IMG_0836.jpg"></span>
-                            <span class="scroll-item1-img-data">
-                              <span class="scroll-item1-data-dark">Congratulation Lettie</span>
-                              <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
-                              <span class="scroll-item1-data-time">5h ago</span>
-                            </span>
-                          </div>
-                          <div class="bell-scroll-item1-L" onclick="opentbelldata3()"><i class="bi bi-x"></i></div>
-                        </div>
-                        <div class="bell-scroll-item1" id="bell-data4">
-                          <div class="bell-scroll-item1-L" >
-                            <span class="scroll-item1-img"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg"></span>
-                            <span class="scroll-item1-img-data">
-                              <span class="scroll-item1-data-dark">Congratulation Lettie</span>
-                              <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
-                              <span class="scroll-item1-data-time">5h ago</span>
-                            </span>
-                          </div>
-                          <div class="bell-scroll-item1-L" onclick="opentbelldata4()"><i class="bi bi-x"></i></div>
-                        </div>
-                        <div class="bell-scroll-item1" id="bell-data5">
-                          <div class="bell-scroll-item1-L" >
-                            <span class="scroll-item1-img"><img src="pics\1.png" alt="1.png"></span>
-                            <span class="scroll-item1-img-data">
-                              <span class="scroll-item1-data-dark">Congratulation Lettie</span>
-                              <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
-                              <span class="scroll-item1-data-time">5h ago</span>
-                            </span>
-                          </div>
-                          <div class="bell-scroll-item1-L" onclick="opentbelldata5()"><i class="bi bi-x"></i></div>
-                        </div>
-                        <div class="bell-scroll-item1" id="bell-data6">
-                          <div class="bell-scroll-item1-L" >
-                            <span class="scroll-item1-img"><img src="pics\girl1.jpg" alt="girl1.jpg"></span>
-                            <span class="scroll-item1-img-data">
-                              <span class="scroll-item1-data-dark">Congratulation Lettie</span>
-                              <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
-                              <span class="scroll-item1-data-time">5h ago</span>
-                            </span>
-                          </div>
-                          <div class="bell-scroll-item1-L" onclick="opentbelldata6()"><i class="bi bi-x"></i></div>
-                        </div>
-                        <div class="bell-scroll-item1" id="bell-data7">
-                          <div class="bell-scroll-item1-L" >
-                            <span class="scroll-item1-img"><img src="pics\top-girl.jpg" alt="top-girl.jpg"></span>
-                            <span class="scroll-item1-img-data">
-                              <span class="scroll-item1-data-dark">Congratulation Lettie</span>
-                              <span class="scroll-item1-data-light">Won the monthly best seller<br> gold badge</span>
-                              <span class="scroll-item1-data-time">5h ago</span>
-                            </span>
-                          </div>
-                          <div class="bell-scroll-item1-L" onclick="opentbelldata7()"><i class="bi bi-x"></i></div>
-                        </div>
-                     </div>
-                     <div class="bell-data-footer">
-                      <button class="bell-footer-btn1">View All Notifications</button>
-                     </div>
-                  </div>
-                <li class="header-pic" onclick="openpopup()" ><span class="top-girl-image"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg" id="iamge1"></span></li>
-                <div class="pic-tooltip-data" id="admindata" onclick="closepopup()">
-                  <div class="admin" ><span class="top-boy-image"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg"></span><span class="admin-name"><span>Basit</span><span>Khokhar</span></span></div>
-                  <div class="admin1">
-                    <span class="admin-bx2"><span><i class="bi bi-person-check"></i></span><span>My Profile</span></span>
-                    <span class="admin-bx2"><span><i class="bi bi-gear"></i></span><span>Setting</span></span>
-                    <span class="admin-bx2"><span><i class="bi bi-calendar4"></i></span><span>Billing</span></span>
-                  </div>
-                  <div class="admin1">
-                    <span class="admin-bx2"><span><i class="bi bi-question-circle"></i></span><span>FAQ</span></span>
-                    <span class="admin-bx2"><span><i class="bi bi-currency-dollar"></i></span><span>Pricing</span></span>
-                  </div>
-                  <div class="admin1" style="border-bottom: none;">
-                    <span class="admin-bx2" ><span><i class="bi bi-box-arrow-right"></i></span><span>Log Out</span></span>
-                  </div>
-               
-                </div>
-            </ul>
-          </div>
-         </div>
-         <div class="input-search" id="search">
-          <div id="searchicon">
-           <input type="text" placeholder="Search" id="txt"><div onclick="closesearchbar()"><i class="bi bi-x" ></i></div>
-          </div>
-         </div> 
-        </div>
-        <span class="blur"></span>
-        <div class="main-h1"><h1>Welcome back, Felecia</h1></div>
-        <div class="main-p1"><p>Your progress this week is Awesome. let's keep it up and get a lot of points reward !</p></div>
-        <div class="main-icons">
-          <div class="main-item1">
-            <span class="main-item1-icon"><i class="bi bi-display"></i></span>
-            <span class="timer">
-              <span class="timer-p">Hours Spent</span>
-              <span class="timer-N">34h</span>
-            </span>
-          </div>
-          <div class="main-item2">
-            <span class="main-item2-icon"><i class="bi bi-lightbulb"></i></span>
-            <span class="timer2">
-              <span class="timer-p2">Results</span>
-              <span class="timer-N2">82%</span>
-            </span>
-          </div>
-          <div class="main-item3">
-            <span class="main-item3-icon"><i class="bi bi-gear"></i></span>
-            <span class="timer3">
-              <span class="timer-p3">Course Completed</span>
-              <span class="timer-N3">14</span>
-            </span>
-          </div>
-        </div>
-        <div class="body-flex1">
-          <div class="left-flex1" data-aos="fade-up">
-            <div class="L-flex1-top">
-              <div class="L-flex1-top-left">Topic you are interested in</div>
-              <div class="L-flex1-top-right" onclick="opentdots1data()">
-                <span></span>
-                <span></span>
-                <span></span>
               </div>
-              <div class="dots1-tooltip-data" id="dots1-data" onclick="closedots1data()" >
-                <div class="dots1"><span>Highest Views</span></div>
-                <div class="dots1"><span>See All</span></div>         
+              <div class="garph-lists">
+                <ul>
+                  <li class="garph-list-item1"><span class="garph-number6">6</span><span class="garph-p6">UI
+                      Design</span></li>
+                  <span class="garph-list-item1-tooltip">
+                    <p>70%</p>
+                  </span>
+                  <li class="garph-list-item2"><span class="garph-number5">5</span><span class="garph-p5">UX
+                      Design</span></li>
+                  <li class="garph-list-item3"><span class="garph-number4">4</span><span class="garph-p4">Music</span>
+                  </li>
+                  <li class="garph-list-item4"><span class="garph-number3">3</span><span
+                      class="garph-p3">Animation</span></li>
+                  <li class="garph-list-item5"><span class="garph-number2">2</span><span class="garph-p2">React</span>
+                  </li>
+                  <li class="garph-list-item6"><span class="garph-number1">1</span><span class="garph-p1">SEO</span>
+                  </li>
+                </ul>
               </div>
-            </div>         
-            <div class="garph-lists">
+            </div>
+            <div class="right-flex1">
+              <div class="R-flex1-top" data-aos="fade-up">
+                <div class="R-flex1-top-left">Popular Instructors</div>
+                <div class="R-flex1-top-right" onclick="opentdots2data()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="dots2-tooltip-data" id="dots2-data" onclick="closedots2data()">
+                  <div class="dots1"><span>Select All</span></div>
+                  <div class="dots1"><span>Refresh</span></div>
+                  <div class="dots1"><span>Share</span></div>
+                </div>
+              </div>
+              <div class="right-flex1-body1" data-aos="fade-up">
+                <span>INSTRUCTORS</span>
+                <span>COURSES</span>
+              </div>
+              <div class="right-flex1-pics-data">
+                <div class="right-flex1-pics-data1" data-aos="fade-up">
+                  <div class="right-flex1-pics-data-L">
+                    <span class="pics-1"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg"></span>
+                    <span class="pics-data-1">
+                      <span class="pics-data-1-dark">Maven Analytics</span><span class="pics-data-1-light">Business
+                        Intelligence</span>
+                    </span>
+                  </div>
+                  <div class="right-flex1-pics-data-R">33</div>
+                </div>
+                <div class="right-flex1-pics-data1" data-aos="fade-up">
+                  <div class="right-flex1-pics-data-L">
+                    <span class="pics-1"><img src="pics\1.png" alt="1.png"></span>
+                    <span class="pics-data-1">
+                      <span class="pics-data-1-dark">Maven Analytics</span><span class="pics-data-1-light">Business
+                        Intelligence</span>
+                    </span>
+                  </div>
+                  <div class="right-flex1-pics-data-R">33</div>
+                </div>
+                <div class="right-flex1-pics-data1" data-aos="fade-up">
+                  <div class="right-flex1-pics-data-L">
+                    <span class="pics-1"><img src="pics\IMG_0836.jpg" alt="IMG_0836.jpg"></span>
+                    <span class="pics-data-1">
+                      <span class="pics-data-1-dark">Maven Analytics</span><span class="pics-data-1-light">Business
+                        Intelligence</span>
+                    </span>
+                  </div>
+                  <div class="right-flex1-pics-data-R">33</div>
+                </div>
+                <div class="right-flex1-pics-data1" data-aos="fade-up">
+                  <div class="right-flex1-pics-data-L">
+                    <span class="pics-1"><img src="pics\top-girl.jpg" alt="top-girl.jpg"></span>
+                    <span class="pics-data-1">
+                      <span class="pics-data-1-dark">Maven Analytics</span><span class="pics-data-1-light">Business
+                        Intelligence</span>
+                    </span>
+                  </div>
+                  <div class="right-flex1-pics-data-R">33</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-flex2">
+            <div class="body-flex2-item1">
+              <div class="L-flex2-top" data-aos="fade-up">
+                <div class="L-flex2-top-left">Top Courses</div>
+                <div class="L-flex2-top-right" onclick="opentdots3data()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="dots3-tooltip-data" id="dots3-data" onclick="closedots3data()">
+                  <div class="dots1"><span>Refresh</span></div>
+                  <div class="dots1"><span>View All</span></div>
+                  <div class="dots1"><span>Download</span></div>
+                </div>
+              </div>
+              <div class="L-flex2-body-part1" data-aos="fade-up">
+                <span class="L-flex2-body-part1-Left"><span class="camera-icon"><i
+                      class="bi bi-camera-video"></i></span></span>
+                <span class="L-flex2-body-part1-rightt">
+                  <span class="L-flex2-dark">Videography Basic Design</span>
+                  <span class="L-flex2-dark">Course</span>
+                  <span class="L-flex2-buttons">
+                    <p>1.2k Views</p>
+                  </span>
+                </span>
+              </div>
+              <div class="L-flex2-body-part1" data-aos="fade-up">
+                <span class="L-flex2-body-part1-Left"><span class="arrows-icon"><i
+                      class="bi bi-arrows-expand-vertical"></i></span></span>
+                <span class="L-flex2-body-part1-rightt">
+                  <span class="L-flex2-dark">Videography Basic Design</span>
+                  <span class="L-flex2-dark">Course</span>
+                  <span class="L-flex2-buttons">
+                    <p>1.2k Views</p>
+                  </span>
+                </span>
+              </div>
+              <div class="L-flex2-body-part1" data-aos="fade-up">
+                <span class="L-flex2-body-part1-Left"><span class="cameras-icon"><i
+                      class="bi bi-camera"></i></span></span>
+                <span class="L-flex2-body-part1-rightt">
+                  <span class="L-flex2-dark">Videography Basic Design</span>
+                  <span class="L-flex2-dark">Course</span>
+                  <span class="L-flex2-buttons">
+                    <p>1.2k Views</p>
+                  </span>
+                </span>
+              </div>
+              <div class="L-flex2-body-part1" data-aos="fade-up">
+                <span class="L-flex2-body-part1-Left"><span class="dribble-icon"><i
+                      class="bi bi-dribbble"></i></span></span>
+                <span class="L-flex2-body-part1-rightt">
+                  <span class="L-flex2-dark">Advance Dribble Base Visual</span>
+                  <span class="L-flex2-dark">Design</span>
+                  <span class="L-flex2-buttons">
+                    <p>3.9k Views</p>
+                  </span>
+                </span>
+              </div>
+              <div class="L-flex2-body-part1" data-aos="fade-up">
+                <span class="L-flex2-body-part1-Left"><span class="mic-icon"><i class="bi bi-mic"></i></span></span>
+                <span class="L-flex2-body-part1-rightt">
+                  <span class="L-flex2-dark">Your First Singing</span>
+                  <span class="L-flex2-dark">Lesson</span>
+                  <span class="L-flex2-buttons">
+                    <p>8.3k Views</p>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="body-flex2-item2" data-aos="fade-up">
+              <div class="body-flex2-item2-image">
+                <img src="pics\girl-with-laptop.png" alt="girl-with-laptop.png">
+              </div>
+              <div class="body-flex2-item2-h1">
+                <h2>Upcoming Webinar</h2>
+              </div>
+              <div class="body-flex2-item2-p1">
+                <p>Next Generation Frontend Architecture Using Layout Engine And React Native Web.</p>
+              </div>
+              <div class="body-flex2-item2-DT">
+                <div class="body-flex2-item2-calender">
+                  <span class="calender1-icon"><i class="bi bi-calendar2-event"></i></span>
+                  <span class="date1">
+                    <span class="date1-dark">17 Nov 23</span>
+                    <span class="date1-light">Date</span>
+                  </span>
+                </div>
+                <div class="body-flex2-item2-clock">
+                  <span class="clock1-icon"><i class="bi bi-clock"></i></span>
+                  <span class="clock1">
+                    <span class="clock1-dark">32 minutes</span>
+                    <span class="clock1-light">Duration</span>
+                  </span>
+                </div>
+              </div>
+              <div class="body-flex2-item2-btn1">
+                <button class="join-event">Join the Event</button>
+              </div>
+            </div>
+            <div class="body-flex2-item3">
+              <div class="body-flex2-item3-h1" data-aos="fade-up">
+                <h2>Assignment Progress</h2>
+              </div>
+              <!-- first row of body item3 -->
+              <div class="body-flex2-item3-part1" data-aos="fade-up">
+                <div class="body-flex2-item3-part1-L">
+                  <span class="body-flex2-item3-left">
+                    <span class="percentage1">80%</span>
+                  </span>
+                  <span class="body-flex2-item3-right">
+                    <span class="body-flex2-item3-headings">User experience Designs</span>
+                    <span class="tasks">59 Tasks</span>
+                  </span>
+                </div>
+                <div class="body-flex2-item3-part1-R">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </div>
+              <!-- first row of body item3 -->
+              <div class="body-flex2-item3-part1" data-aos="fade-up">
+                <div class="body-flex2-item3-part1-L">
+                  <span class="body-flex2-item3-left">
+                    <span class="percentage2">80%</span>
+                  </span>
+                  <span class="body-flex2-item3-right">
+                    <span class="body-flex2-item3-headings">User experience Designs</span>
+                    <span class="tasks">59 Tasks</span>
+                  </span>
+                </div>
+                <div class="body-flex2-item3-part1-R">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </div>
+              <div class="body-flex2-item3-part1" data-aos="fade-up">
+                <div class="body-flex2-item3-part1-L">
+                  <span class="body-flex2-item3-left">
+                    <span class="percentage3">80%</span>
+                  </span>
+                  <span class="body-flex2-item3-right">
+                    <span class="body-flex2-item3-headings">User experience Designs</span>
+                    <span class="tasks">59 Tasks</span>
+                  </span>
+                </div>
+                <div class="body-flex2-item3-part1-R">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </div>
+              <div class="body-flex2-item3-part1" data-aos="fade-up">
+                <div class="body-flex2-item3-part1-L">
+                  <span class="body-flex2-item3-left">
+                    <span class="percentage4">80%</span>
+                  </span>
+                  <span class="body-flex2-item3-right">
+                    <span class="body-flex2-item3-headings">User experience Designs</span>
+                    <span class="tasks">59 Tasks</span>
+                  </span>
+                </div>
+                <div class="body-flex2-item3-part1-R">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-part3">
+            <div class="body-part3-top1" data-aos="fade-up">
+              <span>
+                <h2>Course you are taking</h2>
+              </span>
+            </div>
+            <table id="myTable" class="display">
+              <thead>
+                <tr>
+                  <th><input type="checkbox"></th>
+                  <th class="top-heading">Course Name</th>
+                  <th class="top-heading">Time</th>
+                  <th class="top-heading" id="progress00">Progress</th>
+                  <th class="top-heading" id="status00">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row1 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="Basicfundamentel.html">
+                            <h4>Basic Fundamentals</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\1.png" alt=""></span>
+                          <span class="p2">
+                            <p>Basit khokhar</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>12h 42m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>90%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner"></span></span>
+                      <span class="percent1">
+                        <p>90/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status11">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>133</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>50</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>80</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row2 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-amd" id="icon2"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="#">
+                            <h4>Angular Routing</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\girl1.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Euell Bownass</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>10h 12m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>50%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner" id="two-inner"></span></span>
+                      <span class="percent1">
+                        <p>50/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status22">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>542</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>10</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>40</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row3 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-unity" id="icon3"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="#">
+                            <h4>Advanced Angular</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Robert Bownass</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>18h 22m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>70%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner" id="three-inner"></span></span>
+                      <span class="percent1">
+                        <p>70/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status33">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>333</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>20</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>90</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row4 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-bing" id="icon4"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="#">
+                            <h4>Advanced React Native</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\girl1.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Aluin Leveritt</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>10h 40m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>40%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner" id="four-inner"></span></span>
+                      <span class="percent1">
+                        <p>40/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status44">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>183</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>50</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>70</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row5 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-slack" id="icon5"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="#">
+                            <h4>React Native</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\1.png" alt=""></span>
+                          <span class="p2">
+                            <p>Gertie Langwade</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>16h 30m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>20%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner" id="five-inner"></span></span>
+                      <span class="percent1">
+                        <p>20/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status55">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>123</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>24</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>55</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row6 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-yelp"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="#">
+                            <h4>React for Professional</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\right8.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Ashleigh Bartkowiak</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>18h 52m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>60%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner" id="six-inner"></span></span>
+                      <span class="percent1">
+                        <p>60/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status66">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>113</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>20</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>70</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row7 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-strava"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="#">
+                            <h4>React for Beginners</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\right9.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Terrye Etches</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>18h 56m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>90%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner"></span></span>
+                      <span class="percent1">
+                        <p>90/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status77">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>138</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>47</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>89</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row8 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-dropbox" id="icon8"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="#">
+                            <h4>Color Theory</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Leyla Bourley</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>10h 34m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>30%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner" id="eight-inner"></span></span>
+                      <span class="percent1">
+                        <p>30/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status88">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>133</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>50</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>80</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row9 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-bing" id="icon4"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="#">
+                            <h4>Basics of Angular</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Merrilee Whitnells</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>11h 45m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>80%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner" id="nine-inner"></span></span>
+                      <span class="percent1">
+                        <p>80/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status99">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>833</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>90</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>80</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row10 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-slack" id="icon5"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <a href="#">
+                            <h4>Art & Drawing</h4>
+                          </a>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Estella Chace</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>23h 12m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>60%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner" id="ten-inner"></span></span>
+                      <span class="percent1">
+                        <p>60/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status1010">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>373</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>50</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>30</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row11 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <h4>Basic Fundamentals</h4>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Euell Bownass</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>11h 42m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>30%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner" id="eleven-inner"></span></span>
+                      <span class="percent1">
+                        <p>30/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status1111">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>133</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>50</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>80</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- row12 -->
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>
+                    <div class="course-item1">
+                      <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
+                      <span class="course-item1-data1">
+                        <span class="item1-data1-top">
+                          <h4>Basic Fundamentals</h4>
+                        </span>
+                        <span class="item1-data1-bottom">
+                          <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
+                          <span class="p2">
+                            <p>Euell Bownass</p>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="time">
+                    <h3>14h 40m</h3>
+                  </td>
+                  <td class="progressbar1">
+                    <div class="row1-part2-right">
+                      <span>
+                        <h3>90%</h3>
+                      </span>
+                      <span class="progress-out"><span class="progress-inner"></span></span>
+                      <span class="percent1">
+                        <p>90/100</p>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="Status1" id="Status1212">
+                    <div class="body-part3-row1-part3">
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>133</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>50</p>
+                        </span>
+                      </div>
+                      <div class="row1-part3-item1">
+                        <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
+                        <span class="row1-part3-icon-data">
+                          <p>80</p>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="vuexy-footer">
+            <div class="vuexy-footer-left">
+              <p>© 2023 , made with ❤️ by <b>Basit Khokhar</b></p>
+            </div>
+            <div class="vuexy-footer-right">
               <ul>
-                <li class="garph-list-item1"><span class="garph-number6">6</span><span class="garph-p6">UI Design</span></li>
-                <span class="garph-list-item1-tooltip"><p>70%</p></span>
-                <li class="garph-list-item2"><span class="garph-number5">5</span><span class="garph-p5">UX Design</span></li>
-                <li class="garph-list-item3"><span class="garph-number4">4</span><span class="garph-p4">Music</span></li>
-                <li class="garph-list-item4"><span class="garph-number3">3</span><span class="garph-p3">Animation</span></li>
-                <li class="garph-list-item5"><span class="garph-number2">2</span><span class="garph-p2">React</span></li>
-                <li class="garph-list-item6"><span class="garph-number1">1</span><span class="garph-p1">SEO</span></li>
+                <li>License</li>
+                <li>More Themes</li>
+                <li>Documentation</li>
+                <li>Support</li>
               </ul>
             </div>
           </div>
-          <div class="right-flex1">
-            <div class="R-flex1-top" data-aos="fade-up">
-              <div class="R-flex1-top-left">Popular Instructors</div>
-              <div class="R-flex1-top-right" onclick="opentdots2data()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="dots2-tooltip-data" id="dots2-data" onclick="closedots2data()" >
-                <div class="dots1"><span>Select All</span></div>
-                <div class="dots1"><span>Refresh</span></div>      
-                <div class="dots1"><span>Share</span></div>       
-              </div>
-            </div>
-            <div class="right-flex1-body1" data-aos="fade-up">
-              <span>INSTRUCTORS</span>
-              <span>COURSES</span>
-            </div>
-            <div class="right-flex1-pics-data">
-              <div class="right-flex1-pics-data1" data-aos="fade-up">
-                <div class="right-flex1-pics-data-L">
-                  <span class="pics-1"><img src="pics\IMG_0202.jpg" alt="IMG_0202.jpg"></span>
-                  <span class="pics-data-1">
-                    <span class="pics-data-1-dark">Maven Analytics</span><span class="pics-data-1-light">Business Intelligence</span>
-                  </span>
-                </div>
-                <div class="right-flex1-pics-data-R">33</div>
-              </div>
-              <div class="right-flex1-pics-data1" data-aos="fade-up">
-                <div class="right-flex1-pics-data-L">
-                  <span class="pics-1"><img src="pics\1.png" alt="1.png"></span>
-                  <span class="pics-data-1">
-                    <span class="pics-data-1-dark">Maven Analytics</span><span class="pics-data-1-light">Business Intelligence</span>
-                  </span>
-                </div>
-                <div class="right-flex1-pics-data-R">33</div>
-              </div>
-              <div class="right-flex1-pics-data1" data-aos="fade-up">
-                <div class="right-flex1-pics-data-L">
-                  <span class="pics-1"><img src="pics\IMG_0836.jpg" alt="IMG_0836.jpg"></span>
-                  <span class="pics-data-1">
-                    <span class="pics-data-1-dark">Maven Analytics</span><span class="pics-data-1-light">Business Intelligence</span>
-                  </span>
-                </div>
-                <div class="right-flex1-pics-data-R">33</div>
-              </div>
-              <div class="right-flex1-pics-data1" data-aos="fade-up">
-                <div class="right-flex1-pics-data-L">
-                  <span class="pics-1"><img src="pics\top-girl.jpg" alt="top-girl.jpg"></span>
-                  <span class="pics-data-1">
-                    <span class="pics-data-1-dark">Maven Analytics</span><span class="pics-data-1-light">Business Intelligence</span>
-                  </span>
-                </div>
-                <div class="right-flex1-pics-data-R">33</div>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="body-flex2" >
-          <div class="body-flex2-item1">
-            <div class="L-flex2-top" data-aos="fade-up">
-              <div class="L-flex2-top-left">Top Courses</div>
-              <div class="L-flex2-top-right" onclick="opentdots3data()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="dots3-tooltip-data" id="dots3-data" onclick="closedots3data()" >
-                <div class="dots1"><span>Refresh</span></div>
-                <div class="dots1"><span>View All</span></div>      
-                <div class="dots1"><span>Download</span></div>       
-              </div>
-            </div>
-            <div class="L-flex2-body-part1" data-aos="fade-up">
-              <span class="L-flex2-body-part1-Left"><span class="camera-icon"><i class="bi bi-camera-video"></i></span></span>
-              <span class="L-flex2-body-part1-rightt">
-                <span class="L-flex2-dark">Videography Basic Design</span>
-                <span class="L-flex2-dark">Course</span>
-                <span class="L-flex2-buttons"><p>1.2k Views</p></span>
-              </span>
-            </div>
-            <div class="L-flex2-body-part1" data-aos="fade-up">
-              <span class="L-flex2-body-part1-Left"><span class="arrows-icon"><i class="bi bi-arrows-expand-vertical"></i></span></span>
-              <span class="L-flex2-body-part1-rightt">
-                <span class="L-flex2-dark">Videography Basic Design</span>
-                <span class="L-flex2-dark">Course</span>
-                <span class="L-flex2-buttons"><p>1.2k Views</p></span>
-              </span>
-            </div>
-            <div class="L-flex2-body-part1" data-aos="fade-up">
-              <span class="L-flex2-body-part1-Left"><span class="cameras-icon"><i class="bi bi-camera"></i></span></span>
-              <span class="L-flex2-body-part1-rightt">
-                <span class="L-flex2-dark">Videography Basic Design</span>
-                <span class="L-flex2-dark">Course</span>
-                <span class="L-flex2-buttons"><p>1.2k Views</p></span>
-              </span>
-            </div>
-            <div class="L-flex2-body-part1" data-aos="fade-up">
-              <span class="L-flex2-body-part1-Left"><span class="dribble-icon"><i class="bi bi-dribbble"></i></span></span>
-              <span class="L-flex2-body-part1-rightt">
-                <span class="L-flex2-dark">Advance Dribble Base Visual</span>
-                <span class="L-flex2-dark">Design</span>
-                <span class="L-flex2-buttons"><p>3.9k Views</p></span>
-              </span>
-            </div>
-            <div class="L-flex2-body-part1" data-aos="fade-up">
-              <span class="L-flex2-body-part1-Left"><span class="mic-icon"><i class="bi bi-mic"></i></span></span>
-              <span class="L-flex2-body-part1-rightt">
-                <span class="L-flex2-dark">Your First Singing</span>
-                <span class="L-flex2-dark">Lesson</span>
-                <span class="L-flex2-buttons"><p>8.3k Views</p></span>
-              </span>
-            </div>           
-          </div>
-          <div class="body-flex2-item2" data-aos="fade-up">
-            <div class="body-flex2-item2-image">
-              <img src="pics\girl-with-laptop.png" alt="girl-with-laptop.png">
-            </div>
-            <div class="body-flex2-item2-h1">
-              <h2>Upcoming Webinar</h2>
-            </div>
-            <div class="body-flex2-item2-p1">
-              <p>Next Generation Frontend Architecture Using Layout Engine And React Native Web.</p>
-            </div>
-            <div class="body-flex2-item2-DT">
-              <div class="body-flex2-item2-calender">
-                <span class="calender1-icon"><i class="bi bi-calendar2-event"></i></span>
-                <span class="date1">
-                  <span class="date1-dark">17 Nov 23</span>
-                  <span class="date1-light">Date</span>
-                </span>
-              </div>
-              <div class="body-flex2-item2-clock">
-                <span class="clock1-icon"><i class="bi bi-clock"></i></span>
-                <span class="clock1">
-                  <span class="clock1-dark">32 minutes</span>
-                  <span class="clock1-light">Duration</span>
-                </span>
-              </div>
-            </div>
-            <div class="body-flex2-item2-btn1">
-              <button class="join-event">Join the Event</button>
-            </div>
-          </div>
-          <div class="body-flex2-item3">
-            <div class="body-flex2-item3-h1" data-aos="fade-up"><h2>Assignment Progress</h2></div>
-             <!-- first row of body item3 -->
-            <div class="body-flex2-item3-part1" data-aos="fade-up">
-              <div class="body-flex2-item3-part1-L">
-                <span class="body-flex2-item3-left">
-                   <span class="percentage1">80%</span>
-                </span>
-                <span class="body-flex2-item3-right">
-                  <span class="body-flex2-item3-headings">User experience Designs</span>
-                  <span class="tasks">59 Tasks</span>
-                </span>
-              </div>
-              <div class="body-flex2-item3-part1-R">
-                <i class="bi bi-chevron-right"></i>
-              </div>
-            </div>
-            <!-- first row of body item3 -->
-            <div class="body-flex2-item3-part1" data-aos="fade-up">
-              <div class="body-flex2-item3-part1-L">
-                <span class="body-flex2-item3-left">
-                   <span class="percentage2">80%</span>
-                </span>
-                <span class="body-flex2-item3-right">
-                  <span class="body-flex2-item3-headings">User experience Designs</span>
-                  <span class="tasks">59 Tasks</span>
-                </span>
-              </div>
-              <div class="body-flex2-item3-part1-R">
-                <i class="bi bi-chevron-right"></i>
-              </div>
-            </div>
-            <div class="body-flex2-item3-part1" data-aos="fade-up">
-              <div class="body-flex2-item3-part1-L">
-                <span class="body-flex2-item3-left">
-                   <span class="percentage3">80%</span>
-                </span>
-                <span class="body-flex2-item3-right">
-                  <span class="body-flex2-item3-headings">User experience Designs</span>
-                  <span class="tasks">59 Tasks</span>
-                </span>
-              </div>
-              <div class="body-flex2-item3-part1-R">
-                <i class="bi bi-chevron-right"></i>
-              </div>
-            </div>
-            <div class="body-flex2-item3-part1" data-aos="fade-up">
-              <div class="body-flex2-item3-part1-L">
-                <span class="body-flex2-item3-left">
-                   <span class="percentage4">80%</span>
-                </span>
-                <span class="body-flex2-item3-right">
-                  <span class="body-flex2-item3-headings">User experience Designs</span>
-                  <span class="tasks">59 Tasks</span>
-                </span>
-              </div>
-              <div class="body-flex2-item3-part1-R">
-                <i class="bi bi-chevron-right"></i>
-              </div>
-            </div>         
-          </div>
-        </div>
-        <div class="body-part3">
-          <div class="body-part3-top1"  data-aos="fade-up">
-            <span><h2>Course you are taking</h2></span>
-          </div>
-         <table id="myTable" class="display">
-          <thead>
-            <tr>
-              <th><input type="checkbox"></th>
-              <th class="top-heading">Course Name</th>
-              <th class="top-heading">Time</th>
-              <th class="top-heading">Progress</th>
-              <th class="top-heading">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-             <!-- row1 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                      <a href="Basicfundamentel.html"><h4>Basic Fundamentals</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\1.png" alt=""></span>
-                      <span class="p2">
-                        <p>Basit khokhar</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>12h 42m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>90%</h3></span>
-                  <span class="progress-out"><span class="progress-inner"></span></span>
-                  <span class="percent1"><p>90/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="Status11">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>133</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>50</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>80</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row2 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                      <a href="#"><h4>Angular Routing</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\girl1.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Euell Bownass</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>10h 12m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right" >
-                  <span><h3>50%</h3></span>
-                  <span class="progress-out"><span class="progress-inner" id="two-inner"></span></span>
-                  <span class="percent1"><p>50/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="Status22">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>542</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>10</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>40</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row3 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                      <a href="#"><h4>Advanced Angular</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Robert Bownass</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>18h 22m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>70%</h3></span>
-                  <span class="progress-out"><span class="progress-inner" id="three-inner"></span></span>
-                  <span class="percent1"><p>70/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="Status33">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>333</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>20</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>90</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row4 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                     <a href="#"><h4>Advanced React Native</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\girl1.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Aluin Leveritt</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>10h 40m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>40%</h3></span>
-                  <span class="progress-out"><span class="progress-inner" id="four-inner"></span></span>
-                  <span class="percent1"><p>40/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="status44">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>183</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>50</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>70</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row5 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                      <a href="#"><h4>React Native</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\1.png" alt=""></span>
-                      <span class="p2">
-                        <p>Gertie Langwade</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>16h 30m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>20%</h3></span>
-                  <span class="progress-out"><span class="progress-inner" id="five-inner"></span></span>
-                  <span class="percent1"><p>20/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="status55">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>123</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>24</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>55</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row6 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                     <a href="#"><h4>React for Professional</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\right8.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Ashleigh Bartkowiak</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>18h 52m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>60%</h3></span>
-                  <span class="progress-out"><span class="progress-inner" id="six-inner"></span></span>
-                  <span class="percent1"><p>60/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="Status66">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>113</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>20</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>70</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row7 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                     <a href="#"><h4>React for Beginners</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\right9.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Terrye Etches</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>18h 56m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>90%</h3></span>
-                  <span class="progress-out"><span class="progress-inner"></span></span>
-                  <span class="percent1"><p>90/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="Status77">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>138</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>47</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>89</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row8 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                     <a href="#"><h4>Color Theory</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Leyla Bourley</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>10h 34m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>30%</h3></span>
-                  <span class="progress-out"><span class="progress-inner" id="eight-inner"></span></span>
-                  <span class="percent1"><p>30/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="status88">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>133</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>50</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>80</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row9 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                      <a href="#"><h4>Basics of Angular</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Merrilee Whitnells</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>11h 45m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>80%</h3></span>
-                  <span class="progress-out"><span class="progress-inner" id="nine-inner"></span></span>
-                  <span class="percent1"><p>80/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="status99">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>833</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>90</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>80</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row10 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                      <a href="#"><h4>Art & Drawing</h4></a>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Estella Chace</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>23h 12m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>60%</h3></span>
-                  <span class="progress-out"><span class="progress-inner" id="ten-inner"></span></span>
-                  <span class="percent1"><p>60/100</p></span>
-                </div>
-              </td>
-              <td class="Status1" id="status1010">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>373</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>50</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>30</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row11 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                      <h4>Basic Fundamentals</h4>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Euell Bownass</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>11h 42m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>30%</h3></span>
-                  <span class="progress-out"><span class="progress-inner" id="eleven-inner"></span></span>
-                  <span class="percent1"><p>30/100</p></span>
-                </div>
-              </td>
-              <td class="Status1">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>133</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>50</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>80</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <!-- row13 -->
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>
-                <div class="course-item1">
-                  <span class="course-item1-icon1"><i class="bi bi-ubuntu"></i></span>
-                  <span class="course-item1-data1">
-                    <span class="item1-data1-top">
-                      <h4>Basic Fundamentals</h4>
-                    </span>
-                    <span class="item1-data1-bottom">
-                      <span class="item1-data1-img1"><img src="pics\top-girl.jpg" alt=""></span>
-                      <span class="p2">
-                        <p>Euell Bownass</p>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-              </td>
-              <td class="time"><h3>12h 42m</h3></td>
-              <td class="progressbar1">
-                <div class="row1-part2-right">
-                  <span><h3>90%</h3></span>
-                  <span class="progress-out"><span class="progress-inner"></span></span>
-                  <span class="percent1"><p>90/100</p></span>
-                </div>
-              </td>
-              <td class="Status1">
-                <div class="body-part3-row1-part3">
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon1"><i class="bi bi-people"></i></span>
-                    <span class="row1-part3-icon-data"><p>133</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon2"><i class="bi bi-book"></i></span>
-                    <span class="row1-part3-icon-data"><p>50</p></span>
-                  </div>
-                  <div class="row1-part3-item1">
-                    <span class="row1-part3-icon3"><i class="bi bi-camera-video"></i></span>
-                    <span class="row1-part3-icon-data"><p>80</p></span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-         </table>
-        </div>
-        <div class="vuexy-footer">
-          <div class="vuexy-footer-left"><p>© 2023 , made with ❤️ by <b>Basit Khokhar</b></p></div>
-          <div class="vuexy-footer-right">
-            <ul>
-              <li>License</li>
-              <li>More Themes</li>
-              <li>Documentation</li>
-              <li>Support</li>
-            </ul>
-          </div>
-        </div>
-       </div>
       </div>
     </div>
-   </div>
+  </div>
 
-   <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script src="public\js\javascript.js"></script>
+  <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+  <script src="public\js\javascript.js"></script>
 
 
 </body>
+
 </html>
