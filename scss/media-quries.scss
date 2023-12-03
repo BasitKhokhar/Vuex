@@ -4,11 +4,11 @@
         margin-left: 0;
     }
     .left-sidebaar{
-        width: 30%;
+        width: 0%;
         height: 100%;
         box-shadow: none;
         background-color:white;
-        display: none;
+        display: block;
         transition: all 0.5s ease;
         &::-webkit-scrollbar{
             width: 1rem;  
@@ -24,6 +24,12 @@
         &::-webkit-scrollbar-track{
            box-shadow:0 0 .5rem .5rem gray ;
         }
+    }
+    .grid .left-side{
+        padding-right: 2rem;
+    }
+    .header-right{
+        padding-right: 1rem;
     }
     .right-topbar{
         width: 96%;
@@ -43,7 +49,7 @@
         height: 100%;
         box-shadow: none;
         background-color:white;
-        display: none;
+        display: block;
         transition: left 0.4s;
         // &:hover{
         //     width: 40%;

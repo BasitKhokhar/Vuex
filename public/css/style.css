@@ -67,7 +67,7 @@ html.dark .container {
   transition: all 0.5s ease;
   box-shadow: 0 0 0.5rem 0.5rem rgb(235, 235, 235);
   z-index: 15;
-  transition: 1s;
+  transition: 0.5s;
 }
 .left-sidebaar:hover {
   width: 20%;
@@ -110,7 +110,7 @@ html.dark .left-sidebaar::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding-left: 2rem;
 }
 
 .header-left {
@@ -156,7 +156,7 @@ html.dark .header-left h1 {
   overflow-y: auto;
   padding-top: 1rem;
   padding-left: 3.5rem;
-  padding-right: 4.5rem;
+  padding-right: 3rem;
   transition: 1s;
 }
 
@@ -194,7 +194,7 @@ html.dark .grid .left-side .left-dashboard a .dashboard-left {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 15rem;
+  width: 100%;
 }
 
 .grid .left-side .left-dashboard a .dashboard-right span p {
@@ -338,7 +338,7 @@ html.dark .grid .left-side .list2 ul li a {
   flex-direction: row;
   border: none;
   justify-content: space-between;
-  width: 23rem;
+  width: 100%;
 }
 
 .grid .left-side .list2 ul li a span p {
@@ -2571,11 +2571,11 @@ html.dark .part1 > .part1-right-container > ul > .item1 > .item1-upperside {
     margin-left: 0;
   }
   .left-sidebaar {
-    width: 30%;
+    width: 0%;
     height: 100%;
     box-shadow: none;
     background-color: white;
-    display: none;
+    display: block;
     transition: all 0.5s ease;
   }
   .left-sidebaar::-webkit-scrollbar {
@@ -2591,6 +2591,12 @@ html.dark .part1 > .part1-right-container > ul > .item1 > .item1-upperside {
   }
   .left-sidebaar::-webkit-scrollbar-track {
     box-shadow: 0 0 0.5rem 0.5rem gray;
+  }
+  .grid .left-side {
+    padding-right: 2rem;
+  }
+  .header-right {
+    padding-right: 1rem;
   }
   .right-topbar {
     width: 96%;
@@ -2609,7 +2615,7 @@ html.dark .part1 > .part1-right-container > ul > .item1 > .item1-upperside {
     height: 100%;
     box-shadow: none;
     background-color: white;
-    display: none;
+    display: block;
     transition: left 0.4s;
   }
   .right-topbar {

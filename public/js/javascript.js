@@ -1,7 +1,6 @@
 AOS.init();
 
 // let table = new DataTable('#myTable');
-
 $('#myTable').dataTable( {
     "pageLength": 5
   } );
@@ -12,7 +11,6 @@ $('#myTable').dataTable( {
 //         [5,10, 25, 50, 'All']
 //     ]
 // });
-
 $(document).ready(function(){
   $('#upperitem1').click(function(){
     $('#upperitem1tooltip1').toggle(800)
@@ -25,7 +23,56 @@ $(document).ready(function(){
   });
   $('#upperitem4').click(function(){
     $('#upperitem1tooltip4').toggle(800)
-  });z
+  });
+
+//   $('#dashboard1').click(function(){
+//     $('#upperitem1tooltip4').toggle(800)
+//   });
+//  sidebaar display or none jquery //
+  $("#menu11").click(function(){
+    if($(window).width() > 1000){
+        $("#displaysidebar").animate({
+            width: "22%"
+          });
+    }
+    else if($(window).width() > 850){
+        $("#displaysidebar").animate({
+            width: "25%"
+          });
+    }
+    else if($(window).width() > 750){
+        $("#displaysidebar").animate({
+            width: "30%"
+          });
+    }
+    else if($(window).width() > 550){
+        $("#displaysidebar").animate({
+            width: "35%"
+          });
+    }
+    else if($(window).width() > 450){
+        $("#displaysidebar").animate({
+            width: "40%"
+          });
+    }
+    else if($(window).width() > 250){
+        $("#displaysidebar").animate({
+            width: "45%"
+          });
+    }
+    else{
+        $("#displaysidebar").animate({
+            width: "0%"
+          });
+    }
+   
+  });
+  $("#sidebar-crossicon").click(function(){
+    $("#displaysidebar").animate({
+      width: "0%"
+    });
+  });
+//   console.log($(window).width());
 });
 // let topbar=document.querySelector('.right-topbar');
 
@@ -47,16 +94,15 @@ function light(){
     html.classList.remove('dark');
 }
     //    three lines javascript
-let menu1=document.getElementById('display-sidebar');
-let plusbuton=document.getElementById("menu11");
-let cross=document.querySelector('.header-right')
-plusbuton.onclick=function togle(){
-    menu1.classList.add("left-side-display");
-    // menu1.style.transition='width 2s';
-}
-cross.onclick=function togle(){
-    menu1.classList.remove("left-side-display");
-}
+// let menu1=document.getElementById('displaysidebar');
+// let plusbuton=document.getElementById("menu11");
+// let cross=document.querySelector('.header-right')
+// plusbuton.onclick=function togle(){
+//     menu1.classList.add("left-side-display");
+// }
+// cross.onclick=function togle(){
+//     menu1.classList.remove("left-side-display");
+// }
 
 // $(document).ready(function(){
 //     $("#menu11").on("click", function(){
@@ -83,7 +129,7 @@ cross.onclick=function togle(){
 //     console.log('remove')
 // },1000);
 // function circlesonclick(){
-//    var sidebaar=document.getElementById('display-sidebar');
+//    var sidebaar=document.getElementById('displaysidebar');
 //    sidebaar.classList.toggle('display-leftsidebaar');
 // }
 
