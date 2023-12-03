@@ -2500,6 +2500,7 @@ table>tbody>tr>.progressbar1>.row1-part2-right>.progress-out>#eleven-inner {
 .part1 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: white;
     border-radius: 1rem;
     padding: 3rem 3rem;
@@ -2625,8 +2626,81 @@ html.dark .part1 {
 }
 
 // right side container //
-.part1>.part1-right-container {
+.part1 > .part1-right-container {
     display: flex;
     flex-direction: column;
     width: 30%;
+    height: 100%;
+    border-radius: 1rem;
+    border: .1rem solid lightgray;
+}
+.part1 > .part1-right-container > ul{
+
+}
+.part1 > .part1-right-container > ul > .item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+}
+.part1 > .part1-right-container > ul > .item1 > .item1-upperside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $vuexy-primary;
+    padding: 1rem 1.5rem;
+    border-bottom: .1rem solid lightgray;
+    cursor: pointer;
+}
+html.dark .part1 > .part1-right-container > ul > .item1 > .item1-upperside{
+  background-color:$dark-bg ;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1-upperside > .item1-data-left{
+    display: flex;
+    flex-direction: column;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1-upperside > .item1-data-left > span h2{
+    font-size: 2rem;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1-upperside > .item1-data-left > span p{
+    font-size: 1.6rem;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1-upperside > .item1-data-right{
+    padding-top: 1.3rem;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1-upperside > .item1-data-right > i{
+    font-size: 1.8rem;
+    // &:hover{
+    //     transform: rotate(90deg);
+    // }   
+}
+.part1 > .part1-right-container > ul > .item1 > #upperitem1tooltip1{
+    display: flex;
+    flex-direction: column;
+}
+.part1 > .part1-right-container > ul > .item1 > #upperitem1tooltip2,
+.part1 > .part1-right-container > ul > .item1 > #upperitem1tooltip3,
+.part1 > .part1-right-container > ul > .item1 > #upperitem1tooltip4{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1tooltipdata > .left-item1-tooltip{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    gap: 1.5rem;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1tooltipdata > .left-item1-tooltip > .left-item1-tooltip-left{
+    padding-top: 1.5rem;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1tooltipdata > .left-item1-tooltip > .left-item1-tooltip-right{
+    display: flex;
+    flex-direction: column;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1tooltipdata > .left-item1-tooltip > .left-item1-tooltip-right > span h2{
+    font-size: 2rem;
+}
+.part1 > .part1-right-container > ul > .item1 > .item1tooltipdata > .left-item1-tooltip > .left-item1-tooltip-right > span p{
+    font-size: 1.6rem;
 }

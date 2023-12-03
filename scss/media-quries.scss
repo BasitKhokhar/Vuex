@@ -88,8 +88,10 @@
   // For pages//
   .part1{
     flex-direction: column;
+    row-gap: 2rem;
 }
-.part1 > .part1-left-container{
+   .part1 > .part1-left-container,
+   .part1 > .part1-right-container{
     width: 100%;
 }
 }

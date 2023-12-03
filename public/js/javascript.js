@@ -12,6 +12,21 @@ $('#myTable').dataTable( {
 //         [5,10, 25, 50, 'All']
 //     ]
 // });
+
+$(document).ready(function(){
+  $('#upperitem1').click(function(){
+    $('#upperitem1tooltip1').toggle(800)
+  });
+  $('#upperitem2').click(function(){
+    $('#upperitem1tooltip2').toggle(800)
+  });
+  $('#upperitem3').click(function(){
+    $('#upperitem1tooltip3').toggle(800)
+  });
+  $('#upperitem4').click(function(){
+    $('#upperitem1tooltip4').toggle(800)
+  });
+});
 // let topbar=document.querySelector('.right-topbar');
 
 // window.addEventListener('scroll',function(e){
