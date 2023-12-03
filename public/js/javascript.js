@@ -25,7 +25,7 @@ $(document).ready(function(){
   });
   $('#upperitem4').click(function(){
     $('#upperitem1tooltip4').toggle(800)
-  });
+  });z
 });
 // let topbar=document.querySelector('.right-topbar');
 
