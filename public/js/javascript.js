@@ -335,7 +335,7 @@ langicon.addEventListener('click',function() {
 });
 window.addEventListener('click',function(e) {
     console.log(e.target);
-    if(e.target.id !== 'bellicon' && e.target.id !== 'bell-tooltip'){
+    if(e.target.id !== 'bellicon' && e.target.id !== 'bell-tooltip' && e.target.id !=='bell1'){
         belllist.style.display='none';
     }
     else{
